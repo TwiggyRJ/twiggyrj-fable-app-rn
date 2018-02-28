@@ -18,6 +18,18 @@
       "command": "react-native run-ios"
     },
     {
+      "taskName": "Gradle Clean",
+      "group": "clean",
+      "type": "shell",
+      "command": "cd android && ./gradlew clean"
+    },
+    {
+      "taskName": "Delete Android Build",
+      "group": "clean",
+      "type": "shell",
+      "command": "cd android/app && rm -rf build"
+    },
+    {
       "taskName": "Log Android",
       "group": "build",
       "type": "shell",
