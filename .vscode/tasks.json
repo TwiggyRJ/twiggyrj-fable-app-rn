@@ -1,0 +1,87 @@
+{
+  "version": "2.0.0",
+  "presentation": {
+    "reveal": "always",
+    "panel": "new"
+  },
+  "tasks": [
+    {
+      "taskName": "Run Android",
+      "group": "build",
+      "type": "shell",
+      "command": "react-native run-android"
+    },
+    {
+      "taskName": "Run iOS",
+      "group": "build",
+      "type": "shell",
+      "command": "react-native run-ios"
+    },
+    {
+      "taskName": "Log Android",
+      "group": "build",
+      "type": "shell",
+      "command": "react-native log-android"
+    },
+    {
+      "taskName": "Log iOS",
+      "group": "build",
+      "type": "shell",
+      "command": "react-native log-ios"
+    },
+    {
+      "taskName": "Build APK Debug",
+      "group": "build",
+      "type": "shell",
+      "command": "cd android && ./gradlew assembleDebug",
+      "windows": {
+        "command": "cd android; if($?) {./gradlew assembleDebug}"
+      }
+    },
+    {
+      "taskName": "Build APK Release",
+      "group": "build",
+      "type": "shell",
+      "command": "cd android && ENVFILE=.env.production ./gradlew assembleRelease",
+      "windows": {
+        "command": "cd android; if($?) {./gradlew assembleRelease}"
+      }
+    },
+    {
+      "taskName": "Generate Android Bundle",
+      "group": "build",
+      "type": "shell",
+      "command": "react-native bundle --platform android --dev false --entry-file index.android.js --bundle-output android/main.jsbundle"
+    },
+    {
+      "taskName": "Generate iOS Bundle",
+      "group": "build",
+      "type": "shell",
+      "command": "react-native bundle --platform ios --dev false --entry-file index.ios.js --bundle-output ios/main.jsbundle"
+    },
+    {
+      "taskName": "Fastlane Android QAT",
+      "group": "build",
+      "type": "shell",
+      "command": "cd android && ENVFILE=.env.qat fastlane beta"
+    },
+    {
+      "taskName": "Fastlane Android UAT",
+      "group": "build",
+      "type": "shell",
+      "command": "cd android && ENVFILE=.env.uat fastlane beta"
+    },
+    {
+      "taskName": "Fastlane iOS QAT",
+      "group": "build",
+      "type": "shell",
+      "command": "cd ios && fastlane qat"
+    },
+    {
+      "taskName": "Fastlane iOS UAT",
+      "group": "build",
+      "type": "shell",
+      "command": "cd ios && fastlane uat"
+    }
+  ]
+}
