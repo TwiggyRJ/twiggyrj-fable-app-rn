@@ -18,6 +18,10 @@
                     ".jsx"
                 ]
             }
-        ]
+        ],
+        "linebreak-style": [
+            "error",
+            "windows"
+        ],
     }
 }
