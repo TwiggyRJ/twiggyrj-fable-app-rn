@@ -94,6 +94,18 @@
       "group": "build",
       "type": "shell",
       "command": "cd ios && fastlane uat"
+    },
+    {
+      "taskName": "Bump Minor Version",
+      "group": "build",
+      "type": "shell",
+      "command": "npm version minor"
+    },
+    {
+      "taskName": "Bump Patch Version",
+      "group": "build",
+      "type": "shell",
+      "command": "npm version patch"
     }
   ]
 }
