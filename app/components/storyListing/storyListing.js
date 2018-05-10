@@ -6,7 +6,7 @@ import styles from './styles';
 
 const StoryListing = (props) => {
   return (
-    <TouchableWithoutFeedback>
+    <TouchableWithoutFeedback onPress={() => props.navigate(props.story)}>
       <View style={[styles.listingContainer, props.styles]}>
         <Image style={styles.images} source={{uri: props.story.cover}}/>
         <View style={styles.contentContainer}>

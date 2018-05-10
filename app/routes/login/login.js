@@ -1,7 +1,9 @@
 import React from 'react';
 import { Text, View, Image, StatusBar, TextInput, TouchableWithoutFeedback } from 'react-native';
+import Animation from 'lottie-react-native';
 import styles from './styles';
 import Button from '../../components/button';
+import AnimSky from '../../animations/sky.js';
 
 //<Button style={styles.loginButton} customStyles={ styles.loginButton } textStyles={ styles.loginButtonText } text="Sign In" onPress={() => props.authenticate('john.doe@test.com', 'testing')}/>
 

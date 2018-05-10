@@ -22,10 +22,16 @@ class HomeContainer extends PureComponent {
     this.state = {
       rand: true,
     };
+
+    this.navigateToStory = this.navigateToStory.bind(this);
   }
 
   componentWillMount() {
     this.props.onGetStories();
+  }
+
+  navigateToStory(story) {
+    this.props.navigation.navigate('Synopsis');
   }
 
   render() {
@@ -33,7 +39,7 @@ class HomeContainer extends PureComponent {
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
         {
           Array.isArray(this.props.stories) && this.props.stories.length > 0 ?
-            <FlattendList items={this.props.stories} length={this.props.stories.length}/>
+            <FlattendList items={this.props.stories} length={this.props.stories.length} navigate={this.navigateToStory}/>
           : null
         }
       </View>
