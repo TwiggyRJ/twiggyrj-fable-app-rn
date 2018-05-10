@@ -10,7 +10,7 @@ const FlattendList = (props) => {
       key="expensesList"
       data={props.items}
       keyExtractor={(item, index) => item.id}
-      renderItem={({item, index}) => <StoryListing story={item} index={index} styles={index === (props.length - 1) ? { marginBottom: 0 } : null}/>}/>
+      renderItem={({item, index}) => <StoryListing story={item} navigate={props.navigate} index={index} styles={index === (props.length - 1) ? { marginBottom: 0 } : null}/>}/>
   );
 };
 

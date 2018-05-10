@@ -1,26 +1,40 @@
-import React, { PureComponent } from "react";
+import React, { PureComponent } from 'react';
 import { DrawerNavigator, NavigationActions } from 'react-navigation';
 import Icon from 'react-native-vector-icons/Ionicons';
 import FlattendList from '../../components/flattendList';
 import Button from '../../components/button';
-import Home from "./home";
+import Home from './home';
+import Story from './story';
+import Synopsis from './synopsis';
 
 const MainStack = DrawerNavigator(
   {
     Home: {
       screen: Home,
-      path: '/main/home'
+      path: '/main/home',
+    },
+  },
+  {
+    Story: {
+      screen: Story,
+      path: '/main/story/',
+    },
+  },
+  {
+    Synopsis: {
+      screen: Synopsis,
+      path: '/main/synopsis',
     },
   },
   {
     drawerOpenRoute: 'DrawerOpen',
     drawerCloseRoute: 'DrawerClose',
     drawerToggleRoute: 'DrawerToggle',
-    initialRouteName: 'Home',
+    initialRouteName: 'Synopsis',
     contentOptions: {
       activeTintColor: '#00BCD4',
     },
-  }
+  },
 );
 
 export default class Main extends PureComponent {
@@ -29,7 +43,7 @@ export default class Main extends PureComponent {
 
     return {
       headerTitle: 'Fable',
-      headerRight: (<Button customStyles={{padding: 20}} onPress={navigation.navigate('DrawerToggle')} type="icon" icon={<Icon name="md-menu" size={30} color="#333" />}/>)
+      headerRight: (<Button customStyles={{ padding: 20 }} onPress={navigation.navigate('DrawerToggle')} type="icon" icon={<Icon name="md-menu" size={30} color="#333" />} />),
     };
   };
 

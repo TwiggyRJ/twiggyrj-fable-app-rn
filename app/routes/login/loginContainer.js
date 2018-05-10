@@ -6,12 +6,7 @@ import * as usersActions from '../../actions/users';
 import Login from './login';
 import navConfig from './navConfig';
 
-const resetAction = NavigationActions.reset({
-  index: 0,
-  actions: [
-    NavigationActions.navigate({ routeName: 'Main'})
-  ]
-})
+const resetAction = NavigationActions.navigate({ routeName: 'Stories' });
 
 
 class LoginContainer extends PureComponent {

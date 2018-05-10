@@ -8,6 +8,13 @@
       "name": "William Shakespeare",
       "avatar": "https://www.biography.com/.image/t_share/MTE1ODA0OTcxNzgzMzkwNzMz/william-shakespeare-194895-1-402.jpg"
     },
+    "genre": [
+      "Classical",
+      "Play",
+      "Theatre"
+    ],
+    "type": "classic",
+    "views": 1000,
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae nisl quis est finibus placerat eu eu mi. Fusce eget suscipit eros. Curabitur eget enim sagittis, gravida diam non, ultricies odio.",
     "published": "2013-02-04T18:35:24+00:00",
     "last_modified": "2013-02-04T18:35:24+00:00"
@@ -21,6 +28,13 @@
       "name": "William Shakespeare",
       "avatar": "https://www.biography.com/.image/t_share/MTE1ODA0OTcxNzgzMzkwNzMz/william-shakespeare-194895-1-402.jpg"
     },
+    "genre": [
+      "Classical",
+      "Play",
+      "Theatre"
+    ],
+    "type": "classic",
+    "views": 1000,
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae nisl quis est finibus placerat eu eu mi. Fusce eget suscipit eros. Curabitur eget enim sagittis, gravida diam non, ultricies odio.",
     "published": "2013-02-04T18:35:24+00:00",
     "last_modified": "2013-02-04T18:35:24+00:00"
@@ -34,6 +48,13 @@
       "name": "William Shakespeare",
       "avatar": "https://www.biography.com/.image/t_share/MTE1ODA0OTcxNzgzMzkwNzMz/william-shakespeare-194895-1-402.jpg"
     },
+    "genre": [
+      "Classical",
+      "Play",
+      "Theatre"
+    ],
+    "type": "classic",
+    "views": 1000,
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae nisl quis est finibus placerat eu eu mi. Fusce eget suscipit eros. Curabitur eget enim sagittis, gravida diam non, ultricies odio.",
     "published": "2013-02-04T18:35:24+00:00",
     "last_modified": "2013-02-04T18:35:24+00:00"

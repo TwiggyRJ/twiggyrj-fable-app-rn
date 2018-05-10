@@ -3,6 +3,7 @@ package com.fableapp;
 import android.app.Application;
 import com.crashlytics.android.Crashlytics;
 import com.facebook.react.ReactApplication;
+import com.airbnb.android.react.lottie.LottiePackage;
 import com.smixx.fabric.FabricPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
 import com.oblador.keychain.KeychainPackage;
@@ -28,6 +29,7 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
         new MainReactPackage(),
+            new LottiePackage(),
         new FabricPackage(),
         new VectorIconsPackage(),
         new KeychainPackage(),
