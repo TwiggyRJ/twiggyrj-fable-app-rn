@@ -1,5 +1,6 @@
 import React from 'react';
 import { Dimensions, StyleSheet } from 'react-native';
+import styled from 'styled-components';
 
 export default StyleSheet.create({
   contentContainer: {

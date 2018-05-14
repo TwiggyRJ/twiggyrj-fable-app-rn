@@ -1,12 +1,14 @@
-import React, { PureComponent } from 'react';
+import React, { Component } from 'react';
 import { View, Text } from 'react-native';
-import { connect } from 'react-redux';
+import { inject, observer } from 'mobx-react/native';
 import Icon from 'react-native-vector-icons/Ionicons';
-import * as storiesActions from '../../../actions/stories';
 import FlattendList from '../../../components/flattendList';
 import Button from '../../../components/button';
+import storiesStore from '../../../stores/stories';
 
-class HomeContainer extends PureComponent {
+@inject('storiesStore')
+@observer
+class StoryContainer extends Component {
   static navigationOptions = ({ navigation }) => {
     const params = navigation.state.params || {};
 
@@ -26,8 +28,8 @@ class HomeContainer extends PureComponent {
     this.navigateToStory = this.navigateToStory.bind(this);
   }
 
-  componentWillMount() {
-    this.props.onGetStories();
+  componentDidMount() {
+    this.props.storiesStore.getAll();
   }
 
   navigateToStory(story) {
@@ -35,11 +37,12 @@ class HomeContainer extends PureComponent {
   }
 
   render() {
+    console.log(this.props)
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
         {
-          Array.isArray(this.props.stories) && this.props.stories.length > 0 ?
-            <FlattendList items={this.props.stories} length={this.props.stories.length} navigate={this.navigateToStory}/>
+          !this.props.storiesStore.isLoading ?
+            <FlattendList items={this.props.storiesStore.stories} length={this.props.storiesStore.stories.length} navigate={this.navigateToStory}/>
           : null
         }
       </View>
@@ -47,18 +50,4 @@ class HomeContainer extends PureComponent {
   }
 }
 
-// Maps state from store to props
-const mapStateToProps = (state, ownProps) => {
-  return {
-    stories: state.stories
-  }
-};
-
-// Maps actions to props
-const mapDispatchToProps = (dispatch) => {
-  return {
-    onGetStories: () => dispatch(storiesActions.getStories()),
-  }
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(HomeContainer);
+export default StoryContainer;

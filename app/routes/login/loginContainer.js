@@ -1,15 +1,15 @@
-import React, { PureComponent } from 'react';
+import React, { Component } from 'react';
 import { View, Text } from 'react-native';
 import { NavigationActions } from 'react-navigation';
-import { connect } from 'react-redux';
-import * as usersActions from '../../actions/users';
+import { inject, observer } from 'mobx-react/native';
 import Login from './login';
 import navConfig from './navConfig';
 
 const resetAction = NavigationActions.navigate({ routeName: 'Stories' });
 
-
-class LoginContainer extends PureComponent {
+@inject("auth")
+@observer
+class LoginContainer extends Component {
   static navigationOptions = navConfig;
 
   constructor(props) {
@@ -22,23 +22,9 @@ class LoginContainer extends PureComponent {
 
   render() {
     return (
-      <Login navigation={this.props.navigation} toNav={resetAction}/>
+      <Login navigation={this.props.navigation} toNav={resetAction} />
     );
   }
 }
 
-// Maps state from store to props
-const mapStateToProps = (state, ownProps) => {
-  return {
-    users: state.users
-  }
-};
-
-// Maps actions to props
-const mapDispatchToProps = (dispatch) => {
-  return {
-    onAuthenticate: (email, password) => dispatch(usersActions.authenticate(email, password)),
-  }
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(LoginContainer);
+export default LoginContainer;

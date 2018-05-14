@@ -6,6 +6,12 @@
   },
   "tasks": [
     {
+      "taskName": "Start Packager",
+      "group": "build",
+      "type": "shell",
+      "command": "react-native start --reset-cache"
+    },
+    {
       "taskName": "Run Android",
       "group": "build",
       "type": "shell",
