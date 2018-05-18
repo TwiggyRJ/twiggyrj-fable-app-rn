@@ -1,43 +1,33 @@
-import React, { PureComponent } from 'react';
-import { DrawerNavigator, NavigationActions } from 'react-navigation';
+import React, { Component } from 'react';
+import { createDrawerNavigator } from 'react-navigation';
 import Icon from 'react-native-vector-icons/Ionicons';
 import FlattendList from '../../components/flattendList';
 import Button from '../../components/button';
-import Home from './home';
+import TabNav from './tabs';
+import Home from './stories';
 import Story from './story';
 import Synopsis from './synopsis';
 
-const MainStack = DrawerNavigator(
+const MainStack = createDrawerNavigator(
   {
-    Home: {
-      screen: Home,
-      path: '/main/home',
-    },
-  },
-  {
-    Story: {
-      screen: Story,
-      path: '/main/story/',
-    },
-  },
-  {
-    Synopsis: {
-      screen: Synopsis,
-      path: '/main/synopsis',
-    },
-  },
-  {
-    drawerOpenRoute: 'DrawerOpen',
-    drawerCloseRoute: 'DrawerClose',
-    drawerToggleRoute: 'DrawerToggle',
-    initialRouteName: 'Synopsis',
-    contentOptions: {
-      activeTintColor: '#00BCD4',
+    Stories: {
+      screen: TabNav,
+      navigationOptions: {
+        drawer: () => ({
+          label: 'Stories',
+          icon: ({ tintColor }) => (
+            <Icon
+              name="ios-menu"
+              size={24}
+            />
+          ),
+        }),
+      }
     },
   },
 );
 
-export default class Main extends PureComponent {
+export default class Main extends Component {
   static navigationOptions = ({ navigation }) => {
     const params = navigation.state.params || {};
 

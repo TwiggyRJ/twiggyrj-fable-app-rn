@@ -1,11 +1,12 @@
 import { getApi } from '../config/settings';
 import storiesJson from '../json/stories';
 
-export async function getAllStories() {
+export function getAllStories() {
   try {
     const stories = storiesJson;
     return stories;
   } catch(e) {
+    console.log('error')
     throw e;
   }
 }

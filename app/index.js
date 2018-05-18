@@ -1,13 +1,11 @@
-import React, { PureComponent } from "react";
-import { Provider } from "react-redux";
-import { PersistGate } from 'redux-persist/es/integration/react';
-import { StackNavigator } from 'react-navigation';
-import configureStore from "./config/store";
-import Main from "./routes/main";
-import Login from "./routes/login";
-const { persistor, store } = configureStore();
+import React, { Component } from 'react';
+import { createStackNavigator } from 'react-navigation';
+import { Provider } from 'mobx-react';
+import * as stores from './stores';
+import Main from './routes/main';
+import Login from './routes/login';
 
-const RootStack = StackNavigator(
+const RootStack = createStackNavigator(
   {
     Login: {
       path: '/',
@@ -19,18 +17,15 @@ const RootStack = StackNavigator(
     },
   },
   {
-    initialRouteName: 'Login',
-  }
+    initialRouteName: 'Main',
+  },
 );
 
-export default class App extends PureComponent {
+export default class App extends Component {
   render() {
     return (
-      <Provider store={store}>
-        <PersistGate
-          persistor={persistor}>
-            <RootStack />
-        </PersistGate>
+      <Provider { ...stores }>
+        <Main />
       </Provider>
     );
   }
