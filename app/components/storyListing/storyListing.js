@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, Image, TouchableWithoutFeedback } from 'react-native';
 import { truncateText } from '../../lib/formatting';
 import { dateFormated } from '../../lib/dates';
-import styles from './styles';
+import styles, { TagContainer, Tag } from './styles';
 
 const StoryListing = (props) => {
   return (
@@ -10,6 +10,10 @@ const StoryListing = (props) => {
       <View style={[styles.listingContainer, props.styles]}>
         <Image style={styles.images} source={{uri: props.story.cover}}/>
         <View style={styles.contentContainer}>
+          <TagContainer>
+            <Tag>{props.story.type}</Tag>
+            <Tag>{props.story.genre[0]}</Tag>
+          </TagContainer>
           <Text style={styles.title}>{props.story.title}</Text>
           <Text style={styles.description}>{truncateText(props.story.description, 100)}</Text>
           <View style={styles.metaContainer}>

@@ -1,7 +1,7 @@
 import { observable, action } from 'mobx';
-//import * as api from '../api/auth';
+import { auth } from '../api/auth';
 
-class Auth {
+class AuthStore {
   @observable isLoading;
   @observable auth;
 
@@ -10,13 +10,13 @@ class Auth {
     this.isLoading = false;
   }
 
-  @action authenticate(email, password) {
+  @action
+  authenticate(email, password) {
     this.isLoading = true;
     this.auth = {email, password};
   }
 }
 
-const auth = new Auth();
+const authStore = new AuthStore();
 
-export default auth;
-export { Auth };
+export default authStore;

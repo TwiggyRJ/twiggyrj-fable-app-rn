@@ -3,6 +3,7 @@ import { createDrawerNavigator } from 'react-navigation';
 import Icon from 'react-native-vector-icons/Ionicons';
 import FlattendList from '../../components/flattendList';
 import Button from '../../components/button';
+import TabNav from './tabs';
 import Home from './stories';
 import Story from './story';
 import Synopsis from './synopsis';
@@ -10,7 +11,7 @@ import Synopsis from './synopsis';
 const MainStack = createDrawerNavigator(
   {
     Stories: {
-      screen: Home,
+      screen: TabNav,
       navigationOptions: {
         drawer: () => ({
           label: 'Stories',
