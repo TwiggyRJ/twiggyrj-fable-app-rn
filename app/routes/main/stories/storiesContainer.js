@@ -9,15 +9,6 @@ import storiesStore from '../../../stores/stories';
 @inject('storiesStore')
 @observer
 class StoryContainer extends Component {
-  static navigationOptions = ({ navigation }) => {
-    const params = navigation.state.params || {};
-
-    return {
-      headerTitle: 'Fable',
-      headerRight: (<Button customStyles={{padding: 20}} onPress={navigation.navigate('DrawerToggle')} type="icon" icon={<Icon name="md-menu" size={30} color="#333" />}/>)
-    };
-  };
-
   constructor(props) {
     super(props);
 
@@ -33,16 +24,18 @@ class StoryContainer extends Component {
   }
 
   navigateToStory(story) {
-    this.props.navigation.navigate('Synopsis');
+    this.props.navigation.navigate(
+      'Listing',
+      { story },
+    );
   }
 
   render() {
-    console.log(this.props)
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
         {
           !this.props.storiesStore.isLoading ?
-            <FlattendList items={this.props.storiesStore.stories} length={this.props.storiesStore.stories.length} navigate={this.navigateToStory}/>
+            <FlattendList items={this.props.storiesStore.stories} length={this.props.storiesStore.stories.length} navigate={this.navigateToStory} />
           : null
         }
       </View>

@@ -5,6 +5,8 @@ import { dateFormated } from '../../lib/dates';
 import styles, { TagContainer, Tag } from './styles';
 
 const StoryListing = (props) => {
+  console.log(props.navigate)
+  console.log(props.story)
   return (
     <TouchableWithoutFeedback onPress={() => props.navigate(props.story)}>
       <View style={[styles.listingContainer, props.styles]}>
