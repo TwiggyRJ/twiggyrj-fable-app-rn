@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { createDrawerNavigator, createStackNavigator } from 'react-navigation';
-import Icon from 'react-native-vector-icons/Ionicons';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { Provider } from 'mobx-react';
 import * as stores from './stores';
 import Main from './routes/main';
 import Login from './routes/login';
 import Button from './components/button';
-import { styles } from './config/styles';
+import { theme } from './config/styles';
 
 const RootStack = createStackNavigator({
   Login: {
@@ -18,22 +18,22 @@ const RootStack = createStackNavigator({
       screen: Main,
       navigationOptions: {
         header: null,
-        drawer: () => ({
-          label: 'Stories', 
-          icon: ({ tintColor }) => (
-            <Icon
-              name="ios-menu"
-              size={24}
-            />
-          ),
-        }),
+        drawerLabel: 'Home', 
+        drawerIcon: ({ tintColor }) => (
+          <Icon
+            name="home"
+            size={24}
+            style={{color: tintColor}}
+          />
+        ),
       },
     },
   },
   {
+    drawerPosition: 'right',
     contentOptions: {
-      activeTintColor: styles.primary,
-      inactiveTintColor: styles.text,
+      activeTintColor: theme.primary,
+      inactiveTintColor: theme.text.dark,
     },
   }),
 },

@@ -1,22 +1,20 @@
-import { Dimensions } from 'react-native';
-import styled from 'styled-components';
-import { styles } from '../../config/styles';
+import styled from 'styled-components/native';
+import { theme } from '../../config/styles';
 
 export const HeaderContainer = styled.ImageBackground`
   elevation: 1;
   flex: 1;
-  width: ${Dimensions.get('window').width};
-  height: ${Dimensions.get('window').height / 3};
+  width: 100%;
   justify-content: flex-end;
 `;
 
 export const TitleContainer = styled.View`
-  background-color: ${styles.overlay.background};
+  background-color: ${theme.overlay.background};
   padding: 20px;
-  width: ${Dimensions.get('window').width};
+  width: 100%;
 `;
 
 export const Title = styled.Text`
-  color: ${styles.overlay.text};
+  color: ${theme.overlay.text};
   font-size: 26;
 `;

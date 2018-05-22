@@ -1,6 +1,7 @@
 import React from 'react';
 import { Dimensions, StyleSheet } from 'react-native';
-import styled from 'styled-components';
+import styled from 'styled-components/native';
+import { theme } from '../../config/styles';
 
 export default StyleSheet.create({
   contentContainer: {
@@ -21,11 +22,11 @@ export default StyleSheet.create({
     textAlign: 'left',
     fontSize: 18,
     fontWeight: 'bold',
-    color: '#000000',
+    color: theme.listing.title,
   },
   description: {
     fontSize: 14,
-    color: '#000000',
+    color: theme.listing.description,
   },
   metaContainer: {
     flexDirection: 'row',
@@ -49,7 +50,7 @@ export default StyleSheet.create({
 
 export const Tag = styled.Text`
   border-radius: 25px;
-  color: grey;
+  color: ${theme.listing.meta};
   font-weight: bold;
   margin-right: 10px;
 `;
@@ -58,5 +59,26 @@ export const TagContainer = styled.View`
   flex-wrap: wrap;
   align-items: flex-start;
   flex-direction: row;
-  margin-bottom: 5px;
+  border-right-width: 1px;
+  border-right-color: ${theme.listing.meta};
+`;
+
+export const MetaContainer = styled.View`
+  flex-wrap: nowrap;
+  flex-direction: row;
+  margin-top: 5px;
+  justify-content: flex-start;
+`;
+
+export const ViewedContainer = styled.View`
+  flex-wrap: wrap;
+  align-items: flex-start;
+  flex-direction: row;
+  margin-left: 10px;
+`;
+
+export const Viewed = styled.Text`
+  color: ${theme.listing.meta};
+  font-weight: bold;
+  margin-left: 5px;
 `;

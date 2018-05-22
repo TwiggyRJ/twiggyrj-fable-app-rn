@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 import { createStackNavigator, createBottomTabNavigator } from 'react-navigation';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { getIcon } from '../../lib/helpers';
-import { styles } from '../../config/styles';
+import { theme } from '../../config/styles';
 import FlattendList from '../../components/flattendList';
 import Button from '../../components/button';
 import Home from './stories';
 import Story from './story';
+import Bookmarks from './bookmarks';
 import Listing from './listing';
 
 const TabNav = createBottomTabNavigator(
@@ -27,7 +28,7 @@ const TabNav = createBottomTabNavigator(
       },
     },
     BookmarksTab: {
-      screen: Story,
+      screen: Bookmarks,
       path: '/bookmarks',
       navigationOptions: {
         title: 'Settings',
@@ -41,7 +42,7 @@ const TabNav = createBottomTabNavigator(
       },
     },
     NotificationsTab: {
-      screen: Story,
+      screen: Bookmarks,
       path: '/settings',
       navigationOptions: {
         title: 'Settings',
@@ -55,7 +56,7 @@ const TabNav = createBottomTabNavigator(
       },
     },
     SettingsTab: {
-      screen: Story,
+      screen: Bookmarks,
       path: '/settings',
       navigationOptions: {
         title: 'Settings',
@@ -74,12 +75,12 @@ const TabNav = createBottomTabNavigator(
     animationEnabled: true,
     swipeEnabled: true,
     tabBarOptions: {
-      activeTintColor: styles.tabBar.icons.active,
-      inactiveTintColor: styles.tabBar.icons.inactive,
+      activeTintColor: theme.tabBar.icons.active,
+      inactiveTintColor: theme.tabBar.icons.inactive,
       showLabel: false,
       style: {
-        backgroundColor: styles.tabBar.background,
-        borderTopColor: styles.tabBar.border,
+        backgroundColor: theme.tabBar.background,
+        borderTopColor: theme.tabBar.border,
       },
     },
   },
@@ -100,13 +101,6 @@ const ContainerNav = createStackNavigator(
     initialRouteName: 'MainTabs',
     navigationOptions: {
       headerTitle: 'Fable',
-      headerRight: (
-        <Button
-          customStyles={{ padding: 20 }}
-          type="icon"
-          icon={<Icon name="menu" size={30} color="#333" />}
-        />
-      ),
     },
   },
 );
