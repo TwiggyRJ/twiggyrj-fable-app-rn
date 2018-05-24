@@ -31,21 +31,26 @@ DEPENDENCIES:
   - RNVectorIcons (from `../node_modules/react-native-vector-icons`)
   - yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Crashlytics
+    - Fabric
+
 EXTERNAL SOURCES:
   lottie-ios:
-    :path: ../node_modules/lottie-ios
+    :path: "../node_modules/lottie-ios"
   lottie-react-native:
-    :path: ../node_modules/lottie-react-native
+    :path: "../node_modules/lottie-react-native"
   React:
-    :path: ../node_modules/react-native
+    :path: "../node_modules/react-native"
   ReactNativeFabric:
-    :path: ../node_modules/react-native-fabric
+    :path: "../node_modules/react-native-fabric"
   RNKeychain:
-    :path: ../node_modules/react-native-keychain
+    :path: "../node_modules/react-native-keychain"
   RNVectorIcons:
-    :path: ../node_modules/react-native-vector-icons
+    :path: "../node_modules/react-native-vector-icons"
   yoga:
-    :path: ../node_modules/react-native/ReactCommon/yoga
+    :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
   Crashlytics: 0360624eea1c978a743feddb2fb1ef8b37fb7a0d
@@ -60,4 +65,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 2543de93991443e9be102a564e8294380a3dd7bd
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.2

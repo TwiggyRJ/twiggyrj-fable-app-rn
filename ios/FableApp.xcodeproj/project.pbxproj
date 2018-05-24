@@ -23,7 +23,6 @@
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		1786CFF05C3549DA9FF90E3B /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3028702507B5426DBC415BDA /* MaterialCommunityIcons.ttf */; };
-		2204933D58984760AFBDC532 /* libReactNativeConfig.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A3EF7217FCA42589B0CD67C /* libReactNativeConfig.a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -40,10 +39,9 @@
 		3BFFF6AB20B74B20007FD3A0 /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B9EB69E20B72861005ED993 /* Lottie.framework */; };
 		3BFFF6AC20B74B20007FD3A0 /* Lottie.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3B9EB69E20B72861005ED993 /* Lottie.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		45F9D9EF9D284650AB1AF4CF /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1783FA1F2C634F10AA164AF5 /* SimpleLineIcons.ttf */; };
-		4BAF44B973604642991FEFE2 /* libSMXCrashlytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA21219851B4263A4807ADE /* libSMXCrashlytics.a */; };
+		4706FD243D7FDCBD1935903A /* libPods-FableApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73FDD3729C8444C91CFA665C /* libPods-FableApp.a */; };
 		4D1B196186454FF286E3FEEB /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FDCEB962E3E5435AA3A42C8C /* Foundation.ttf */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
-		7EA0F5056E244A2E984A1359 /* libRNKeychain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 776BF60FCC3E4DED974528A3 /* libRNKeychain.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		9442C1C75ED74D4AAADEDA69 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 505E6F3802B544658AC13F09 /* MaterialIcons.ttf */; };
 		97E9257FF0A04FB59F40DFBD /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E2D952E8C2F4F8CB2FCE9B2 /* Octicons.ttf */; };
@@ -51,11 +49,8 @@
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		B0CF269DC08D4CB69E22E676 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 99ADF916EFBE40DD9CED27E2 /* Entypo.ttf */; };
 		C0C0452390D24D3A87063FFB /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED26655197EB41F9B6239158 /* Zocial.ttf */; };
-		D851FE2E097A4DF8BE10FAC1 /* libRNVectorIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BCAC5F192C3F4E34A30C4C84 /* libRNVectorIcons.a */; };
 		D975F8C5A7CC4D298C14CB0B /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 51FE6091B2EF4C00B88957B7 /* EvilIcons.ttf */; };
-		D9EA21212F3343CFA7E90370 /* libLottieReactNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 651A6EAB190C4F9A9879A90E /* libLottieReactNative.a */; };
 		DB7B5AD776D44CB79AF2AAB7 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EAC16571F0F04EE7A4FF332F /* FontAwesome.ttf */; };
-		E87484B09C21CA939692C7CD /* libPods-FableApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73FDD3729C8444C91CFA665C /* libPods-FableApp.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -514,12 +509,7 @@
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
-				2204933D58984760AFBDC532 /* libReactNativeConfig.a in Frameworks */,
-				7EA0F5056E244A2E984A1359 /* libRNKeychain.a in Frameworks */,
-				D851FE2E097A4DF8BE10FAC1 /* libRNVectorIcons.a in Frameworks */,
-				4BAF44B973604642991FEFE2 /* libSMXCrashlytics.a in Frameworks */,
-				D9EA21212F3343CFA7E90370 /* libLottieReactNative.a in Frameworks */,
-				E87484B09C21CA939692C7CD /* libPods-FableApp.a in Frameworks */,
+				4706FD243D7FDCBD1935903A /* libPods-FableApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -885,7 +875,6 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				AB32E72B167E1ACB9510763B /* [CP] Embed Pods Frameworks */,
 				419BD09B18E99A9BD655216F /* [CP] Copy Pods Resources */,
 				3BFFF6AF20B74B20007FD3A0 /* Embed Frameworks */,
 				3BFFF6D420B7550F007FD3A0 /* ShellScript */,
@@ -1525,21 +1514,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FableApp/Pods-FableApp-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AB32E72B167E1ACB9510763B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FableApp/Pods-FableApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F6B8C73F45EA1B5435F788D3 /* [CP] Check Pods Manifest.lock */ = {
