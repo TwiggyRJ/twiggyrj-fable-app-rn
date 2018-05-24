@@ -3,11 +3,12 @@ import { View, Text } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import ParallaxScrollView from 'react-native-parallax-scroll-view';
 import autobind from 'autobind-decorator';
+import { getDateFormated } from '../../../lib/dates';
 import { getIonicIcon } from '../../../lib/helpers';
 import Button from '../../../components/button';
 import Header from '../../../components/header';
 import Author from '../../../components/author';
-import { theme } from '../../../config/styles';
+import { theme, Divider, Spacer } from '../../../config/styles';
 import {
   AuthorButton,
   AuthorButtonIcon,
@@ -17,10 +18,11 @@ import {
   Container,
   DescriptionContainer,
   Description,
-  Divider,
-  Genre,
   ListingContent,
   MetaContainer,
+  MetaItem,
+  MetaLabel,
+  MetaValue,
   MetaTitle,
   PlayContainer,
   ButtonText,
@@ -32,7 +34,7 @@ class ListingContainer extends Component {
     const params = navigation.state.params || {};
 
     return {
-      headerTitle: 'Fables',
+      headerTitle: 'Fable',
     };
   };
 
@@ -53,7 +55,6 @@ class ListingContainer extends Component {
   }
 
   render() {
-
     return (
       <ParallaxScrollView
         backgroundColor={theme.background.dark}
@@ -121,21 +122,48 @@ class ListingContainer extends Component {
               }
             />
           </DescriptionContainer>
-          <Divider space="10" />
+          <Divider height={10} />
           <MetaContainer>
             <MetaTitle>
-              About
+              Information
             </MetaTitle>
-            <Genre>
-              {
-                this.state.story.genre.map((genre, index) => {
-                  if (this.state.story.genre.length > index + 1) {
-                    return `${genre}  `;
-                  }
-                  return genre;
-                })
-              }
-            </Genre>
+            <MetaItem>
+              <MetaLabel>Type</MetaLabel>
+              <MetaValue>{this.state.story.type}</MetaValue>
+            </MetaItem>
+            <Divider height={10} />
+            <Spacer height={10} />
+            <MetaItem>
+              <MetaLabel>Genre</MetaLabel>
+              <MetaValue>
+                {
+                  this.state.story.genre.map((genre, index) => {
+                    if (this.state.story.genre.length > index + 1) {
+                      return `${genre}, `;
+                    }
+                    return genre;
+                  })
+                }
+              </MetaValue>
+            </MetaItem>
+            <Divider height={10} />
+            <Spacer height={10} />
+            <MetaItem>
+              <MetaLabel>Published</MetaLabel>
+              <MetaValue>{getDateFormated(this.state.story.published)}</MetaValue>
+            </MetaItem>
+            <Divider height={10} />
+            <Spacer height={10} />
+            <MetaItem>
+              <MetaLabel>Updated</MetaLabel>
+              <MetaValue>{getDateFormated(this.state.story.last_modified)}</MetaValue>
+            </MetaItem>
+            <Divider height={10} />
+            <Spacer height={10} />
+            <MetaItem>
+              <MetaLabel>Edition</MetaLabel>
+              <MetaValue>{this.state.story.edition}</MetaValue>
+            </MetaItem>
           </MetaContainer>
           <PlayContainer>
             {

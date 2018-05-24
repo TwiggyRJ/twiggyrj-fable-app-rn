@@ -17,7 +17,8 @@ const stories = [
     "views": 1000,
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae nisl quis est finibus placerat eu eu mi. Fusce eget suscipit eros. Curabitur eget enim sagittis, gravida diam non, ultricies odio.\n\nPellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin eu nisl velit. Morbi ante elit, efficitur non sapien nec, mattis dignissim nisi. Proin aliquam dictum mauris, sit amet suscipit ligula vulputate nec.\n\nPellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin eu nisl velit. Morbi ante elit, efficitur non sapien nec, mattis dignissim nisi. Proin aliquam dictum mauris, sit amet suscipit ligula vulputate nec.",
     "published": "2013-02-04T18:35:24+00:00",
-    "last_modified": "2013-02-04T18:35:24+00:00"
+    "last_modified": "2013-02-04T18:35:24+00:00",
+    "edition": "First Edition"
   },
   {
     "id": "2",
@@ -37,7 +38,8 @@ const stories = [
     "views": 1000,
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae nisl quis est finibus placerat eu eu mi. Fusce eget suscipit eros. Curabitur eget enim sagittis, gravida diam non, ultricies odio.\n\nPellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin eu nisl velit. Morbi ante elit, efficitur non sapien nec, mattis dignissim nisi. Proin aliquam dictum mauris, sit amet suscipit ligula vulputate nec.",
     "published": "2013-02-04T18:35:24+00:00",
-    "last_modified": "2013-02-04T18:35:24+00:00"
+    "last_modified": "2013-02-04T18:35:24+00:00",
+    "edition": "First Edition"
   },
   {
     "id": "3",
@@ -57,7 +59,8 @@ const stories = [
     "views": 1000,
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae nisl quis est finibus placerat eu eu mi. Fusce eget suscipit eros. Curabitur eget enim sagittis, gravida diam non, ultricies odio.\n\nPellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin eu nisl velit. Morbi ante elit, efficitur non sapien nec, mattis dignissim nisi. Proin aliquam dictum mauris, sit amet suscipit ligula vulputate nec.",
     "published": "2013-02-04T18:35:24+00:00",
-    "last_modified": "2013-02-04T18:35:24+00:00"
+    "last_modified": "2013-02-04T18:35:24+00:00",
+    "edition": "First Edition"
   },
   {
     "id": "4",
@@ -76,7 +79,8 @@ const stories = [
     "views": 1000,
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae nisl quis est finibus placerat eu eu mi. Fusce eget suscipit eros. Curabitur eget enim sagittis, gravida diam non, ultricies odio.\n\nPellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin eu nisl velit. Morbi ante elit, efficitur non sapien nec, mattis dignissim nisi. Proin aliquam dictum mauris, sit amet suscipit ligula vulputate nec.",
     "published": "2013-02-04T18:35:24+00:00",
-    "last_modified": "2013-02-04T18:35:24+00:00"
+    "last_modified": "2013-02-04T18:35:24+00:00",
+    "edition": "First Edition"
   },
   {
     "id": "4",
@@ -94,7 +98,8 @@ const stories = [
     "views": 3500,
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae nisl quis est finibus placerat eu eu mi. Fusce eget suscipit eros. Curabitur eget enim sagittis, gravida diam non, ultricies odio.\n\nPellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin eu nisl velit. Morbi ante elit, efficitur non sapien nec, mattis dignissim nisi. Proin aliquam dictum mauris, sit amet suscipit ligula vulputate nec.",
     "published": "2018-05-20T18:35:24+00:00",
-    "last_modified": "2018-05-23T18:35:24+00:00"
+    "last_modified": "2018-05-23T18:35:24+00:00",
+    "edition": "First Edition"
   },
 ];
 

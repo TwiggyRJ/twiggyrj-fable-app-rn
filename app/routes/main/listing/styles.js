@@ -37,27 +37,20 @@ export const Description = styled.Text`
   font-style: italic;
 `;
 
-export const Divider = styled.View`
-  border-bottom-color: #EEEEEE;
-  border-bottom-width: 1px;
-  padding-bottom: ${props => (props.space ? props.space : '0')};
-`;
-
 export const MetaValue = styled.Text`
   color: ${theme.text.dark};
   font-size: 18;
-  font-weight: bold;
 `;
 
-export const Meta = styled.Text`
-
+export const MetaLabel = MetaValue.extend`
+  color: ${theme.text.grey};
 `;
 
 export const MetaContainer = styled.View`
   border-bottom-color: #EEEEEE;
   border-bottom-width: 1px;
   padding-top: 10px;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 `;
 
 export const MetaItem = styled.View`
@@ -68,6 +61,7 @@ export const MetaItem = styled.View`
 export const MetaTitle = styled.Text`
   color: ${theme.text.dark};
   font-size: 26;
+  margin-bottom: 5px;
 `;
 
 export const ListingContent = styled.View`

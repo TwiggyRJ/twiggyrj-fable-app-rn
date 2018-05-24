@@ -21,6 +21,12 @@ const colours = {
   white: '#FFFFFF',
 };
 
+export const Divider = styled.View`
+  border-bottom-color: #EEEEEE;
+  border-bottom-width: 1px;
+  padding-bottom: ${props => (props.height ? props.height : '0')};
+`;
+
 export const Spacer = styled.View`
   height: ${props => props.height};
 `;
