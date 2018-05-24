@@ -1,0 +1,63 @@
+PODS:
+  - Crashlytics (3.10.1):
+    - Fabric (~> 1.7.5)
+  - Fabric (1.7.7)
+  - lottie-ios (2.5.0)
+  - lottie-react-native (2.5.0):
+    - lottie-ios
+    - React
+  - React (0.55.4):
+    - React/Core (= 0.55.4)
+  - React/Core (0.55.4):
+    - yoga (= 0.55.4.React)
+  - ReactNativeFabric (0.5.1):
+    - Crashlytics
+    - Fabric
+    - React
+  - RNKeychain (2.0.0):
+    - React
+  - RNVectorIcons (4.6.0):
+    - React
+  - yoga (0.55.4.React)
+
+DEPENDENCIES:
+  - Crashlytics
+  - Fabric
+  - lottie-ios (from `../node_modules/lottie-ios`)
+  - lottie-react-native (from `../node_modules/lottie-react-native`)
+  - React/Core (from `../node_modules/react-native`)
+  - ReactNativeFabric (from `../node_modules/react-native-fabric`)
+  - RNKeychain (from `../node_modules/react-native-keychain`)
+  - RNVectorIcons (from `../node_modules/react-native-vector-icons`)
+  - yoga (from `../node_modules/react-native/ReactCommon/yoga`)
+
+EXTERNAL SOURCES:
+  lottie-ios:
+    :path: ../node_modules/lottie-ios
+  lottie-react-native:
+    :path: ../node_modules/lottie-react-native
+  React:
+    :path: ../node_modules/react-native
+  ReactNativeFabric:
+    :path: ../node_modules/react-native-fabric
+  RNKeychain:
+    :path: ../node_modules/react-native-keychain
+  RNVectorIcons:
+    :path: ../node_modules/react-native-vector-icons
+  yoga:
+    :path: ../node_modules/react-native/ReactCommon/yoga
+
+SPEC CHECKSUMS:
+  Crashlytics: aee1a064cbbf99b32efa3f056a5f458d846bc8ff
+  Fabric: bda89e242bce1b7b8ab264248cf3407774ce0095
+  lottie-ios: 9f24be3ecb13412223b6ac70d97437742b0e3de1
+  lottie-react-native: db4bd75685428c4ad0ec2f913145abff3d38b640
+  React: aa2040dbb6f317b95314968021bd2888816e03d5
+  ReactNativeFabric: 3912bf9c714d7cc98110eadf06ca6dedef219322
+  RNKeychain: 627c6095cef215dd3d9804a9a9cf45ab96aa3997
+  RNVectorIcons: c0dbfbf6068fefa240c37b0f71bd03b45dddac44
+  yoga: a23273df0088bf7f2bb7e5d7b00044ea57a2a54a
+
+PODFILE CHECKSUM: 2543de93991443e9be102a564e8294380a3dd7bd
+
+COCOAPODS: 1.4.0
