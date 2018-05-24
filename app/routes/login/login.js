@@ -1,30 +1,48 @@
 import React from 'react';
 import { Text, View, Image, StatusBar, TextInput, TouchableWithoutFeedback } from 'react-native';
 import Animation from 'lottie-react-native';
-import styles from './styles';
+import styles, { Container, TextField, LoginButton, LoginButtonText, Seperator, SignupContainer, SignupButton, SignupButtonText } from './styles';
 import Button from '../../components/button';
 import AnimSky from '../../animations/sky.js';
-
-//<Button style={styles.loginButton} customStyles={ styles.loginButton } textStyles={ styles.loginButtonText } text="Sign In" onPress={() => props.authenticate('john.doe@test.com', 'testing')}/>
+import { theme, Spacer } from '../../config/styles';
 
 const Login = (props) => {
   return (
-    <View style={styles.container}>
-      <StatusBar barStyle="light-content"/>
-      <View style={styles.spacer}/>
-      <TextInput style={styles.textInput} underlineColorAndroid='rgba(0,0,0,0)' placeholder={'Enter email address'} placeholderTextColor={"#FFF"} />
-      <TextInput style={styles.textInput} underlineColorAndroid='rgba(0,0,0,0)' placeholder={'Enter password'} placeholderTextColor={"#FFF"} secureTextEntry={true} />
-      <Button style={styles.loginButton} customStyles={ styles.loginButton } textStyles={ styles.loginButtonText } text="Sign In" onPress={() => props.navigation.dispatch(props.toNav)}/>
+    <Container>
+      <StatusBar barStyle="light-content" />
+      <Spacer height="100" />
+      <TextField
+        underlineColorAndroid='rgba(0,0,0,0)'
+        placeholder={'Enter email address'}
+        placeholderTextColor={theme.text.light}
+      />
+      <TextField
+        underlineColorAndroid='rgba(0,0,0,0)'
+        placeholder={'Enter password'}
+        placeholderTextColor={theme.text.light}
+        secureTextEntry={true}
+      />
+      <Button
+        customStyles={LoginButton}
+        textStyles={LoginButtonText}
+        text="Sign In"
+        onPress={() => props.navigate()}
+      />
       <TouchableWithoutFeedback onPress={() => alert('Reset Password Button')}>
         <View>
           <Text style={styles.forgottenPassword}>Forgotten Password?</Text>
         </View>
       </TouchableWithoutFeedback>
-      <View style={styles.seperator}/>
-      <View style={styles.signupContainer}>
-        <Button style={styles.signupButton} customStyles={styles.signupButton} textStyles={styles.signupButtonText} text="Sign Up" onPress={() => props.register()} />
-      </View>
-    </View>
+      <Seperator />
+      <SignupContainer>
+        <Button
+          customStyles={SignupButton}
+          textStyles={SignupButtonText}
+          text="Sign Up"
+          onPress={() => props.register()}
+        />
+      </SignupContainer>
+    </Container>
   );
 };
 

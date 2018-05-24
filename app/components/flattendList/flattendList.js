@@ -7,10 +7,10 @@ const FlattendList = (props) => {
   return (
     <FlatList
       style={[styles.list]}
-      key="expensesList"
+      key="storiesList"
       data={props.items}
       keyExtractor={(item, index) => item.id}
-      renderItem={({item, index}) => <StoryListing story={item} navigate={props.navigate} index={index} styles={index === (props.length - 1) ? { marginBottom: 0 } : null}/>}/>
+      renderItem={({item, index}) => <StoryListing story={item} navigate={props.navigate} index={index} styles={index === (props.length - 1) ? { marginBottom: 0 } : null} />} />
   );
 };
 

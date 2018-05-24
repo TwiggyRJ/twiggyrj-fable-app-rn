@@ -4,10 +4,20 @@ export function isIOS() {
   return Platform.OS === 'ios';
 }
 
-export function getIcon(icon) {
+export function getIonicIcon(icon, outline) {
   if (Platform.OS === 'ios') {
+    if (outline) {
+      return `${Platform.OS}-${icon}-outline`;
+    }
     return `${Platform.OS}-${icon}`;
   } else {
     return `md-${icon}`;
   }
+}
+
+export function getIcon(icon, outline) {
+  if (outline) {
+    return `${icon}-outline`;
+  }
+  return `${icon}`;
 }

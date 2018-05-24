@@ -791,6 +791,10 @@ atob@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.1.tgz#ae2d5a729477f289d60dd7f96a6314a22dd6c22a"
 
+autobind-decorator@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/autobind-decorator/-/autobind-decorator-2.1.0.tgz#4451240dbfeff46361c506575a63ed40f0e5bc68"
+
 aws-sign2@~0.7.0:
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/aws-sign2/-/aws-sign2-0.7.0.tgz#b46e890934a9591f2d2f6f86d7e6a9f1b3fe76a8"
@@ -4724,6 +4728,12 @@ react-native-fabric@^0.5.1:
 react-native-keychain@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/react-native-keychain/-/react-native-keychain-2.0.0.tgz#5e6ae75d66d2737a0b38a95c903b6d6f966dd475"
+
+react-native-parallax-scroll-view@^0.21.0:
+  version "0.21.0"
+  resolved "https://registry.yarnpkg.com/react-native-parallax-scroll-view/-/react-native-parallax-scroll-view-0.21.0.tgz#742fcbb9b81c47e475d6ecfb5995eb6fd6779162"
+  dependencies:
+    prop-types "^15.6.0"
 
 react-native-safe-area-view@^0.7.0:
   version "0.7.0"

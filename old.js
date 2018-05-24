@@ -23,14 +23,14 @@ type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
+      <View style={theme.container}>
+        <Text style={theme.welcome}>
           Welcome to React Native!
         </Text>
-        <Text style={styles.instructions}>
+        <Text style={theme.instructions}>
           To get started, edit App.js
         </Text>
-        <Text style={styles.instructions}>
+        <Text style={theme.instructions}>
           {instructions}
         </Text>
       </View>

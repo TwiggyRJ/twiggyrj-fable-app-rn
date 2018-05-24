@@ -6,9 +6,9 @@ import autobind from 'autobind-decorator';
 import FlattendList from '../../../components/flattendList';
 import Button from '../../../components/button';
 
-@inject('storiesStore')
+@inject('bookmarksStore')
 @observer
-class StoryContainer extends Component {
+class BookmarksContainer extends Component {
   constructor(props) {
     super(props);
 
@@ -18,7 +18,7 @@ class StoryContainer extends Component {
   }
 
   componentDidMount() {
-    this.props.storiesStore.getAll();
+    this.props.bookmarksStore.getAll();
   }
 
   @autobind
@@ -33,13 +33,13 @@ class StoryContainer extends Component {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
         {
-          !this.props.storiesStore.isLoading ?
-            <FlattendList items={this.props.storiesStore.stories} length={this.props.storiesStore.stories.length} navigate={this.navigateToStory} />
-          : null
+          !this.props.bookmarksStore.isLoading ?
+            <FlattendList items={this.props.bookmarksStore.bookmarks} length={this.props.bookmarksStore.bookmarks.length} navigate={this.navigateToStory} />
+            : null
         }
       </View>
     );
   }
 }
 
-export default StoryContainer;
+export default BookmarksContainer;

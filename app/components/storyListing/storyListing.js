@@ -1,30 +1,49 @@
 import React from 'react';
 import { View, Text, Image, TouchableWithoutFeedback } from 'react-native';
-import { truncateText } from '../../lib/formatting';
-import { dateFormated } from '../../lib/dates';
-import styles, { TagContainer, Tag } from './styles';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import { formatNumber, truncateText } from '../../lib/formatting';
+import { getDateFormated } from '../../lib/dates';
+import Author from '../author';
+import { theme, Spacer } from '../../config/styles';
+import styles, { MetaContainer, TagContainer, Tag, ViewedContainer, Viewed } from './styles';
 
 const StoryListing = (props) => {
   return (
     <TouchableWithoutFeedback onPress={() => props.navigate(props.story)}>
       <View style={[styles.listingContainer, props.styles]}>
-        <Image style={styles.images} source={{uri: props.story.cover}}/>
+        <Image style={styles.images} source={{ uri: props.story.cover }} />
         <View style={styles.contentContainer}>
-          <TagContainer>
-            <Tag>{props.story.type}</Tag>
-            <Tag>{props.story.genre[0]}</Tag>
-          </TagContainer>
           <Text style={styles.title}>{props.story.title}</Text>
           <Text style={styles.description}>{truncateText(props.story.description, 100)}</Text>
-          <View style={styles.metaContainer}>
-            <View style={styles.authorAvatarContainer}>
-              <Image style={styles.authorAvatar} source={{uri: props.story.author.avatar}}/>
-            </View>
-            <View style={styles.authorContainer}>
-              <Text style={styles.author}>{props.story.author.name}</Text>
-              <Text style={styles.published}>{dateFormated(props.story.published)}</Text>
-            </View>
-          </View>   
+          <MetaContainer>
+            <TagContainer>
+              <Tag>{props.story.type}</Tag>
+              <Tag>{props.story.genre[0]}</Tag>
+            </TagContainer>
+            <ViewedContainer>
+              <Icon
+                name="eye"
+                size={20}
+              />
+              <Viewed>{formatNumber(props.story.views)} views</Viewed>
+            </ViewedContainer>
+          </MetaContainer>
+          <Spacer height="20" />
+          <Author
+            author={props.story.author.name}
+            avatar={{
+              src: props.story.author.avatar,
+              height: 50,
+              width: 50,
+            }}
+            size={14}
+            color={theme.text.dark}
+            component={
+              <Text>
+                {getDateFormated(props.story.published)}
+              </Text>
+            }
+          />
         </View>
       </View>
     </TouchableWithoutFeedback>
