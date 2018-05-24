@@ -1,6 +1,6 @@
 PODS:
-  - Crashlytics (3.10.1):
-    - Fabric (~> 1.7.5)
+  - Crashlytics (3.10.2):
+    - Fabric (~> 1.7.7)
   - Fabric (1.7.7)
   - lottie-ios (2.5.0)
   - lottie-react-native (2.5.0):
@@ -14,7 +14,7 @@ PODS:
     - Crashlytics
     - Fabric
     - React
-  - RNKeychain (2.0.0):
+  - RNKeychain (3.0.0-rc.3):
     - React
   - RNVectorIcons (4.6.0):
     - React
@@ -48,7 +48,7 @@ EXTERNAL SOURCES:
     :path: ../node_modules/react-native/ReactCommon/yoga
 
 SPEC CHECKSUMS:
-  Crashlytics: aee1a064cbbf99b32efa3f056a5f458d846bc8ff
+  Crashlytics: 0360624eea1c978a743feddb2fb1ef8b37fb7a0d
   Fabric: bda89e242bce1b7b8ab264248cf3407774ce0095
   lottie-ios: 9f24be3ecb13412223b6ac70d97437742b0e3de1
   lottie-react-native: db4bd75685428c4ad0ec2f913145abff3d38b640
