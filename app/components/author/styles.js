@@ -23,4 +23,5 @@ export const AuthorAvatar = styled.Image`
 
 export const AuthorName = styled.Text`
   color: ${props => props.color};
+  font-size: ${props => props.size};
 `;

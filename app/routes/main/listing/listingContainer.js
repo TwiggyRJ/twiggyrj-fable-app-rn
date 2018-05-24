@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
+import ParallaxScrollView from 'react-native-parallax-scroll-view';
 import autobind from 'autobind-decorator';
 import { getIonicIcon } from '../../../lib/helpers';
 import Button from '../../../components/button';
@@ -11,6 +12,7 @@ import {
   AuthorButton,
   AuthorButtonIcon,
   AuthorStyle,
+  AuthorLabel,
   ButtonStyles,
   Container,
   DescriptionContainer,
@@ -19,6 +21,7 @@ import {
   Genre,
   ListingContent,
   MetaContainer,
+  MetaTitle,
   PlayContainer,
   ButtonText,
   ReadButton,
@@ -52,29 +55,35 @@ class ListingContainer extends Component {
   render() {
 
     return (
-      <Container>
-        <Header
-          cover={this.state.story.cover}
-          title={this.state.story.title}
-          subcontent={
-            <PlayContainer>
-              {
-                this.state.notRead ?
-                  <Button
-                    customStyles={ReadButton}
-                    textStyles={ButtonText}
-                    text="Read"
-                  />
-                :
-                  <Button
-                    customStyles={ReadButton}
-                    textStyles={ButtonText}
-                    text="Continue"
-                  />
-              }
-            </PlayContainer>
-          }
-        />
+      <ParallaxScrollView
+        backgroundColor={theme.background.dark}
+        contentBackgroundColor={theme.background.light}
+        parallaxHeaderHeight={300}
+        renderForeground={() => (
+          <Header
+            cover={this.state.story.cover}
+            title={this.state.story.title}
+            subcontent={
+              <PlayContainer>
+                {
+                  this.state.notRead ?
+                    <Button
+                      customStyles={ReadButton}
+                      textStyles={ButtonText}
+                      text="Read"
+                    />
+                    :
+                    <Button
+                      customStyles={ReadButton}
+                      textStyles={ButtonText}
+                      text="Continue"
+                    />
+                }
+              </PlayContainer>
+            }
+          />
+        )}
+      >
         <ListingContent>
           <DescriptionContainer>
             <Description>
@@ -92,8 +101,14 @@ class ListingContainer extends Component {
                       height: 50,
                       width: 50,
                     }}
+                    size={18}
                     customStyles={AuthorStyle}
                     color={theme.primary}
+                    component={
+                      <AuthorLabel>
+                        Author
+                      </AuthorLabel>
+                    }
                   />
                   <AuthorButtonIcon>
                     <Icon
@@ -108,6 +123,9 @@ class ListingContainer extends Component {
           </DescriptionContainer>
           <Divider space="10" />
           <MetaContainer>
+            <MetaTitle>
+              About
+            </MetaTitle>
             <Genre>
               {
                 this.state.story.genre.map((genre, index) => {
@@ -119,8 +137,24 @@ class ListingContainer extends Component {
               }
             </Genre>
           </MetaContainer>
+          <PlayContainer>
+            {
+              this.state.notRead ?
+                <Button
+                  customStyles={ReadButton}
+                  textStyles={ButtonText}
+                  text="Read"
+                />
+                :
+                <Button
+                  customStyles={ReadButton}
+                  textStyles={ButtonText}
+                  text="Continue"
+                />
+            }
+          </PlayContainer>
         </ListingContent>
-      </Container>
+      </ParallaxScrollView>
     );
   }
 }

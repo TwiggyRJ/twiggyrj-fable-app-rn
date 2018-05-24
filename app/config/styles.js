@@ -28,6 +28,11 @@ export const Spacer = styled.View`
 export const theme = {
   primary: colours.blue,
   secondary: colours.pink,
+  background: {
+    light: colours.white,
+    dark: colours.black,
+    translucent: colours.translucent.black,
+  },
   tabBar: {
     background: colours.grey.light[2],
     border: colours.grey.light[2],
@@ -38,6 +43,7 @@ export const theme = {
   },
   text: {
     light: colours.white,
+    grey: colours.grey.medium[1],
     dark: colours.black,
   },
   listing: {

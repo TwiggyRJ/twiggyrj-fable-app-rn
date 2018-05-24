@@ -17,6 +17,11 @@ export const AuthorButtonIcon = styled.View`
   padding: 10px;
 `;
 
+export const AuthorLabel = styled.Text`
+  font-size: 16;
+  color: ${theme.text.grey};
+`;
+
 export const AuthorStyle = `
   flex-grow: 1;
   flex-shrink: 0;
@@ -38,22 +43,35 @@ export const Divider = styled.View`
   padding-bottom: ${props => (props.space ? props.space : '0')};
 `;
 
-export const Genre = styled.Text`
+export const MetaValue = styled.Text`
   color: ${theme.text.dark};
   font-size: 18;
   font-weight: bold;
 `;
 
+export const Meta = styled.Text`
+
+`;
+
 export const MetaContainer = styled.View`
   border-bottom-color: #EEEEEE;
   border-bottom-width: 1px;
-  padding-top: 20px;
+  padding-top: 10px;
   padding-bottom: 20px;
 `;
 
-export const ListingContent = styled.ScrollView`
+export const MetaItem = styled.View`
+  flex-direction: row;
+  justify-content: space-between;
+`;
+
+export const MetaTitle = styled.Text`
+  color: ${theme.text.dark};
+  font-size: 26;
+`;
+
+export const ListingContent = styled.View`
   background: #fff;
-  flex: 1;
   padding: 20px;
 `;
 

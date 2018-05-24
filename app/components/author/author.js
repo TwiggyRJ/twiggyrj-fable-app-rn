@@ -18,6 +18,7 @@ const propTypes = {
   component: PropTypes.element,
   customStyles: PropTypes.string,
   color: PropTypes.string,
+  size: PropTypes.number,
 };
 
 const defaultProps = {
@@ -28,10 +29,11 @@ const defaultProps = {
     width: 50,
   },
   color: '#000000',
+  size: 16,
 };
 
 const Author = (props) => {
-  const { author, avatar, customStyles, component, color } = props;
+  const { author, avatar, customStyles, component, color, size } = props;
   return (
     <AuthorContainer styling={customStyles}>
       {
@@ -42,7 +44,7 @@ const Author = (props) => {
         : null
       }
       <TextContainer avatar={avatar.src}>
-        <AuthorName color={color}>{author}</AuthorName>
+        <AuthorName color={color} size={size}>{author}</AuthorName>
         { component }
       </TextContainer>
     </AuthorContainer>
