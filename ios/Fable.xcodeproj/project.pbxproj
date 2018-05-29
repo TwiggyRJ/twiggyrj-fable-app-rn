@@ -12,7 +12,7 @@
 		00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302C01ABCB91800DB3ED1 /* libRCTImage.a */; };
 		00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */; };
 		00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */; };
-		00E356F31AD99517003FC87E /* FableAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* FableAppTests.m */; };
+		00E356F31AD99517003FC87E /* FableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* FableTests.m */; };
 		133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
 		139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139105C11AF99BAD00B5F7CC /* libRCTSettings.a */; };
 		139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139FDEF41B06529B00C62182 /* libRCTWebSocket.a */; };
@@ -34,12 +34,12 @@
 		2D02E4C71E0B4AEC006451C7 /* libRCTText-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E941DF850E9000B6D8A /* libRCTText-tvOS.a */; };
 		2D02E4C81E0B4AEC006451C7 /* libRCTWebSocket-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E991DF850E9000B6D8A /* libRCTWebSocket-tvOS.a */; };
 		2D16E6881FA4F8E400B85C8A /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D16E6891FA4F8E400B85C8A /* libReact.a */; };
-		2DCD954D1E0B4F2C00145EB5 /* FableAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* FableAppTests.m */; };
+		2DCD954D1E0B4F2C00145EB5 /* FableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* FableTests.m */; };
 		389946D6C94F4EE5A0540834 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 514359A285B94FF9B7AF22E8 /* Feather.ttf */; };
 		3BFFF6AB20B74B20007FD3A0 /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B9EB69E20B72861005ED993 /* Lottie.framework */; };
 		3BFFF6AC20B74B20007FD3A0 /* Lottie.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3B9EB69E20B72861005ED993 /* Lottie.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		45F9D9EF9D284650AB1AF4CF /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1783FA1F2C634F10AA164AF5 /* SimpleLineIcons.ttf */; };
-		4706FD243D7FDCBD1935903A /* libPods-FableApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73FDD3729C8444C91CFA665C /* libPods-FableApp.a */; };
+		4706FD243D7FDCBD1935903A /* libPods-Fable.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73FDD3729C8444C91CFA665C /* libPods-Fable.a */; };
 		4D1B196186454FF286E3FEEB /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FDCEB962E3E5435AA3A42C8C /* Foundation.ttf */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
@@ -94,7 +94,7 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = FableApp;
+			remoteInfo = Fable;
 		};
 		139105C01AF99BAD00B5F7CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -122,7 +122,7 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
-			remoteInfo = "FableApp-tvOS";
+			remoteInfo = "Fable-tvOS";
 		};
 		2D16E6711FA4F8DC00B85C8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -434,29 +434,29 @@
 		00C302BB1ABCB91800DB3ED1 /* RCTImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTImage.xcodeproj; path = "../node_modules/react-native/Libraries/Image/RCTImage.xcodeproj"; sourceTree = "<group>"; };
 		00C302D31ABCB9D200DB3ED1 /* RCTNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTNetwork.xcodeproj; path = "../node_modules/react-native/Libraries/Network/RCTNetwork.xcodeproj"; sourceTree = "<group>"; };
 		00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTVibration.xcodeproj; path = "../node_modules/react-native/Libraries/Vibration/RCTVibration.xcodeproj"; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* FableAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FableAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* FableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* FableAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FableAppTests.m; sourceTree = "<group>"; };
-		12940B4E97F0B725A9ADA911 /* Pods-FableApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FableApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-FableApp/Pods-FableApp.release.xcconfig"; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* FableTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FableTests.m; sourceTree = "<group>"; };
+		12940B4E97F0B725A9ADA911 /* Pods-Fable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fable.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fable/Pods-Fable.release.xcconfig"; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* FableApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FableApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = FableApp/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = FableApp/AppDelegate.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* Fable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Fable/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Fable/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = FableApp/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = FableApp/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = FableApp/main.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Fable/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Fable/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Fable/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		1783FA1F2C634F10AA164AF5 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
 		2974CEB50E4F45869E3D337B /* LottieReactNative.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = LottieReactNative.xcodeproj; path = "../node_modules/lottie-react-native/src/ios/LottieReactNative.xcodeproj"; sourceTree = "<group>"; };
 		2CA21219851B4263A4807ADE /* libSMXCrashlytics.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libSMXCrashlytics.a; sourceTree = "<group>"; };
-		2D02E47B1E0B4A5D006451C7 /* FableApp-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FableApp-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D02E4901E0B4A5D006451C7 /* FableApp-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FableApp-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E47B1E0B4A5D006451C7 /* Fable-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fable-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* Fable-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fable-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3028702507B5426DBC415BDA /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
 		3B9EB69620B72860005ED993 /* Lottie.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Lottie.xcodeproj; path = "../node_modules/lottie-ios/Lottie.xcodeproj"; sourceTree = "<group>"; };
-		3BFFF66920B749E8007FD3A0 /* FableApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = FableApp.entitlements; path = FableApp/FableApp.entitlements; sourceTree = "<group>"; };
+		3BFFF66920B749E8007FD3A0 /* Fable.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Fable.entitlements; path = Fable/Fable.entitlements; sourceTree = "<group>"; };
 		3E2D952E8C2F4F8CB2FCE9B2 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
 		440694FA3C804A52900F3B61 /* SMXCrashlytics.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = SMXCrashlytics.xcodeproj; path = "../node_modules/react-native-fabric/ios/SMXCrashlytics.xcodeproj"; sourceTree = "<group>"; };
 		505E6F3802B544658AC13F09 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
@@ -464,8 +464,8 @@
 		51FE6091B2EF4C00B88957B7 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		651A6EAB190C4F9A9879A90E /* libLottieReactNative.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libLottieReactNative.a; sourceTree = "<group>"; };
-		70922953B9C9AA7B3CABF1B6 /* Pods-FableApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FableApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FableApp/Pods-FableApp.debug.xcconfig"; sourceTree = "<group>"; };
-		73FDD3729C8444C91CFA665C /* libPods-FableApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FableApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70922953B9C9AA7B3CABF1B6 /* Pods-Fable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fable.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fable/Pods-Fable.debug.xcconfig"; sourceTree = "<group>"; };
+		73FDD3729C8444C91CFA665C /* libPods-Fable.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Fable.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75A2B5D739EE425089DA530E /* RNVectorIcons.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNVectorIcons.xcodeproj; path = "../node_modules/react-native-vector-icons/RNVectorIcons.xcodeproj"; sourceTree = "<group>"; };
 		776BF60FCC3E4DED974528A3 /* libRNKeychain.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNKeychain.a; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
@@ -509,7 +509,7 @@
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
-				4706FD243D7FDCBD1935903A /* libPods-FableApp.a in Frameworks */,
+				4706FD243D7FDCBD1935903A /* libPods-Fable.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,13 +580,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		00E356EF1AD99517003FC87E /* FableAppTests */ = {
+		00E356EF1AD99517003FC87E /* FableTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* FableAppTests.m */,
+				00E356F21AD99517003FC87E /* FableTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = FableAppTests;
+			path = FableTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -617,10 +617,10 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* FableApp */ = {
+		13B07FAE1A68108700A75B9A /* Fable */ = {
 			isa = PBXGroup;
 			children = (
-				3BFFF66920B749E8007FD3A0 /* FableApp.entitlements */,
+				3BFFF66920B749E8007FD3A0 /* Fable.entitlements */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -629,7 +629,7 @@
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = FableApp;
+			name = Fable;
 			sourceTree = "<group>";
 		};
 		146834001AC3E56700842450 /* Products */ = {
@@ -659,7 +659,7 @@
 			isa = PBXGroup;
 			children = (
 				2D16E6891FA4F8E400B85C8A /* libReact.a */,
-				73FDD3729C8444C91CFA665C /* libPods-FableApp.a */,
+				73FDD3729C8444C91CFA665C /* libPods-Fable.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -802,9 +802,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* FableApp */,
+				13B07FAE1A68108700A75B9A /* Fable */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* FableAppTests */,
+				00E356EF1AD99517003FC87E /* FableTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				817B59AABB0E4CD8B69231B7 /* Resources */,
@@ -819,10 +819,10 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* FableApp.app */,
-				00E356EE1AD99517003FC87E /* FableAppTests.xctest */,
-				2D02E47B1E0B4A5D006451C7 /* FableApp-tvOS.app */,
-				2D02E4901E0B4A5D006451C7 /* FableApp-tvOSTests.xctest */,
+				13B07F961A680F5B00A75B9A /* Fable.app */,
+				00E356EE1AD99517003FC87E /* FableTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* Fable-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* Fable-tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -839,8 +839,8 @@
 		F571919BB7D3E7D2C67748C4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				70922953B9C9AA7B3CABF1B6 /* Pods-FableApp.debug.xcconfig */,
-				12940B4E97F0B725A9ADA911 /* Pods-FableApp.release.xcconfig */,
+				70922953B9C9AA7B3CABF1B6 /* Pods-Fable.debug.xcconfig */,
+				12940B4E97F0B725A9ADA911 /* Pods-Fable.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -848,9 +848,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* FableAppTests */ = {
+		00E356ED1AD99517003FC87E /* FableTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "FableAppTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "FableTests" */;
 			buildPhases = (
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
@@ -861,14 +861,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = FableAppTests;
-			productName = FableAppTests;
-			productReference = 00E356EE1AD99517003FC87E /* FableAppTests.xctest */;
+			name = FableTests;
+			productName = FableTests;
+			productReference = 00E356EE1AD99517003FC87E /* FableTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* FableApp */ = {
+		13B07F861A680F5B00A75B9A /* Fable */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "FableApp" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Fable" */;
 			buildPhases = (
 				F6B8C73F45EA1B5435F788D3 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
@@ -884,14 +884,14 @@
 			dependencies = (
 				3BFFF6AE20B74B20007FD3A0 /* PBXTargetDependency */,
 			);
-			name = FableApp;
+			name = Fable;
 			productName = "Hello World";
-			productReference = 13B07F961A680F5B00A75B9A /* FableApp.app */;
+			productReference = 13B07F961A680F5B00A75B9A /* Fable.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E47A1E0B4A5D006451C7 /* FableApp-tvOS */ = {
+		2D02E47A1E0B4A5D006451C7 /* Fable-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "FableApp-tvOS" */;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Fable-tvOS" */;
 			buildPhases = (
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
@@ -902,14 +902,14 @@
 			);
 			dependencies = (
 			);
-			name = "FableApp-tvOS";
-			productName = "FableApp-tvOS";
-			productReference = 2D02E47B1E0B4A5D006451C7 /* FableApp-tvOS.app */;
+			name = "Fable-tvOS";
+			productName = "Fable-tvOS";
+			productReference = 2D02E47B1E0B4A5D006451C7 /* Fable-tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E48F1E0B4A5D006451C7 /* FableApp-tvOSTests */ = {
+		2D02E48F1E0B4A5D006451C7 /* Fable-tvOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "FableApp-tvOSTests" */;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Fable-tvOSTests" */;
 			buildPhases = (
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
@@ -920,9 +920,9 @@
 			dependencies = (
 				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
 			);
-			name = "FableApp-tvOSTests";
-			productName = "FableApp-tvOSTests";
-			productReference = 2D02E4901E0B4A5D006451C7 /* FableApp-tvOSTests.xctest */;
+			name = "Fable-tvOSTests";
+			productName = "Fable-tvOSTests";
+			productReference = 2D02E4901E0B4A5D006451C7 /* Fable-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -957,7 +957,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "FableApp" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Fable" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -1044,10 +1044,10 @@
 			);
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* FableApp */,
-				00E356ED1AD99517003FC87E /* FableAppTests */,
-				2D02E47A1E0B4A5D006451C7 /* FableApp-tvOS */,
-				2D02E48F1E0B4A5D006451C7 /* FableApp-tvOSTests */,
+				13B07F861A680F5B00A75B9A /* Fable */,
+				00E356ED1AD99517003FC87E /* FableTests */,
+				2D02E47A1E0B4A5D006451C7 /* Fable-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* Fable-tvOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -1484,7 +1484,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-FableApp/Pods-FableApp-resources.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-Fable/Pods-Fable-resources.sh",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Feather.ttf",
@@ -1513,7 +1513,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FableApp/Pods-FableApp-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fable/Pods-Fable-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F6B8C73F45EA1B5435F788D3 /* [CP] Check Pods Manifest.lock */ = {
@@ -1527,7 +1527,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FableApp-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Fable-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1541,7 +1541,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* FableAppTests.m in Sources */,
+				00E356F31AD99517003FC87E /* FableTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1567,7 +1567,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DCD954D1E0B4F2C00145EB5 /* FableAppTests.m in Sources */,
+				2DCD954D1E0B4F2C00145EB5 /* FableTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1576,12 +1576,12 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* FableApp */;
+			target = 13B07F861A680F5B00A75B9A /* Fable */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D02E47A1E0B4A5D006451C7 /* FableApp-tvOS */;
+			target = 2D02E47A1E0B4A5D006451C7 /* Fable-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
 		3BFFF6AE20B74B20007FD3A0 /* PBXTargetDependency */ = {
@@ -1598,7 +1598,7 @@
 				13B07FB21A68108700A75B9A /* Base */,
 			);
 			name = LaunchScreen.xib;
-			path = FableApp;
+			path = Fable;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1620,7 +1620,7 @@
 					"$(SRCROOT)..\node_modules\neact-native-fabriciosSMXCrashlytics",
 					"$(SRCROOT)..\node_moduleslottie-react-nativesrciosLottieReactNative",
 				);
-				INFOPLIST_FILE = FableAppTests/Info.plist;
+				INFOPLIST_FILE = FableTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -1636,7 +1636,7 @@
 					"-lc++",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FableApp.app/FableApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fable.app/Fable";
 			};
 			name = Debug;
 		};
@@ -1653,7 +1653,7 @@
 					"$(SRCROOT)..\node_modules\neact-native-fabriciosSMXCrashlytics",
 					"$(SRCROOT)..\node_moduleslottie-react-nativesrciosLottieReactNative",
 				);
-				INFOPLIST_FILE = FableAppTests/Info.plist;
+				INFOPLIST_FILE = FableTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -1669,16 +1669,16 @@
 					"-lc++",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FableApp.app/FableApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fable.app/Fable";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 70922953B9C9AA7B3CABF1B6 /* Pods-FableApp.debug.xcconfig */;
+			baseConfigurationReference = 70922953B9C9AA7B3CABF1B6 /* Pods-Fable.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = FableApp/FableApp.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Fable/Fable.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = HK64769L4T;
@@ -1690,7 +1690,7 @@
 					"$(SRCROOT)..\node_modules\neact-native-fabriciosSMXCrashlytics",
 					"$(SRCROOT)..\node_moduleslottie-react-nativesrciosLottieReactNative",
 				);
-				INFOPLIST_FILE = FableApp/Info.plist;
+				INFOPLIST_FILE = Fable/Info.plist;
 				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "-traditional";
 				INFOPLIST_PREFIX_HEADER = "${BUILD_DIR}/GeneratedInfoPlistDotEnv.h";
 				INFOPLIST_PREPROCESS = YES;
@@ -1700,18 +1700,18 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.aaronfryer.FableApp;
-				PRODUCT_NAME = FableApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aaronfryer.Fable;
+				PRODUCT_NAME = Fable;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 12940B4E97F0B725A9ADA911 /* Pods-FableApp.release.xcconfig */;
+			baseConfigurationReference = 12940B4E97F0B725A9ADA911 /* Pods-Fable.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = FableApp/FableApp.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Fable/Fable.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HK64769L4T;
 				HEADER_SEARCH_PATHS = (
@@ -1722,7 +1722,7 @@
 					"$(SRCROOT)..\node_modules\neact-native-fabriciosSMXCrashlytics",
 					"$(SRCROOT)..\node_moduleslottie-react-nativesrciosLottieReactNative",
 				);
-				INFOPLIST_FILE = FableApp/Info.plist;
+				INFOPLIST_FILE = Fable/Info.plist;
 				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "-traditional";
 				INFOPLIST_PREFIX_HEADER = "${BUILD_DIR}/GeneratedInfoPlistDotEnv.h";
 				INFOPLIST_PREPROCESS = YES;
@@ -1732,8 +1732,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.aaronfryer.FableApp;
-				PRODUCT_NAME = FableApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aaronfryer.Fable;
+				PRODUCT_NAME = Fable;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -1758,7 +1758,7 @@
 					"$(SRCROOT)..\node_modules\neact-native-fabriciosSMXCrashlytics",
 					"$(SRCROOT)..\node_moduleslottie-react-nativesrciosLottieReactNative",
 				);
-				INFOPLIST_FILE = "FableApp-tvOS/Info.plist";
+				INFOPLIST_FILE = "Fable-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1772,7 +1772,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.FableApp-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Fable-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -1800,7 +1800,7 @@
 					"$(SRCROOT)..\node_modules\neact-native-fabriciosSMXCrashlytics",
 					"$(SRCROOT)..\node_moduleslottie-react-nativesrciosLottieReactNative",
 				);
-				INFOPLIST_FILE = "FableApp-tvOS/Info.plist";
+				INFOPLIST_FILE = "Fable-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1814,7 +1814,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.FableApp-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Fable-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -1833,7 +1833,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "FableApp-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "Fable-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1843,10 +1843,10 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.FableApp-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Fable-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FableApp-tvOS.app/FableApp-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fable-tvOS.app/Fable-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Debug;
@@ -1862,7 +1862,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "FableApp-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "Fable-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1872,10 +1872,10 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.FableApp-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Fable-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FableApp-tvOS.app/FableApp-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fable-tvOS.app/Fable-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Release;
@@ -1959,7 +1959,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "FableAppTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "FableTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -1968,7 +1968,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "FableApp" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Fable" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -1977,7 +1977,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "FableApp-tvOS" */ = {
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Fable-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4971E0B4A5E006451C7 /* Debug */,
@@ -1986,7 +1986,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "FableApp-tvOSTests" */ = {
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Fable-tvOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4991E0B4A5E006451C7 /* Debug */,
@@ -1995,7 +1995,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "FableApp" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Fable" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

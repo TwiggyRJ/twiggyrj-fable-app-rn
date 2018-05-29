@@ -1,4 +1,4 @@
-package com.fableapp;
+package com.aaronfryer.fableapp;
 
 import android.app.Application;
 import com.crashlytics.android.Crashlytics;

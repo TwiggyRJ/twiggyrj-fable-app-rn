@@ -1,4 +1,4 @@
-package com.fableapp;
+package com.aaronfryer.fableapp;
 
 import com.facebook.react.ReactActivity;
 
@@ -10,6 +10,6 @@ public class MainActivity extends ReactActivity {
      */
     @Override
     protected String getMainComponentName() {
-        return "FableApp";
+        return "Fable";
     }
 }

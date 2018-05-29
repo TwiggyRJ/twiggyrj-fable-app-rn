@@ -9,14 +9,12 @@
 /* Begin PBXBuildFile section */
 		00566DA2172F73D92A7886C413B8D5FA /* LOTValueDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 38736CDA4E279ABF1E864656B920CE00 /* LOTValueDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		030792CABA79073C4EB71F1DCE7AF28A /* LOTCacheProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 605B76A198A2733860735A30FAC72C26 /* LOTCacheProvider.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		036E0A25FE4AEF6F82426B6E0482A36D /* RNKeychainManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 65A346988A162EDE9368EEDA207C15A5 /* RNKeychainManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		0389FBCF7BE5730B4D294C34CF2BA02D /* LOTShapeGradientFill.h in Headers */ = {isa = PBXBuildFile; fileRef = 825C294F1E7D5FFEF26978952F0A54C4 /* LOTShapeGradientFill.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		060A83BC433FFC0835B822ED70632050 /* YGNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F42CE63FE983F8C2B4CFA03AE8B78D7 /* YGNode.cpp */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC -fno-objc-arc"; }; };
+		0509B328EC463B57D185E4A802D8A614 /* RNVectorIconsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8402F1B82F9D7988920407D53B3EF49F /* RNVectorIconsManager.m */; };
+		07E40E463506F823FBF19BCF22D58768 /* SMXAnswers.h in Headers */ = {isa = PBXBuildFile; fileRef = BE6C5ECE1FF72B2B22C3715BCB337E0E /* SMXAnswers.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		08821E7F806917C0FE79CF5C22B61EC7 /* LOTAnimationView_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C962B06BE8B6DBB7466F5F163BFD070 /* LOTAnimationView_Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		09544AAD7788E02F7D7FE9A28E270A34 /* YGLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = A41DC282633515F62559CF4541B3A6CE /* YGLayout.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		0D847FB0CDFC0E66DE9D78A6B76B7BC3 /* LOTBezierPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 707D324DC9752B59BFEEA9EF0E63347F /* LOTBezierPath.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		10261E23D74E9E55C20200117239BE1D /* Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = B37ACD5B32686A3637E40AC05C9C3009 /* Utils.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		1035151B3610575F60931868675BD73B /* RNVectorIconsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = DDE7D35E93590D765D07048396728FE5 /* RNVectorIconsManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0EC4403F016E23E51926864BFB70154E /* Yoga-internal.h in Headers */ = {isa = PBXBuildFile; fileRef = FA693EE893CC5F223D5778C82FE37585 /* Yoga-internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		103A95E098AC93E095712EDCCD0F4B03 /* LOTAnimationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 89057DD65232D1B3EFDD96EF029359C6 /* LOTAnimationView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		10F597B7224FF6C0C38FFFE7F5F51283 /* LOTShapeCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8366450A1B375C490A7E10DE38C206 /* LOTShapeCircle.m */; };
 		114681F55404BA156DCD0075C3164560 /* LRNAnimationViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A13DE418628AE1FC45B083755E617 /* LRNAnimationViewManager.m */; };
@@ -24,41 +22,44 @@
 		12AE81D0F5F065437587AE897B742B8D /* LOTShapeGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 265F3A6DB757D16075522A4776A3CC40 /* LOTShapeGroup.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		149B46214CBC6CC910C8C05FA0F72A45 /* LOTComposition.h in Headers */ = {isa = PBXBuildFile; fileRef = 58A7BDC10DE976E05B41600AF1016A74 /* LOTComposition.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		162B1D4517C9920A511BCBC3B2059D69 /* LOTSizeInterpolator.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D913134B143DCFB601DA0480C9FBA9 /* LOTSizeInterpolator.m */; };
-		194FF58469CADC1ABE3F17F1FF23B1E7 /* YGMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E099198020B27E353DAE2D8DB9038C0 /* YGMacros.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		1BC303E600A057BAB56029F9C27A3CC6 /* lottie-ios-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E0FB1F51D9B0ED13F6695E191B475C7E /* lottie-ios-dummy.m */; };
 		1C3B3E09A0DDB5073137D2E1CE572A20 /* LOTShapeTrimPath.m in Sources */ = {isa = PBXBuildFile; fileRef = F406C353AB20E103DBCAF2B8F23445B8 /* LOTShapeTrimPath.m */; };
 		1CE7B98F905FBB99C778225A2D237E87 /* LOTBezierData.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BECD4108C1270DCDD93F9EF8A701657 /* LOTBezierData.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		1DC13C51CEF919355B5F70720CEB179E /* LOTAnimatorNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D089F2364D9F09E9DF095E724AB9B3A /* LOTAnimatorNode.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		1E137C618C2284BE4E5480EB9D505759 /* YGNodePrint.h in Headers */ = {isa = PBXBuildFile; fileRef = 135EADEDB67EED3AFF5CF9E313586CE4 /* YGNodePrint.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		209925DC1D747BCB7FC99F5DACEA9F00 /* LOTAnimatedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 187CE8D550132A3D3473B62E61D71308 /* LOTAnimatedControl.m */; };
+		23348276C5A865C756E80B6D5BBB9F85 /* RNKeychainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FDFEFF393828B74980672FA67FD601E /* RNKeychainManager.m */; };
 		2340477707CDBAB03B2CA9EA4CFD1B74 /* LOTLayerContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 41B3724068C23CEE0659006E0ABBD14A /* LOTLayerContainer.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		23F102A002D56AAD477C42645FF3AE58 /* LOTSizeInterpolator.h in Headers */ = {isa = PBXBuildFile; fileRef = 22BAF7ED3956B33AE874B3B11BA9999D /* LOTSizeInterpolator.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		24B9F07BD1D0938F9CCFEB415B497428 /* LOTShapeTrimPath.h in Headers */ = {isa = PBXBuildFile; fileRef = AA4A11D3DBC94B22EDC9B8A544E82F47 /* LOTShapeTrimPath.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		25C20172A9A45B57C0806EBAF699D94D /* LOTGradientFillRender.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4003C984B299169F5BB5E7FFD751C9 /* LOTGradientFillRender.m */; };
 		25F413A29ABC1DC970FE2F374FEF364B /* lottie-react-native-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FC42D19766214B0A707E3463C600E5 /* lottie-react-native-dummy.m */; };
-		275AC2B443FDEE9D9FAC9A4534F6AA5E /* RNVectorIcons-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E637F8F31EA0C19199F1231DCC72C0 /* RNVectorIcons-dummy.m */; };
 		28CC6001978531619DCB05E67FAFB2C1 /* LOTModels.h in Headers */ = {isa = PBXBuildFile; fileRef = 805CE4C30D97732CBC932AE119C459FF /* LOTModels.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		2A66F1F81E21A3421D3057F9908E2A63 /* LOTValueCallback.h in Headers */ = {isa = PBXBuildFile; fileRef = E553812AA006B1775E288D59C1C1A643 /* LOTValueCallback.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		2AA9AEA2362F110CC5FA7553770DD55D /* LOTColorInterpolator.m in Sources */ = {isa = PBXBuildFile; fileRef = E91A462E485E5E740406377683E15AB7 /* LOTColorInterpolator.m */; };
-		2CFBB31392284573F3E0F5BD9A413EF5 /* YGStyle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 73ACA3D97E87B285F78500AB432D2568 /* YGStyle.cpp */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC -fno-objc-arc"; }; };
+		2B1850BC5A01F8B6465E3A6BC707532D /* RNKeychain-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 799C7A8507BD7C44F62E7EBA6477890D /* RNKeychain-dummy.m */; };
+		2D4F5749391301EEBA631BFB727A3651 /* YGEnums.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41E45ACC0EFBEA74988E64ECE616A956 /* YGEnums.cpp */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC -fno-objc-arc"; }; };
 		2EF1E4E8E8348E333E9E45BEF14EC670 /* LOTAnimationCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D108390324C698426C01EE0DDD15B41 /* LOTAnimationCache.m */; };
 		32A55137367578D93C3686C967493B4A /* LOTPathInterpolator.m in Sources */ = {isa = PBXBuildFile; fileRef = 00235B36676F5FAD0176BF03FBEA1BB3 /* LOTPathInterpolator.m */; };
 		32A83125B63DA3701083941E2D38B032 /* LOTTrimPathNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E27E8263E3E2C3C65B8C28FCF2E881 /* LOTTrimPathNode.m */; };
 		38604D6D3BFF8710CBE96A0B03D1E1C0 /* LOTPointInterpolator.m in Sources */ = {isa = PBXBuildFile; fileRef = A8AEC0DF6B3AE654C5C7AD99B1B5BC24 /* LOTPointInterpolator.m */; };
+		38D6A1297F1BB0A0FE4DC95DBBFD7C53 /* YGNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EC3B781CC006811CBFF6F45463AA3F5 /* YGNode.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		38FB50FCCC4BBC23ABF4DA88C9EAE50C /* LOTCompositionContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ABF91B559EBB5D49AECF80D3164DCA1 /* LOTCompositionContainer.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		3AA21512AD31425B00828045C7BF1E43 /* LOTValueCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = B582F8BC9E2142660BD1696761632701 /* LOTValueCallback.m */; };
 		3AE3F2FF0AEB5BD134FD35B1FA8AA8A9 /* LOTPointInterpolator.h in Headers */ = {isa = PBXBuildFile; fileRef = 0123F63F3BB360D349A8D6CDFC10294A /* LOTPointInterpolator.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		3C8D639D44FEDC58C304CC921A7981C0 /* LRNContainerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 580C85F5A6A6226DB2D73DC2C1EE83D7 /* LRNContainerView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		3CE9B2E231E9F47C7355F6C29D6085A8 /* LOTPolygonAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = B976F5FD70805FE8AE3C1693BDCB8732 /* LOTPolygonAnimator.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		3D648E37A46F6DCF5D013074500F27C6 /* LOTShapeGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E377029A92EC61C5F02FC364C968B5F /* LOTShapeGroup.m */; };
+		4002BC3A27A0AA861BDE9F702DB6D774 /* SMXCrashlytics.m in Sources */ = {isa = PBXBuildFile; fileRef = 0297EC8106A4FCB90DD64649908C2AD0 /* SMXCrashlytics.m */; };
 		40349A6B19E71DF924F858140CFEF397 /* UIColor+Expanded.h in Headers */ = {isa = PBXBuildFile; fileRef = ABEEF3C578BF2A69BF9349223F453FE5 /* UIColor+Expanded.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		40351B581492ADA707BC4E34ED8F1B45 /* YGStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = DF39B3081800CD59D419843802A704F3 /* YGStyle.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		407102DA2B5DE27FD432412257131301 /* LOTShapeFill.h in Headers */ = {isa = PBXBuildFile; fileRef = 44351F68A680E555D0B1F1B5F50E2A3D /* LOTShapeFill.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4081BFEA72DD28C5488251D534AEDCA5 /* Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 147AC4319C988B7D1D241C6C57B6E5D2 /* Utils.cpp */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC -fno-objc-arc"; }; };
+		4402580115AC022117535EF98E357BAC /* SMXAnswers.m in Sources */ = {isa = PBXBuildFile; fileRef = F04BD14F1C329859741C4EA4EECE60D0 /* SMXAnswers.m */; };
 		4A2107E7CC4695E1EBF32493198B0F63 /* LOTShapeRepeater.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7C0D94F29F27F98CDB0B8A576CBB62 /* LOTShapeRepeater.m */; };
 		4AB3CB7E8E4BBD92EAF366A424327D67 /* LOTAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = D78F40B9FBE739ACC5FEC2F9F5BEF78A /* LOTAsset.m */; };
 		4C9011D3EA19FF3BE522A62791A4A415 /* LOTRenderGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EEF833275235413AC314FEAA8C33A6A /* LOTRenderGroup.m */; };
 		4DE7BAC1754820C8418DF8DF21FA850F /* LOTStrokeRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 50611E35047C48BFA234E2C8A3542EE8 /* LOTStrokeRenderer.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		5004EE19D91AB1F74191D4691A764742 /* LOTBlockCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3C62AC411C6551F8F7815E39C28998 /* LOTBlockCallback.m */; };
-		52DC6F5F6CD43C851A0D55F643081919 /* SMXAnswers.m in Sources */ = {isa = PBXBuildFile; fileRef = F04BD14F1C329859741C4EA4EECE60D0 /* SMXAnswers.m */; };
 		5333C59D07F161F7F69D4EC2461BE3A7 /* LOTPolystarAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C18D2AB7C2A5754FF3B1A51F99F1690 /* LOTPolystarAnimator.m */; };
 		5368C6BCA57F23684E0F8ACE1101A705 /* LOTShapeCircle.h in Headers */ = {isa = PBXBuildFile; fileRef = 9635FA0F2AEC5B2953D7D3F7693BD5CC /* LOTShapeCircle.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		56FA680A49DB8380F86D3B59EB1C6DCE /* LOTAnimatorNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BA97D7A0EA1B75B9A0A4C419A2263E /* LOTAnimatorNode.m */; };
@@ -68,17 +69,18 @@
 		5ED1C60E8F683FD36F33B740F14978B4 /* LOTFillRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 370B24D130FF07CAC74008A436A79C4E /* LOTFillRenderer.m */; };
 		5F3AD50E4E68DC6758BADC2D0AADDF5A /* LOTMaskContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = FCD44AE4804FFF0B02BDFFFA9BC43C37 /* LOTMaskContainer.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6006B20031443114633D892C503BBF80 /* LOTShapeGradientFill.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9C72858EBEF70EA95870737573AC1F /* LOTShapeGradientFill.m */; };
-		640FC3DE56786F6881C6A414EEAF537B /* SMXCrashlytics.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E9ACD9040B2B7853A38671084425E49 /* SMXCrashlytics.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		628F50755C7AB7758FEDD9AE332048A7 /* YGLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = A41DC282633515F62559CF4541B3A6CE /* YGLayout.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		65C6253BCA085EBB2284A6F4CAA4F616 /* Pods-Fable-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B2D9C544727A6042D15228D3CC59F9 /* Pods-Fable-dummy.m */; };
 		669026B8E304748F9F5885E85239A37D /* UIColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DE5A0D6B0B227B42C5567B0C921507A /* UIColor.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		672C22AFCB79A47F51C869E3D24825D0 /* LOTKeyframe.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B13EB9D22D2773CCF598A165F406972 /* LOTKeyframe.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		67811B97256FB03A51099140635A2714 /* UIBezierPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 477A2E3396109EADF88C0AEEF7D73CF0 /* UIBezierPath.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		69296D906E297C1653CB312342FD7410 /* LOTInterpolatorCallback.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A05EA3979EA3641FEF5D86730E92A94 /* LOTInterpolatorCallback.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		6EDB676E32438C202A4296E172FDD1A2 /* yoga-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 428C07404D970C62CA79C9D3E05ACA6A /* yoga-dummy.m */; };
+		69986970C8621FA1E99557E8E236C6D8 /* Yoga.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B7E56C1DF94E2838015DDF8A64B600 /* Yoga.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6BA67A446B3D4E6464A3A44B4DBCED1D /* YGLayout.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2147A107A587520492BE25564EEB0FDF /* YGLayout.cpp */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC -fno-objc-arc"; }; };
 		6EE7CCB982A5C497A46939F71E31D696 /* NSValue+Compat.h in Headers */ = {isa = PBXBuildFile; fileRef = E02CE429C13A160E9605B065FF68B5D6 /* NSValue+Compat.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6EFD4B477A649C9E1EB9C7547C054C78 /* LOTAnimationTransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189A48153CEB502918F099E74FF840E0 /* LOTAnimationTransitionController.m */; };
 		70A7907A8CC97A54F5751E0E6BBE28C0 /* LOTRenderNode.h in Headers */ = {isa = PBXBuildFile; fileRef = E09C145F77AAECA4D91CE6EDD426ED0A /* LOTRenderNode.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		71BE3AEFA60E4837F13240AF2CBBA28D /* SMXAnswers.h in Headers */ = {isa = PBXBuildFile; fileRef = BE6C5ECE1FF72B2B22C3715BCB337E0E /* SMXAnswers.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		7369F487B176437C8A9BF0F3E5DB5CBD /* ReactNativeFabric-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BAAB51F982A1842A4D0C43F51F15276D /* ReactNativeFabric-dummy.m */; };
+		739ED5F0FB045B5CBA14B80D52BADEA4 /* Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = B37ACD5B32686A3637E40AC05C9C3009 /* Utils.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		74AEC2AF330A5FCDFFAEF34B9FD2C5A3 /* LOTRepeaterRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B9F69E56545441C5480EFD08E108E8F /* LOTRepeaterRenderer.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		77EF9328584C9CAEF3FE6C0B869D12D7 /* LOTLayerGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E67687329F52523338B6FF885E60310 /* LOTLayerGroup.m */; };
 		78D61F7EE3177156FF7AE83FBD33A747 /* LOTLayerGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E702FA4669A70325F9886835834F157 /* LOTLayerGroup.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -88,24 +90,26 @@
 		7CD8FC8D5E65C2922805971F6281DC14 /* LOTInterpolatorCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE227101DB51ECA715EABE6ADC39CC5 /* LOTInterpolatorCallback.m */; };
 		7E40F6A03454E5EB07F9079D88D554CB /* CGGeometry+LOTAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2501029AD67AC12706EFF964D187700C /* CGGeometry+LOTAdditions.m */; };
 		81717D8C1D59E7619794DDD5BAE095A6 /* LOTRenderGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F5970F2EC74CAAE872C668E767A6E6 /* LOTRenderGroup.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		82CE21C922DBD8638FA9DFE208F9D3F5 /* YGEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = 7863FE717A5FE9E212C27008C0207372 /* YGEnums.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		82EB93C5ABD3D7298C968D10F459B716 /* LOTAnimatedControl.h in Headers */ = {isa = PBXBuildFile; fileRef = E03A79BCFA5C8CF6AEEB2600ECC35FF6 /* LOTAnimatedControl.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		856672EE26678E249E3D00690B2767E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B108FDF195E5B9F297F34551E4206851 /* UIKit.framework */; };
+		863A64D6D3777EE28D19903AB9E54AAD /* RNVectorIconsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = DDE7D35E93590D765D07048396728FE5 /* RNVectorIconsManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		8688538F2EB13D6FB2AABD8A191ABD9A /* LOTAnimationView_Compat.h in Headers */ = {isa = PBXBuildFile; fileRef = 38BE453D030E1AE96546AD05D930545E /* LOTAnimationView_Compat.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		883803446162042134D864B15AEF36EB /* YGNodePrint.h in Headers */ = {isa = PBXBuildFile; fileRef = 135EADEDB67EED3AFF5CF9E313586CE4 /* YGNodePrint.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		884F6D7DF20D3912A5CA72932019632B /* LOTCircleAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 01AEF9298896221EC82C35931BCA37F4 /* LOTCircleAnimator.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		8C0500BC4521ED033B65CB162B59C518 /* LOTKeypath.h in Headers */ = {isa = PBXBuildFile; fileRef = A1AEFD8688391D0C3F7A678B93804995 /* LOTKeypath.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8E05FEAF1FD7F0FA3B1A013EA4EB89F2 /* RNVectorIcons-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E637F8F31EA0C19199F1231DCC72C0 /* RNVectorIcons-dummy.m */; };
 		90221D48933322438A4DBAA54A959A27 /* LOTAsset.h in Headers */ = {isa = PBXBuildFile; fileRef = 39D46743FA61E1E70BC58DF9F16B0467 /* LOTAsset.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		94728824705C867EDAC95D76EEC9A343 /* Pods-FableApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD930C8470666B55B90D53E3A50A1E43 /* Pods-FableApp-dummy.m */; };
 		947D6B3F020C5BD5FAA1448EBB5D2CD5 /* LOTTransformInterpolator.m in Sources */ = {isa = PBXBuildFile; fileRef = 718D8D144CF7E5EF7ACCBF2D69BC4A46 /* LOTTransformInterpolator.m */; };
 		96CE797D84125705828EB19B20B16573 /* LOTAssetGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E0AEF596236173FE8FAF5E787354C3 /* LOTAssetGroup.m */; };
+		98D975C11713DA19B3B399F7182E2877 /* YGMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E099198020B27E353DAE2D8DB9038C0 /* YGMacros.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		9A1793B24FB6B85A1AFE6195D8BDB42A /* LOTRenderNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 271E4A2C8D9AAC21557247A165475F44 /* LOTRenderNode.m */; };
-		9C58709BB85DEB530D013444D769D70E /* RNKeychainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FDFEFF393828B74980672FA67FD601E /* RNKeychainManager.m */; };
 		9C6BF5FEF41E17071D7315113C71C07C /* LOTTrimPathNode.h in Headers */ = {isa = PBXBuildFile; fileRef = F80BE804AE7CA5581F017D059A68215E /* LOTTrimPathNode.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		9CDBA335A623133C1E85FEE3237A9455 /* LOTRoundedRectAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 4647532C604F5E6986CF80E1CBFF3070 /* LOTRoundedRectAnimator.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		9D6A38765A7572290D9D18AC987F8DDF /* LOTCircleAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2612187C37C99A42AC13AF2A3436FC49 /* LOTCircleAnimator.m */; };
-		9D75E712EB2AF2A37DEB07B5FF27D841 /* YGNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EC3B781CC006811CBFF6F45463AA3F5 /* YGNode.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		9D761C6129CA1AA554D3BC62E3CF465B /* LOTAnimationTransitionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 93BD6221ACC0A86EF2D37F9B67FC2F6D /* LOTAnimationTransitionController.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		9F094C753FF9B56FA16101EAFCC8FBBF /* LOTBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 8112221B4AC170F5A8A3EBF6ACCAF1DE /* LOTBezierPath.m */; };
+		9F1799078C4DA192AB01F66E42FD2DDF /* YGNodePrint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F22D045D7E76578FFAF5DC0B884E7705 /* YGNodePrint.cpp */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC -fno-objc-arc"; }; };
+		9F18ADBAF5E7D3F9DE965EF509BA75EA /* RNKeychainManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 65A346988A162EDE9368EEDA207C15A5 /* RNKeychainManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		A276667AE2A43F2D8C58F530EC336263 /* LOTAssetGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = BC66AB504306F210F02D5769C137F9C7 /* LOTAssetGroup.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		A2C5653EE36D5DA133FFCC95C1D1111C /* Lottie.h in Headers */ = {isa = PBXBuildFile; fileRef = 61D0D47F09D0C268996EE77BFB86E65C /* Lottie.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		A38C1BE3DDC90E7A2263899B7ACFB6FB /* LOTShapePath.m in Sources */ = {isa = PBXBuildFile; fileRef = 2859CF34BFC844249045A028838209AD /* LOTShapePath.m */; };
@@ -121,52 +125,48 @@
 		B4C1D5EB4323485E23AE1842C19A28FB /* LOTPolygonAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7079B460B1846C9848BD63D404FD61A5 /* LOTPolygonAnimator.m */; };
 		B514700B2317D218ABDF8FD6B083199E /* LOTPathAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E90A88019E55AAD6A5B6136D7F1960C /* LOTPathAnimator.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		B5B8FA300E86F58DAA885B51D1FD6C73 /* LOTLayerContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D2B05E7C10E4A3B8F4DB25981BCCCD /* LOTLayerContainer.m */; };
-		B68977A934DB900F7A02E627690BD123 /* YGStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = DF39B3081800CD59D419843802A704F3 /* YGStyle.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B5E63071A89E041C7094904C925A7CF5 /* yoga-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 428C07404D970C62CA79C9D3E05ACA6A /* yoga-dummy.m */; };
 		B733F9AF7E0069A8BAA67437F01EA9B6 /* LOTAnimatedSwitch.h in Headers */ = {isa = PBXBuildFile; fileRef = 976B760FE749F04EC70BCC932B861D5B /* LOTAnimatedSwitch.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		B9D7C001FB1D75215865D10C79DDBF80 /* LOTAnimatedSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C3DD1E0F6AC06F7424EA290BE44276 /* LOTAnimatedSwitch.m */; };
 		BA8AC5CB6A36B2624ECF9749283D4ACF /* LOTValueInterpolator.h in Headers */ = {isa = PBXBuildFile; fileRef = FC880CDE29693069EA67B906F0302AD3 /* LOTValueInterpolator.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		BB1C283C4D814D8C730AA1B0F3D60CD8 /* RNVectorIconsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8402F1B82F9D7988920407D53B3EF49F /* RNVectorIconsManager.m */; };
-		BCE090B68E2900AEFE346DA32E009F2D /* YGLayout.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2147A107A587520492BE25564EEB0FDF /* YGLayout.cpp */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC -fno-objc-arc"; }; };
 		BD813EED327CF4924CB3BB97EAC2ACC4 /* UIBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AB6BE5DACE78F8A5AE6018185D43A3 /* UIBezierPath.m */; };
+		BE14EE5D6BF399A7F477F662D523A9C4 /* SMXCrashlytics.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E9ACD9040B2B7853A38671084425E49 /* SMXCrashlytics.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		C09BE3CDF608A9B358B03AD07EAFAA46 /* LOTKeypath.m in Sources */ = {isa = PBXBuildFile; fileRef = FADF115C1093BC938827D40EDF9D91F9 /* LOTKeypath.m */; };
 		C37B3E45EF129D1FE30FF5B0529CD285 /* LOTShapeRepeater.h in Headers */ = {isa = PBXBuildFile; fileRef = C3FD3DD794B8E5F792153199230A4A4C /* LOTShapeRepeater.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C39E84281E4606A5CB66498F1CFED597 /* YGEnums.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41E45ACC0EFBEA74988E64ECE616A956 /* YGEnums.cpp */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC -fno-objc-arc"; }; };
 		C3F1A62F3C49998EC74696BF97ADE232 /* CGGeometry+LOTAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4849F15ABF5AF00EAB17036522B37D6D /* CGGeometry+LOTAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		C5A6A0FF86D44C3037D39CC99E7DC0E3 /* LOTAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBD9B906422B8BD14393A513D2A5CD0 /* LOTAnimationView.m */; };
 		C5FF99E341F18B0189D0CE253EAC71DF /* LOTNumberInterpolator.m in Sources */ = {isa = PBXBuildFile; fileRef = DEE058B96F22D63519E6923F95769B6D /* LOTNumberInterpolator.m */; };
 		C80FC3E84E2052FEC72D94994B429B8C /* LOTMask.h in Headers */ = {isa = PBXBuildFile; fileRef = C38ACCD623EAE0877A4023F5DDAF022D /* LOTMask.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		CC2EFB7AE494EF9B40D18F60E921E3D3 /* LOTComposition.m in Sources */ = {isa = PBXBuildFile; fileRef = 272DECBFDB3473F4DE9E141C8E51CF8A /* LOTComposition.m */; };
 		CDAF4917D9907BF8694A5131565F9280 /* UIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = AB60EB0B6488672D42EBDC7E88649FBB /* UIColor.m */; };
-		CE309CF9C48F2D28EE54563354025DA8 /* Yoga.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B7E56C1DF94E2838015DDF8A64B600 /* Yoga.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D1C871828793B7F3A1CB5508F4DCA890 /* LOTBlockCallback.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F2929E708389FEE7B820AADF1350DF /* LOTBlockCallback.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D2CB01265B404A48AFEA5D2F6D391D80 /* LOTShapeRectangle.h in Headers */ = {isa = PBXBuildFile; fileRef = B02090F81F53D01BC2B179DAD2D8C296 /* LOTShapeRectangle.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D3374F58D59CCCACA712B409DDC5AAFB /* Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 147AC4319C988B7D1D241C6C57B6E5D2 /* Utils.cpp */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC -fno-objc-arc"; }; };
 		D3816D7BE98376466F793D47D7EA95EA /* LOTShapeTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E75EBB6EC39ECB1797FBFC56068D0C /* LOTShapeTransform.m */; };
 		D53AB12D2DB9D498EDA1D96FEDE5A9EF /* LOTRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 557102A5F1CAEF7D1735ACFBFE592EBD /* LOTRadialGradientLayer.m */; };
 		D5597CF2BDC383D6B6F64547AD1D4A89 /* LOTShapePath.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B9C6F9A793DACACA0BBDF25F3A4C528 /* LOTShapePath.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		DA09B6D9FDA77C0AF64E9B571AF74197 /* RNKeychain-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 799C7A8507BD7C44F62E7EBA6477890D /* RNKeychain-dummy.m */; };
 		DA0B55049FF9E5610B60601D1E902F10 /* LOTFillRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 66572F4500EBB9390D113C4CDF8DE9FA /* LOTFillRenderer.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		DAA6473F1DFFD47A8D0EC9CF55665BD1 /* LOTPathInterpolator.h in Headers */ = {isa = PBXBuildFile; fileRef = E79A7257DB1423E81C403DB01EFA71F4 /* LOTPathInterpolator.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		DBAF268DE8A3EFCEC9148B83CC5114BC /* Yoga.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7DD013BFDB2E17A55CA2A31DC684F43A /* Yoga.cpp */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC -fno-objc-arc"; }; };
 		E064D3E4D488BA8084717E342D65DC92 /* LOTColorInterpolator.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FCF9C5296F598697560FE3681C83947 /* LOTColorInterpolator.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		E1828022EFF59C3586BCCB6C3217083F /* LOTHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 11EC65387B5F8ED4F2ADA7051CDA1457 /* LOTHelpers.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E4F656936FDC1978A2C546ECA997401D /* YGNodePrint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F22D045D7E76578FFAF5DC0B884E7705 /* YGNodePrint.cpp */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC -fno-objc-arc"; }; };
+		E5CB96D228B37680A81E404BA8F23418 /* Yoga.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7DD013BFDB2E17A55CA2A31DC684F43A /* Yoga.cpp */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC -fno-objc-arc"; }; };
+		EB79CB93106176EFC50E30CEF5C35783 /* YGEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = 7863FE717A5FE9E212C27008C0207372 /* YGEnums.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		EEC952A86B3D0E8D3EAB9F7336C6BFD9 /* LOTKeyframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB6453F382FBAE4A7D01FCBF318339E /* LOTKeyframe.m */; };
 		EFA9016E3999011BF8AF42AC1EDA4893 /* LOTCompositionContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B96B91F1D5EE0CCA43AECDCD8A6C788 /* LOTCompositionContainer.m */; };
-		EFC0DAEEB744FEAE72B6394508D00268 /* SMXCrashlytics.m in Sources */ = {isa = PBXBuildFile; fileRef = 0297EC8106A4FCB90DD64649908C2AD0 /* SMXCrashlytics.m */; };
 		F06E9FD0E5D30BF10580D34E0D1A1F7A /* LOTMaskContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 05474A07DC27E5982048BE1FC0134E43 /* LOTMaskContainer.m */; };
 		F0AE73D908C49C1E038C45EB04F68A5D /* LOTStrokeRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = C26F307DE1B062670B296DD4781FDB10 /* LOTStrokeRenderer.m */; };
 		F1756352DC5416A84B555195CBF8EAA5 /* LOTRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = DB29CD8F62CFE87CEF36F7B8B2174E52 /* LOTRadialGradientLayer.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		F1785D9281C8A91F6F844821E2082D21 /* CALayer+Compat.h in Headers */ = {isa = PBXBuildFile; fileRef = 00A0AA2B703DB0CE3E5D3A7210497C90 /* CALayer+Compat.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		F30B5DD74D9D860150F56867AA15DB33 /* Yoga-internal.h in Headers */ = {isa = PBXBuildFile; fileRef = FA693EE893CC5F223D5778C82FE37585 /* Yoga-internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		F3ABA1AC701D57854B2249412BCC4F87 /* LOTCacheProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = A6CA7A263B9DDF09ABB4C6047416B747 /* LOTCacheProvider.m */; };
 		F3EE76AFFB6EE785563539B318B21489 /* LOTLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC460D21E664D71E49B1BE17D0D23B3 /* LOTLayer.m */; };
+		F4CA32B5A97509703A4E5E61B51DB5C7 /* ReactNativeFabric-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BAAB51F982A1842A4D0C43F51F15276D /* ReactNativeFabric-dummy.m */; };
 		F4EB3B43D741675151F000ECB4480461 /* LOTShapeTransform.h in Headers */ = {isa = PBXBuildFile; fileRef = 75877031DCA92474AA5A0B0772576ADB /* LOTShapeTransform.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F607D6A763082E18EA42301772080B91 /* YGNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F42CE63FE983F8C2B4CFA03AE8B78D7 /* YGNode.cpp */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC -fno-objc-arc"; }; };
 		F8CAA90D140ACAA34839ABF5CEC6797B /* LOTShapeRectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = F96730B2CC84AFDAFB3133CF3827C75A /* LOTShapeRectangle.m */; };
 		FA18C67B662F9F39E0FAFF0675B0ED24 /* LOTMask.m in Sources */ = {isa = PBXBuildFile; fileRef = B7CB98F076DEE243A62835BD5F515E9C /* LOTMask.m */; };
 		FA1A9F7FA766DACE6D5BCDCFF3760CEE /* LOTPlatformCompat.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CFEDAEB0CC945ACE92A795E2451E9D7 /* LOTPlatformCompat.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		FA3CEAC6F5D2D8F3A4DCA0A33BE1FD97 /* LOTShapeFill.m in Sources */ = {isa = PBXBuildFile; fileRef = C545975421E0F172AD708894E0420628 /* LOTShapeFill.m */; };
 		FAA4DF53BB965DE72F0631EAF2DBDFC8 /* LRNAnimationViewManager.h in Headers */ = {isa = PBXBuildFile; fileRef = EE12ECA30E726A670F174700B29A6F43 /* LRNAnimationViewManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FC2A76AC51852930B800EA5C58A7C381 /* YGStyle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 73ACA3D97E87B285F78500AB432D2568 /* YGStyle.cpp */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC -fno-objc-arc"; }; };
 		FC389A460CA2E073181DBE1A68E425E0 /* LOTGradientFillRender.h in Headers */ = {isa = PBXBuildFile; fileRef = B04B32980AA1084F7F41231C61F4CA88 /* LOTGradientFillRender.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		FD475E0A773E8165E872486DBCFA3F95 /* LOTArrayInterpolator.m in Sources */ = {isa = PBXBuildFile; fileRef = FA40CF7D22FD6655779514DD952D94E7 /* LOTArrayInterpolator.m */; };
 		FD728FDBFB5CBAAA1F1216EC149C0CE1 /* LOTShapeStroke.h in Headers */ = {isa = PBXBuildFile; fileRef = 284881929974CA2227AFC9A11DE45934 /* LOTShapeStroke.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -175,19 +175,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		175EB3E0C643889938556CF6C23CA464 /* PBXContainerItemProxy */ = {
+		1DFE1A1DD1A3F82333D3B5DBF231590C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F9D3CF5DCDE2ECAB50D558967BE87B0D;
+			remoteGlobalIDString = 9D4E5C9908B9CA51A8F70FEBD7C4B3A3;
 			remoteInfo = RNVectorIcons;
-		};
-		1D08AB5B38BFA443F6B8B7B7A3A8AD10 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0000000023A0;
-			remoteInfo = React;
 		};
 		26340770B5F3339214DF577430998CFE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -196,26 +189,26 @@
 			remoteGlobalIDString = 58C59A321CE3E36BFCB567322DDFBAB6;
 			remoteInfo = "lottie-ios";
 		};
-		64056814B9873D185322F54543C1555D /* PBXContainerItemProxy */ = {
+		4203307E7A9C10023E6F18070A289EF4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 58C59A321CE3E36BFCB567322DDFBAB6;
-			remoteInfo = "lottie-ios";
+			remoteGlobalIDString = AB44023427968F61400B4CB6789FB87A;
+			remoteInfo = yoga;
 		};
-		6C20D8545B764C4E9B461C4F8E0EC8F8 /* PBXContainerItemProxy */ = {
+		52B20A6B0B578FA49D846D3602F685A1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 0000000023A0;
 			remoteInfo = React;
 		};
-		6F692862541188C822A647D729FF9AB2 /* PBXContainerItemProxy */ = {
+		730C5EABBAEFA6C0942BC49832D9B88B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0000000023A0;
-			remoteInfo = React;
+			remoteGlobalIDString = B704C2E68709F966F574BF166B314FBD;
+			remoteInfo = "lottie-react-native";
 		};
 		AE18EA43DDC87E379D65DDF34C1B4921 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -224,40 +217,47 @@
 			remoteGlobalIDString = 0000000023A0;
 			remoteInfo = React;
 		};
-		B442B343E6093CB6029EBBEEAD378F40 /* PBXContainerItemProxy */ = {
+		CBBC4E920FDAB1037F8CAE5A203D066E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3CAD39BB7A8D35BFECE025FE1662EB0A;
-			remoteInfo = ReactNativeFabric;
+			remoteGlobalIDString = 469B63B6E33293A2C923D86B651D1A7C;
+			remoteInfo = RNKeychain;
 		};
-		B5D869A62E9EC013CE383950B87B0B1E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B704C2E68709F966F574BF166B314FBD;
-			remoteInfo = "lottie-react-native";
-		};
-		CCF2AF3254B0A8DD923DABB71ADE7AC9 /* PBXContainerItemProxy */ = {
+		CD99EAB3A027AA70D64CECFC7A797BCE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 0000000023A0;
 			remoteInfo = React;
 		};
-		CFCD4302283511CAE18EE1AA7BC4ACFE /* PBXContainerItemProxy */ = {
+		D4BAD46729BF00E681EB7366F42BB2D5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1B541B56F4BC61A03983E2C3552D5C77;
-			remoteInfo = RNKeychain;
+			remoteGlobalIDString = 0000000023A0;
+			remoteInfo = React;
 		};
-		DD5C91D7E397F26097150B51B9058705 /* PBXContainerItemProxy */ = {
+		E18EF706B43F2CC4B9CD08A000ED0D01 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = ED4937F62CDF414473A3AAC5ACF80F0D;
-			remoteInfo = yoga;
+			remoteGlobalIDString = 58C59A321CE3E36BFCB567322DDFBAB6;
+			remoteInfo = "lottie-ios";
+		};
+		ECC0CB61F6B81306C19E918004BEABBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0000000023A0;
+			remoteInfo = React;
+		};
+		F9ED8630D4B630DCC365460EB8A403F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D23762FC904CDCA31F67743719006C65;
+			remoteInfo = ReactNativeFabric;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -270,6 +270,7 @@
 		026A038CAABB0C2B049D9FA761C6F19D /* RCTDeviceInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTDeviceInfo.m; sourceTree = "<group>"; };
 		0297EC8106A4FCB90DD64649908C2AD0 /* SMXCrashlytics.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SMXCrashlytics.m; path = ios/SMXCrashlytics/SMXCrashlytics.m; sourceTree = "<group>"; };
 		02C3C568CDF1C1F55D445BE9E72315C8 /* RCTModalHostViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTModalHostViewController.m; sourceTree = "<group>"; };
+		0305BBDFB5B7A80E40EC0673ED4F3FEB /* Pods-Fable-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Fable-frameworks.sh"; sourceTree = "<group>"; };
 		03F2929E708389FEE7B820AADF1350DF /* LOTBlockCallback.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LOTBlockCallback.h; sourceTree = "<group>"; };
 		04FC08E46F94398A7E318BC4BB451368 /* RCTProfileTrampoline-x86_64.S */ = {isa = PBXFileReference; includeInIndex = 1; path = "RCTProfileTrampoline-x86_64.S"; sourceTree = "<group>"; };
 		04FC42D19766214B0A707E3463C600E5 /* lottie-react-native-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "lottie-react-native-dummy.m"; sourceTree = "<group>"; };
@@ -279,7 +280,6 @@
 		060B43A3CB0551C7578F397676FD04A8 /* RCTKeyboardObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTKeyboardObserver.h; sourceTree = "<group>"; };
 		065FBA27FBD5139DDC3B4A89C6C52722 /* RCTActivityIndicatorViewManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTActivityIndicatorViewManager.m; sourceTree = "<group>"; };
 		06FC5BC77AC6850CD6515C9556032721 /* RCTFabricSurfaceHostingView.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = RCTFabricSurfaceHostingView.mm; sourceTree = "<group>"; };
-		074A4048018D1D162C830CC093277457 /* Pods-FableApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FableApp-resources.sh"; sourceTree = "<group>"; };
 		079038C3FE8901D15330304A2AF64DB8 /* RCTSurfaceRootShadowView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTSurfaceRootShadowView.m; sourceTree = "<group>"; };
 		088FA6CC3B0F9CF237F2EB4BE9399F84 /* RCTConvert+Transform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RCTConvert+Transform.m"; sourceTree = "<group>"; };
 		08F14E763BD001BE72EF937796F81F1A /* RCTFPSGraph.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTFPSGraph.h; sourceTree = "<group>"; };
@@ -287,6 +287,7 @@
 		09AD5E711517CC2EA9DE00A27E562DCB /* RCTEventDispatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTEventDispatcher.m; sourceTree = "<group>"; };
 		0A2B69166935D76359D21F65E3B2E9D7 /* RNKeychain.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RNKeychain.xcconfig; sourceTree = "<group>"; };
 		0C87DB91E8F91753814DC18B9FA37368 /* RCTAlertManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTAlertManager.m; sourceTree = "<group>"; };
+		0CC9E0FBBCB30E638F1FBFF765E94C5E /* libyoga.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libyoga.a; path = libyoga.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D1F4335B58855417B7B7DA24F178930 /* RCTAnimationType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTAnimationType.h; sourceTree = "<group>"; };
 		0E46DD4C7B1BC97F6FAD45FBC119238F /* Watermelon.gif */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.gif; name = Watermelon.gif; path = docs/gifs/Watermelon.gif; sourceTree = "<group>"; };
 		0E90A88019E55AAD6A5B6136D7F1960C /* LOTPathAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LOTPathAnimator.h; sourceTree = "<group>"; };
@@ -378,6 +379,7 @@
 		3835AD45DDF6A3B92E58E9EB27702037 /* RCTBorderStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTBorderStyle.h; sourceTree = "<group>"; };
 		38736CDA4E279ABF1E864656B920CE00 /* LOTValueDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LOTValueDelegate.h; sourceTree = "<group>"; };
 		38BE453D030E1AE96546AD05D930545E /* LOTAnimationView_Compat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LOTAnimationView_Compat.h; sourceTree = "<group>"; };
+		38E29AED07A8C6931C1D90B01B0A2FA8 /* libRNVectorIcons.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libRNVectorIcons.a; path = libRNVectorIcons.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		39327611668D407A7D0E23607426DD88 /* RCTTiming.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTTiming.h; sourceTree = "<group>"; };
 		39D46743FA61E1E70BC58DF9F16B0467 /* LOTAsset.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LOTAsset.h; sourceTree = "<group>"; };
 		39DB469CBCA197F1388EAB01FBA3797E /* RCTBridgeModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTBridgeModule.h; sourceTree = "<group>"; };
@@ -396,6 +398,7 @@
 		4075F5765B70C257FAE958D41DD0E813 /* RCTFont.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = RCTFont.mm; sourceTree = "<group>"; };
 		4099B04734BEA17C4F50FCCFA8A8202F /* RCTModalHostView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTModalHostView.m; sourceTree = "<group>"; };
 		40F8FC296DFF59A374AC08D56D46346E /* RCTBorderDrawing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTBorderDrawing.h; sourceTree = "<group>"; };
+		41A71AC46EA557B5BB0832AF87CE0970 /* libPods-Fable.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Fable.a"; path = "libPods-Fable.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		41B3724068C23CEE0659006E0ABBD14A /* LOTLayerContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LOTLayerContainer.h; sourceTree = "<group>"; };
 		41E0AEF596236173FE8FAF5E787354C3 /* LOTAssetGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LOTAssetGroup.m; sourceTree = "<group>"; };
 		41E45ACC0EFBEA74988E64ECE616A956 /* YGEnums.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = YGEnums.cpp; path = yoga/YGEnums.cpp; sourceTree = "<group>"; };
@@ -447,7 +450,6 @@
 		580C85F5A6A6226DB2D73DC2C1EE83D7 /* LRNContainerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LRNContainerView.h; path = src/ios/LottieReactNative/LRNContainerView.h; sourceTree = "<group>"; };
 		58A7BDC10DE976E05B41600AF1016A74 /* LOTComposition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LOTComposition.h; sourceTree = "<group>"; };
 		58EDB559829F3C206E81CE377BB0508C /* RNVectorIcons.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = RNVectorIcons.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		58EE4DCA1FF89B4B1763BBDA3B318DED /* Pods-FableApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FableApp.release.xcconfig"; sourceTree = "<group>"; };
 		58F47554F3BB9BD758A408F8E521AF35 /* ReactNativeFabric.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ReactNativeFabric.xcconfig; sourceTree = "<group>"; };
 		595594FABB2CC120C3EA86504C992CD7 /* RCTSlider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTSlider.h; sourceTree = "<group>"; };
 		5B0AC4555A08701A9F1760172610E0AF /* ANSCompatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ANSCompatibility.h; path = iOS/Crashlytics.framework/Headers/ANSCompatibility.h; sourceTree = "<group>"; };
@@ -456,6 +458,7 @@
 		5D11B3C1BCA9B37FD3D2FEC339E284DD /* RCTFPSGraph.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTFPSGraph.m; sourceTree = "<group>"; };
 		5D2DCCE412C63188C6C4FF746637EBB0 /* RCTMultipartDataTask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTMultipartDataTask.h; sourceTree = "<group>"; };
 		5E590198364A2B5C078139FE1F4D1559 /* RCTAccessibilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTAccessibilityManager.m; sourceTree = "<group>"; };
+		5F3EF2D84C9ACFE8BC4397E0ACBA86A7 /* Pods-Fable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Fable.debug.xcconfig"; sourceTree = "<group>"; };
 		5F92CF0A03703FE3D4BFE884CF813CCB /* LOTValueInterpolator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LOTValueInterpolator.m; sourceTree = "<group>"; };
 		5F982FE2D1E6EF2542E8CFCE311CAC82 /* RCTAssert.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTAssert.m; sourceTree = "<group>"; };
 		5FCE4C80A62E26FFCC99F5580FBC86B7 /* RCTRedBoxExtraDataViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTRedBoxExtraDataViewController.h; sourceTree = "<group>"; };
@@ -468,6 +471,7 @@
 		640BAD579B5DF4EE18F7BC0942C936F3 /* RCTBorderDrawing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTBorderDrawing.m; sourceTree = "<group>"; };
 		64D22407593D00DC9AF778046865EF8A /* RCTTouchHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTTouchHandler.h; sourceTree = "<group>"; };
 		6526E6F75FA7C91F3012B3532AD4DFE7 /* RCTProfileTrampoline-arm64.S */ = {isa = PBXFileReference; includeInIndex = 1; path = "RCTProfileTrampoline-arm64.S"; sourceTree = "<group>"; };
+		6549E92F02563625785D8EF1BF0FCDA3 /* Pods-Fable-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Fable-acknowledgements.plist"; sourceTree = "<group>"; };
 		65A346988A162EDE9368EEDA207C15A5 /* RNKeychainManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RNKeychainManager.h; path = RNKeychainManager/RNKeychainManager.h; sourceTree = "<group>"; };
 		65A6773018B22E506202BA4423D0422F /* RCTSafeAreaViewManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTSafeAreaViewManager.m; sourceTree = "<group>"; };
 		662DA95D225B78D6C307BFDBCB393FDF /* RCTI18nManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTI18nManager.m; sourceTree = "<group>"; };
@@ -478,12 +482,10 @@
 		689A34F13C35B70EE0589CDB467779AA /* lottie-ios.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = "lottie-ios.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		69458B9E88BE31AF2F357C481DC48E23 /* RCTSafeAreaViewManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTSafeAreaViewManager.h; sourceTree = "<group>"; };
 		6AD06FC5BE572FE60D1C66D784C885AD /* RCTBridge+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RCTBridge+Private.h"; sourceTree = "<group>"; };
-		6B10EF4A8DC42301653ABFE4E6E21EA0 /* Pods-FableApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FableApp-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6B9F69E56545441C5480EFD08E108E8F /* LOTRepeaterRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LOTRepeaterRenderer.h; sourceTree = "<group>"; };
 		6C0409BEF74F3ABD7B29E46B7BB0136B /* RCTScrollContentViewManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTScrollContentViewManager.h; sourceTree = "<group>"; };
 		6C962B06BE8B6DBB7466F5F163BFD070 /* LOTAnimationView_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LOTAnimationView_Internal.h; sourceTree = "<group>"; };
 		6CDA1639BABC00F51EE67F973573C2D8 /* LOTPathAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LOTPathAnimator.m; sourceTree = "<group>"; };
-		6D02410C2E5FDCC108A0839E41B4BE50 /* liblottie-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "liblottie-ios.a"; path = "liblottie-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D9D211E96CFCC1D90BFFC8AD00F9932 /* RCTScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTScrollView.m; sourceTree = "<group>"; };
 		6DE5A0D6B0B227B42C5567B0C921507A /* UIColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UIColor.h; sourceTree = "<group>"; };
 		6DF5F87730AF49769A0CABD4ECB8953D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
@@ -503,6 +505,7 @@
 		718D8D144CF7E5EF7ACCBF2D69BC4A46 /* LOTTransformInterpolator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LOTTransformInterpolator.m; sourceTree = "<group>"; };
 		71D1AF371B456F9A5BF1898FD485425A /* RCTRedBox.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTRedBox.m; sourceTree = "<group>"; };
 		72182235541478C66007C390DC2D1B55 /* RCTSegmentedControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTSegmentedControl.h; sourceTree = "<group>"; };
+		725DD8B0990B8BE62DC9499E2804BDF2 /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libReact.a; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		72927D6DC7859E13198B56765C82287C /* RCTPlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTPlatform.h; sourceTree = "<group>"; };
 		73ACA3D97E87B285F78500AB432D2568 /* YGStyle.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = YGStyle.cpp; path = yoga/YGStyle.cpp; sourceTree = "<group>"; };
 		74BADE57D652B247C48374C499532C31 /* Foundation.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = Foundation.ttf; path = Fonts/Foundation.ttf; sourceTree = "<group>"; };
@@ -547,6 +550,7 @@
 		8677023EE4B061B3E63B634A593E3122 /* RCTFabricSurfaceHostingProxyRootView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTFabricSurfaceHostingProxyRootView.h; sourceTree = "<group>"; };
 		86E209C08B5EAF8EE5602E1B094F9BF0 /* RCTFrameUpdate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTFrameUpdate.h; sourceTree = "<group>"; };
 		877A9D73CDEC2B97342873C81BA4E5C0 /* LOTTransformInterpolator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LOTTransformInterpolator.h; sourceTree = "<group>"; };
+		87ADE25146265E205EFF667729A21F1B /* Pods-Fable-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Fable-acknowledgements.markdown"; sourceTree = "<group>"; };
 		886E4D4C00D3D3450840CFB7AB51EF9D /* Feather.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = Feather.ttf; path = Fonts/Feather.ttf; sourceTree = "<group>"; };
 		88BA97D7A0EA1B75B9A0A4C419A2263E /* LOTAnimatorNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LOTAnimatorNode.m; sourceTree = "<group>"; };
 		88BD29345100F3237EF4B0C1372E204E /* UIView+React.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+React.h"; sourceTree = "<group>"; };
@@ -557,9 +561,7 @@
 		8B4442E41E0BBFCE942180A48BBE66BB /* RCTModalHostViewManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTModalHostViewManager.m; sourceTree = "<group>"; };
 		8B4CD2DD0A1E476DF71163C32DA33676 /* RCTUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTUtils.h; sourceTree = "<group>"; };
 		8B9C6F9A793DACACA0BBDF25F3A4C528 /* LOTShapePath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LOTShapePath.h; sourceTree = "<group>"; };
-		8C3FF221982E2A52354227D9146BD680 /* liblottie-react-native.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "liblottie-react-native.a"; path = "liblottie-react-native.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CD4A0B7476031E55A14242B2A30072C /* RCTLog.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = RCTLog.mm; sourceTree = "<group>"; };
-		8D566E9008657A149C764CC23B14CCCB /* libyoga.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libyoga.a; path = libyoga.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D96D77A32686F08AE4ADF9F37A7C001 /* RCTNavItemManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTNavItemManager.m; sourceTree = "<group>"; };
 		8DB331D62E03B90D571016097AB0A7E0 /* CLSAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSAttributes.h; path = iOS/Crashlytics.framework/Headers/CLSAttributes.h; sourceTree = "<group>"; };
 		8DB41586F3958B47D949CE247274E58D /* RCTSurfaceRootShadowView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTSurfaceRootShadowView.h; sourceTree = "<group>"; };
@@ -582,6 +584,7 @@
 		9635FA0F2AEC5B2953D7D3F7693BD5CC /* LOTShapeCircle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LOTShapeCircle.h; sourceTree = "<group>"; };
 		976B760FE749F04EC70BCC932B861D5B /* LOTAnimatedSwitch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LOTAnimatedSwitch.h; sourceTree = "<group>"; };
 		989E59D5047264865CB769292C675B77 /* RCTInvalidating.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTInvalidating.h; sourceTree = "<group>"; };
+		98B2D9C544727A6042D15228D3CC59F9 /* Pods-Fable-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Fable-dummy.m"; sourceTree = "<group>"; };
 		98FEB9F27B1C603AC67B9B331B23280F /* Ionicons.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = Ionicons.ttf; path = Fonts/Ionicons.ttf; sourceTree = "<group>"; };
 		99920CC2B26D17BD56192FCE51FFA209 /* React.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = React.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		99994405C53025CBD211D12BAC49346D /* RCTLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTLog.h; sourceTree = "<group>"; };
@@ -592,14 +595,12 @@
 		9C200002AA8C0BC4FEC70A7EE688FA5B /* LRNContainerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LRNContainerView.m; path = src/ios/LottieReactNative/LRNContainerView.m; sourceTree = "<group>"; };
 		9C9AC9B79761A4003E7AC3D52E8F4A75 /* RCTSurfaceSizeMeasureMode.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = RCTSurfaceSizeMeasureMode.mm; sourceTree = "<group>"; };
 		9D30972886BE7D88CA501FB42AD9E02A /* Example4.gif */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.gif; name = Example4.gif; path = docs/gifs/Example4.gif; sourceTree = "<group>"; };
-		9E2C1406A77361E6EF6CA14D146DDEF5 /* Pods-FableApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FableApp-acknowledgements.plist"; sourceTree = "<group>"; };
 		9EE642F839F2870B4D0EBD34648A1996 /* RCTKeyCommands.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTKeyCommands.m; sourceTree = "<group>"; };
 		A17866D8E26A5BB10815726F61B67511 /* RCTRootViewDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTRootViewDelegate.h; sourceTree = "<group>"; };
 		A1AECE47F4CB9F7651D382523EE201EA /* RCTShadowView+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RCTShadowView+Internal.h"; sourceTree = "<group>"; };
 		A1AEFD8688391D0C3F7A678B93804995 /* LOTKeypath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LOTKeypath.h; sourceTree = "<group>"; };
 		A1FF570BAB23B0DF6FAB6BB21C6697E4 /* RCTRefreshControlManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTRefreshControlManager.h; sourceTree = "<group>"; };
 		A257FEAC78EB0E131CC90889CA48AAF8 /* LOTArrayInterpolator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LOTArrayInterpolator.h; sourceTree = "<group>"; };
-		A25C14812F41534AD791319C39A87107 /* libRNKeychain.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libRNKeychain.a; path = libRNKeychain.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A265577C06A5C4BFFCB3C5BCC757018D /* RCTUIUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTUIUtils.m; sourceTree = "<group>"; };
 		A2E183B8B60FA23CE68A60D5AD1D3DD5 /* UIView+React.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+React.m"; sourceTree = "<group>"; };
 		A375824FE7E3ADF3959065EDA26F5D6A /* RCTErrorInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTErrorInfo.h; sourceTree = "<group>"; };
@@ -609,6 +610,7 @@
 		A4AB4ADC778347E4C2105FFA97AA7903 /* RCTSliderManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTSliderManager.h; sourceTree = "<group>"; };
 		A4DA6B231532E1E5D68BC14A6251BBFB /* RCTFrameUpdate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTFrameUpdate.m; sourceTree = "<group>"; };
 		A4E5013A2D975C87E40C22E059E6FAFA /* RCTConvert+CoreLocation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RCTConvert+CoreLocation.m"; sourceTree = "<group>"; };
+		A513F58D68D99B65E922FB6B522B78CA /* liblottie-react-native.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "liblottie-react-native.a"; path = "liblottie-react-native.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A539E9C4A3B8040497A408402FBCB5B3 /* RCTSegmentedControlManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTSegmentedControlManager.h; sourceTree = "<group>"; };
 		A5E2F71CF43506EFB9F7065BCC7B919D /* RCTNavigatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTNavigatorManager.m; sourceTree = "<group>"; };
 		A61E08527EFC3DBEDD4BFA0B5C45104C /* Answers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Answers.h; path = iOS/Crashlytics.framework/Headers/Answers.h; sourceTree = "<group>"; };
@@ -616,7 +618,6 @@
 		A77AB0B00109A3BA3D613DC08839E585 /* RCTView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTView.h; sourceTree = "<group>"; };
 		A835CD608A996A824C59A9C6DF240ED1 /* Example1.gif */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.gif; name = Example1.gif; path = docs/gifs/Example1.gif; sourceTree = "<group>"; };
 		A8AEC0DF6B3AE654C5C7AD99B1B5BC24 /* LOTPointInterpolator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LOTPointInterpolator.m; sourceTree = "<group>"; };
-		A928D894F81F94A689D8673381B41189 /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libReact.a; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA4A11D3DBC94B22EDC9B8A544E82F47 /* LOTShapeTrimPath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LOTShapeTrimPath.h; sourceTree = "<group>"; };
 		AB60EB0B6488672D42EBDC7E88649FBB /* UIColor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UIColor.m; sourceTree = "<group>"; };
 		ABEEF3C578BF2A69BF9349223F453FE5 /* UIColor+Expanded.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor+Expanded.h"; sourceTree = "<group>"; };
@@ -630,7 +631,6 @@
 		AF9EC08371CBAC0FF3F3AE39FF900AC5 /* RCTScrollViewManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTScrollViewManager.m; sourceTree = "<group>"; };
 		B00A8E42E469BC14B1D92332DBC4F5F6 /* RCTSafeAreaShadowView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTSafeAreaShadowView.m; sourceTree = "<group>"; };
 		B02090F81F53D01BC2B179DAD2D8C296 /* LOTShapeRectangle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LOTShapeRectangle.h; sourceTree = "<group>"; };
-		B0414B62DAD21BACF6608A66210BA5B3 /* Pods-FableApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FableApp.debug.xcconfig"; sourceTree = "<group>"; };
 		B04B32980AA1084F7F41231C61F4CA88 /* LOTGradientFillRender.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LOTGradientFillRender.h; sourceTree = "<group>"; };
 		B108FDF195E5B9F297F34551E4206851 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		B2C39EF054B8EA06D602D494AA12C1A3 /* RCTRootContentView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTRootContentView.h; sourceTree = "<group>"; };
@@ -648,7 +648,6 @@
 		BAAB51F982A1842A4D0C43F51F15276D /* ReactNativeFabric-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ReactNativeFabric-dummy.m"; sourceTree = "<group>"; };
 		BAC8542C6CE13171797411A81AB3C84E /* RCTRefreshControlManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTRefreshControlManager.m; sourceTree = "<group>"; };
 		BB3B012A90D1068408454DA9AB4E3AEC /* LOTPolystarAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LOTPolystarAnimator.h; sourceTree = "<group>"; };
-		BB6B6A588F9D9E249C95BFD1FDEA4821 /* libRNVectorIcons.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libRNVectorIcons.a; path = libRNVectorIcons.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBBD9B906422B8BD14393A513D2A5CD0 /* LOTAnimationView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LOTAnimationView.m; sourceTree = "<group>"; };
 		BC6372A59FE6C6A04E469F5E269C0FE1 /* RCTLayoutAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTLayoutAnimation.m; sourceTree = "<group>"; };
 		BC66AB504306F210F02D5769C137F9C7 /* LOTAssetGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LOTAssetGroup.h; sourceTree = "<group>"; };
@@ -665,6 +664,7 @@
 		C24BB42E10F43ACDAC6EC4CF312A3D95 /* RCTTouchEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTTouchEvent.h; sourceTree = "<group>"; };
 		C26F307DE1B062670B296DD4781FDB10 /* LOTStrokeRenderer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LOTStrokeRenderer.m; sourceTree = "<group>"; };
 		C2801B197EF4D76C35350C58962B6E50 /* RCTCxxConvert.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTCxxConvert.m; sourceTree = "<group>"; };
+		C2C10045C23FC9CE6537255A2000518F /* liblottie-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "liblottie-ios.a"; path = "liblottie-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C38ACCD623EAE0877A4023F5DDAF022D /* LOTMask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LOTMask.h; sourceTree = "<group>"; };
 		C39A75AB11AE00B05E37BA5BB49717B9 /* RCTMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTMacros.h; sourceTree = "<group>"; };
 		C3C8E382C9895723B72C967F7FF18C7E /* RCTDatePickerManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTDatePickerManager.m; sourceTree = "<group>"; };
@@ -672,7 +672,9 @@
 		C3FD3DD794B8E5F792153199230A4A4C /* LOTShapeRepeater.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LOTShapeRepeater.h; sourceTree = "<group>"; };
 		C520EDF2640AC269B1288F4344D2ABD0 /* RCTEventDispatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTEventDispatcher.h; sourceTree = "<group>"; };
 		C545975421E0F172AD708894E0420628 /* LOTShapeFill.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LOTShapeFill.m; sourceTree = "<group>"; };
+		C5845F9BB0ED8FD144751650BD5D9FFF /* Pods-Fable-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Fable-resources.sh"; sourceTree = "<group>"; };
 		C60DC1CCA564B8C50818B5F9A2918C6B /* RCTJSCSamplingProfiler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTJSCSamplingProfiler.h; sourceTree = "<group>"; };
+		C681296D3AC91A0FA673AFE23C382A7D /* Pods-Fable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Fable.release.xcconfig"; sourceTree = "<group>"; };
 		C72C62CE7F6CF9A310D7CA8A58661AD6 /* LottieWalkthrough.gif */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.gif; name = LottieWalkthrough.gif; path = docs/gifs/LottieWalkthrough.gif; sourceTree = "<group>"; };
 		C744E1AC54F49DEB1488AE4912905265 /* RCTJSCErrorHandling.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = RCTJSCErrorHandling.mm; sourceTree = "<group>"; };
 		C76CE15534564262A50DB5AC8B842FD0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
@@ -704,7 +706,6 @@
 		D7808430F748B9BAE8A459189C88DF0F /* RCTBridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTBridge.h; sourceTree = "<group>"; };
 		D780FED3DE751F651E3FF9DEA8DD168B /* RCTModalHostView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTModalHostView.h; sourceTree = "<group>"; };
 		D78F40B9FBE739ACC5FEC2F9F5BEF78A /* LOTAsset.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LOTAsset.m; sourceTree = "<group>"; };
-		D79819016DE18268F4AAB0CF3379CE5A /* Pods-FableApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FableApp-frameworks.sh"; sourceTree = "<group>"; };
 		D83117B26B05EC210C9596E047ABBF69 /* RCTManagedPointer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTManagedPointer.h; sourceTree = "<group>"; };
 		D84FEEA164245DAC6F5C710D56709123 /* Octicons.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = Octicons.ttf; path = Fonts/Octicons.ttf; sourceTree = "<group>"; };
 		D860D0B72135B48A2A9613F8F429F6D5 /* RNKeychain-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RNKeychain-prefix.pch"; sourceTree = "<group>"; };
@@ -747,12 +748,12 @@
 		EC1931A71A751CB9EAD13A552A01D6EC /* RCTURLRequestHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTURLRequestHandler.h; sourceTree = "<group>"; };
 		EDEAD823F84B77A3496BE9423687CD29 /* RCTMultipartStreamReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTMultipartStreamReader.h; sourceTree = "<group>"; };
 		EE12ECA30E726A670F174700B29A6F43 /* LRNAnimationViewManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LRNAnimationViewManager.h; path = src/ios/LottieReactNative/LRNAnimationViewManager.h; sourceTree = "<group>"; };
+		EE546B6B1FBD4D8CF78EDDB63F313F16 /* libReactNativeFabric.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libReactNativeFabric.a; path = libReactNativeFabric.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF12C4F2BEBD2AB92295151CC2D28968 /* RCTI18nUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTI18nUtil.h; sourceTree = "<group>"; };
 		EF78C08ABD9509F0BB94F1A423E30367 /* yoga.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = yoga.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F04BD14F1C329859741C4EA4EECE60D0 /* SMXAnswers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SMXAnswers.m; path = ios/SMXCrashlytics/SMXAnswers.m; sourceTree = "<group>"; };
 		F082F31F615E0B0B6C881BF3A32DFEEB /* RCTJavaScriptLoader.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = RCTJavaScriptLoader.mm; sourceTree = "<group>"; };
 		F0F741C534593559DB7D42B900382463 /* RCTDeviceInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTDeviceInfo.h; sourceTree = "<group>"; };
-		F166A7FA99AA6861CE44B025CDF70328 /* libReactNativeFabric.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libReactNativeFabric.a; path = libReactNativeFabric.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F17438EF42F0A3B60372BA9C1EF9B831 /* RCTNavigator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTNavigator.m; sourceTree = "<group>"; };
 		F204AB5482F7143A2A90E070367E9C05 /* RCTAssert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTAssert.h; sourceTree = "<group>"; };
 		F22D045D7E76578FFAF5DC0B884E7705 /* YGNodePrint.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = YGNodePrint.cpp; path = yoga/YGNodePrint.cpp; sourceTree = "<group>"; };
@@ -760,10 +761,10 @@
 		F2777DAA7F31FB829D5BB7AE88E4BB22 /* RCTKeyboardObserver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTKeyboardObserver.m; sourceTree = "<group>"; };
 		F406C353AB20E103DBCAF2B8F23445B8 /* LOTShapeTrimPath.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LOTShapeTrimPath.m; sourceTree = "<group>"; };
 		F468E4957BA953CF74864B4BABBC1A8A /* RCTNullability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTNullability.h; sourceTree = "<group>"; };
-		F4E8BB4619B9E6855BFDA4646A5B7AFB /* libPods-FableApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-FableApp.a"; path = "libPods-FableApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5334AC5824567C9D46481D40E7A8008 /* RCTScrollContentViewManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTScrollContentViewManager.m; sourceTree = "<group>"; };
 		F5781576F7A8D282BF249AB251D272C1 /* RCTSurfaceHostingProxyRootView.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = RCTSurfaceHostingProxyRootView.mm; sourceTree = "<group>"; };
 		F64266AF6769D8C422E1EDBD85529F43 /* RCTProfileTrampoline-arm.S */ = {isa = PBXFileReference; includeInIndex = 1; path = "RCTProfileTrampoline-arm.S"; sourceTree = "<group>"; };
+		F7E22CDCCE422DD67A0D90D732B5E646 /* libRNKeychain.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libRNKeychain.a; path = libRNKeychain.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F80BE804AE7CA5581F017D059A68215E /* LOTTrimPathNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LOTTrimPathNode.h; sourceTree = "<group>"; };
 		F87AD1E79EBB0184D6E64D6BB3FFAF4E /* RCTTabBarItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTTabBarItem.m; sourceTree = "<group>"; };
 		F883AE4F16C071D743664CE007B5339B /* RCTReloadCommand.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTReloadCommand.m; sourceTree = "<group>"; };
@@ -784,12 +785,25 @@
 		FCAC91B0094DA451BD332EBCC02AF038 /* RCTNavigatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTNavigatorManager.h; sourceTree = "<group>"; };
 		FCD44AE4804FFF0B02BDFFFA9BC43C37 /* LOTMaskContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LOTMaskContainer.h; sourceTree = "<group>"; };
 		FD6AD3776D93D1C030B4E630EE9E4B98 /* RCTSurfaceStage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTSurfaceStage.m; sourceTree = "<group>"; };
-		FD930C8470666B55B90D53E3A50A1E43 /* Pods-FableApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FableApp-dummy.m"; sourceTree = "<group>"; };
 		FFCB0DCD2F52590B3B29EF03704A828A /* RCTProgressViewManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTProgressViewManager.h; sourceTree = "<group>"; };
 		FFD1B758013E07CEA7915C7D61E4391C /* RCTScrollViewManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTScrollViewManager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		17F332C9D728B806213E29F03A7320A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D1F2DD1923B6369A3BDD25F7237A125 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		48918F7BFED104C9ED2E4F871F439E50 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -798,7 +812,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4AC6D0D35B9041B826E5118652CFD418 /* Frameworks */ = {
+		54DE9748ED36A42AA7C7916478D38DB3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -812,28 +826,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		908016D65AEA5612E0DDC6AB7F0B1AB9 /* Frameworks */ = {
+		714BFE201109E3EB14446EF383267C52 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A434FABE5248CB75CA1670FC95182C8A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AC648D0A803B36509341FC0C5F1CA680 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B50412A33DAB4ECB3AD6358D3A928864 /* Frameworks */ = {
+		7B69C298E3BEA4C3595BFCE06C009A5E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -843,6 +843,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0818F42DBAFC34FB3B982CDFECD5649C /* Pods-Fable */ = {
+			isa = PBXGroup;
+			children = (
+				87ADE25146265E205EFF667729A21F1B /* Pods-Fable-acknowledgements.markdown */,
+				6549E92F02563625785D8EF1BF0FCDA3 /* Pods-Fable-acknowledgements.plist */,
+				98B2D9C544727A6042D15228D3CC59F9 /* Pods-Fable-dummy.m */,
+				0305BBDFB5B7A80E40EC0673ED4F3FEB /* Pods-Fable-frameworks.sh */,
+				C5845F9BB0ED8FD144751650BD5D9FFF /* Pods-Fable-resources.sh */,
+				5F3EF2D84C9ACFE8BC4397E0ACBA86A7 /* Pods-Fable.debug.xcconfig */,
+				C681296D3AC91A0FA673AFE23C382A7D /* Pods-Fable.release.xcconfig */,
+			);
+			name = "Pods-Fable";
+			path = "Target Support Files/Pods-Fable";
+			sourceTree = "<group>";
+		};
 		0BC0996C37BC53EFFBD1F3C0EA86E69C /* AnimatableProperties */ = {
 			isa = PBXGroup;
 			children = (
@@ -995,21 +1010,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		1F7E823BCFE6FBFAB8704B56B34032CE /* Pods-FableApp */ = {
-			isa = PBXGroup;
-			children = (
-				6B10EF4A8DC42301653ABFE4E6E21EA0 /* Pods-FableApp-acknowledgements.markdown */,
-				9E2C1406A77361E6EF6CA14D146DDEF5 /* Pods-FableApp-acknowledgements.plist */,
-				FD930C8470666B55B90D53E3A50A1E43 /* Pods-FableApp-dummy.m */,
-				D79819016DE18268F4AAB0CF3379CE5A /* Pods-FableApp-frameworks.sh */,
-				074A4048018D1D162C830CC093277457 /* Pods-FableApp-resources.sh */,
-				B0414B62DAD21BACF6608A66210BA5B3 /* Pods-FableApp.debug.xcconfig */,
-				58EE4DCA1FF89B4B1763BBDA3B318DED /* Pods-FableApp.release.xcconfig */,
-			);
-			name = "Pods-FableApp";
-			path = "Target Support Files/Pods-FableApp";
-			sourceTree = "<group>";
-		};
 		1FCA82407CC987F9780C5384F483C508 /* ScrollView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1136,6 +1136,21 @@
 				3191D94ACDEAC7E2E1CDC3CFED242E6D /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4787FCDA2FB6F634D7F5258EBD1874A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2C10045C23FC9CE6537255A2000518F /* liblottie-ios.a */,
+				A513F58D68D99B65E922FB6B522B78CA /* liblottie-react-native.a */,
+				41A71AC46EA557B5BB0832AF87CE0970 /* libPods-Fable.a */,
+				725DD8B0990B8BE62DC9499E2804BDF2 /* libReact.a */,
+				EE546B6B1FBD4D8CF78EDDB63F313F16 /* libReactNativeFabric.a */,
+				F7E22CDCCE422DD67A0D90D732B5E646 /* libRNKeychain.a */,
+				38E29AED07A8C6931C1D90B01B0A2FA8 /* libRNVectorIcons.a */,
+				0CC9E0FBBCB30E638F1FBFF765E94C5E /* libyoga.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		5D5650E3997D68146F9540C30A60A00A /* AnimatorNodes */ = {
@@ -1288,20 +1303,20 @@
 			path = React/Views;
 			sourceTree = "<group>";
 		};
+		703D863E39F41E9AA503C71E454B5A6D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0818F42DBAFC34FB3B982CDFECD5649C /* Pods-Fable */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
 		74D9176034E073AE3CBBDC49BF72FDF3 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
 				EF78C08ABD9509F0BB94F1A423E30367 /* yoga.podspec */,
 			);
 			name = Pod;
-			sourceTree = "<group>";
-		};
-		7CFB5BECD53C2A6C265150C36364BDE5 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				1F7E823BCFE6FBFAB8704B56B34032CE /* Pods-FableApp */,
-			);
-			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -1311,8 +1326,8 @@
 				15480E9AD4FCFA0BD52F9658C9F854E9 /* Development Pods */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
 				1DECF7299F0875E9BCB9492390207331 /* Pods */,
-				8EA713CD9423C54157429BC855966544 /* Products */,
-				7CFB5BECD53C2A6C265150C36364BDE5 /* Targets Support Files */,
+				4787FCDA2FB6F634D7F5258EBD1874A8 /* Products */,
+				703D863E39F41E9AA503C71E454B5A6D /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1405,21 +1420,6 @@
 			);
 			name = Surface;
 			path = Surface;
-			sourceTree = "<group>";
-		};
-		8EA713CD9423C54157429BC855966544 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				6D02410C2E5FDCC108A0839E41B4BE50 /* liblottie-ios.a */,
-				8C3FF221982E2A52354227D9146BD680 /* liblottie-react-native.a */,
-				F4E8BB4619B9E6855BFDA4646A5B7AFB /* libPods-FableApp.a */,
-				A928D894F81F94A689D8673381B41189 /* libReact.a */,
-				F166A7FA99AA6861CE44B025CDF70328 /* libReactNativeFabric.a */,
-				A25C14812F41534AD791319C39A87107 /* libRNKeychain.a */,
-				BB6B6A588F9D9E249C95BFD1FDEA4821 /* libRNVectorIcons.a */,
-				8D566E9008657A149C764CC23B14CCCB /* libyoga.a */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		8F676F123D4D16061303166F8FA5EED3 /* InterpolatorNodes */ = {
@@ -1873,36 +1873,44 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		23C44D9B69CF25C28FF7839552C42072 /* Headers */ = {
+		187E0B631B9E10116B2929BFD823A173 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1035151B3610575F60931868675BD73B /* RNVectorIconsManager.h in Headers */,
+				739ED5F0FB045B5CBA14B80D52BADEA4 /* Utils.h in Headers */,
+				EB79CB93106176EFC50E30CEF5C35783 /* YGEnums.h in Headers */,
+				628F50755C7AB7758FEDD9AE332048A7 /* YGLayout.h in Headers */,
+				98D975C11713DA19B3B399F7182E2877 /* YGMacros.h in Headers */,
+				38D6A1297F1BB0A0FE4DC95DBBFD7C53 /* YGNode.h in Headers */,
+				883803446162042134D864B15AEF36EB /* YGNodePrint.h in Headers */,
+				40351B581492ADA707BC4E34ED8F1B45 /* YGStyle.h in Headers */,
+				0EC4403F016E23E51926864BFB70154E /* Yoga-internal.h in Headers */,
+				69986970C8621FA1E99557E8E236C6D8 /* Yoga.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4DCFE5F0CAD576023080C4ED69A2B815 /* Headers */ = {
+		5E6A8FAFA62ACC9A2E9BC3AADAA06670 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71BE3AEFA60E4837F13240AF2CBBA28D /* SMXAnswers.h in Headers */,
-				640FC3DE56786F6881C6A414EEAF537B /* SMXCrashlytics.h in Headers */,
+				07E40E463506F823FBF19BCF22D58768 /* SMXAnswers.h in Headers */,
+				BE14EE5D6BF399A7F477F662D523A9C4 /* SMXCrashlytics.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7F21862FB35A3A7733F3B05D8AA82596 /* Headers */ = {
+		658CA08183202D4BC2C327919164D57C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10261E23D74E9E55C20200117239BE1D /* Utils.h in Headers */,
-				82CE21C922DBD8638FA9DFE208F9D3F5 /* YGEnums.h in Headers */,
-				09544AAD7788E02F7D7FE9A28E270A34 /* YGLayout.h in Headers */,
-				194FF58469CADC1ABE3F17F1FF23B1E7 /* YGMacros.h in Headers */,
-				9D75E712EB2AF2A37DEB07B5FF27D841 /* YGNode.h in Headers */,
-				1E137C618C2284BE4E5480EB9D505759 /* YGNodePrint.h in Headers */,
-				B68977A934DB900F7A02E627690BD123 /* YGStyle.h in Headers */,
-				F30B5DD74D9D860150F56867AA15DB33 /* Yoga-internal.h in Headers */,
-				CE309CF9C48F2D28EE54563354025DA8 /* Yoga.h in Headers */,
+				9F18ADBAF5E7D3F9DE965EF509BA75EA /* RNKeychainManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FE35E45D94524BD75EFBB2FE4720418 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				863A64D6D3777EE28D19903AB9E54AAD /* RNVectorIconsManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1981,14 +1989,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DF0477626F7246D534CBEA289C100942 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				036E0A25FE4AEF6F82426B6E0482A36D /* RNKeychainManager.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E414C93450C5B38B57145694F66E5CB1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -2001,40 +2001,22 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1B541B56F4BC61A03983E2C3552D5C77 /* RNKeychain */ = {
+		469B63B6E33293A2C923D86B651D1A7C /* RNKeychain */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5733D9AF6C97E1C5DDD924917E8DF97F /* Build configuration list for PBXNativeTarget "RNKeychain" */;
+			buildConfigurationList = 66FCE0F07039B35CC9AA4F35D9F07E03 /* Build configuration list for PBXNativeTarget "RNKeychain" */;
 			buildPhases = (
-				C8C1F0DBCA55804A8154A72CCB36BDA2 /* Sources */,
-				4AC6D0D35B9041B826E5118652CFD418 /* Frameworks */,
-				DF0477626F7246D534CBEA289C100942 /* Headers */,
+				708B95886F893F2D65BA04F4E296BE76 /* Sources */,
+				2D1F2DD1923B6369A3BDD25F7237A125 /* Frameworks */,
+				658CA08183202D4BC2C327919164D57C /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DF0EFEBE266B864A8614F857D631A4F6 /* PBXTargetDependency */,
+				6C08F0D1E3B514D43C0E9B83912EA784 /* PBXTargetDependency */,
 			);
 			name = RNKeychain;
 			productName = RNKeychain;
-			productReference = A25C14812F41534AD791319C39A87107 /* libRNKeychain.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		3CAD39BB7A8D35BFECE025FE1662EB0A /* ReactNativeFabric */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 83E9FEF22BB1DEED2F659003D5DBCDED /* Build configuration list for PBXNativeTarget "ReactNativeFabric" */;
-			buildPhases = (
-				E42E3325037EE166DA6743CA62115497 /* Sources */,
-				908016D65AEA5612E0DDC6AB7F0B1AB9 /* Frameworks */,
-				4DCFE5F0CAD576023080C4ED69A2B815 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				87BBFACF78237442B11FEED9DB67EE5B /* PBXTargetDependency */,
-			);
-			name = ReactNativeFabric;
-			productName = ReactNativeFabric;
-			productReference = F166A7FA99AA6861CE44B025CDF70328 /* libReactNativeFabric.a */;
+			productReference = F7E22CDCCE422DD67A0D90D732B5E646 /* libRNKeychain.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		58C59A321CE3E36BFCB567322DDFBAB6 /* lottie-ios */ = {
@@ -2051,30 +2033,65 @@
 			);
 			name = "lottie-ios";
 			productName = "lottie-ios";
-			productReference = 6D02410C2E5FDCC108A0839E41B4BE50 /* liblottie-ios.a */;
+			productReference = C2C10045C23FC9CE6537255A2000518F /* liblottie-ios.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		A04A4FCCF78222E4DB53346253F11C2F /* Pods-FableApp */ = {
+		85812F5D4C9E21C584E61D45DFA9EBF5 /* Pods-Fable */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9B06DC0B57921EAFE7FFCA86F8C09E75 /* Build configuration list for PBXNativeTarget "Pods-FableApp" */;
+			buildConfigurationList = 74373686A7E2374FA75D18F1509C2096 /* Build configuration list for PBXNativeTarget "Pods-Fable" */;
 			buildPhases = (
-				9228257373E2349F8214CBAC532114E4 /* Sources */,
-				B50412A33DAB4ECB3AD6358D3A928864 /* Frameworks */,
+				626D397DA9977065B0F1C3355D2C2E82 /* Sources */,
+				17F332C9D728B806213E29F03A7320A2 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DC3162F5137EF6E81C00971610C52333 /* PBXTargetDependency */,
-				65DEC94F2AE8DEE00801FE10C67AC676 /* PBXTargetDependency */,
-				B0434C0BE3D1266BEF5F399B9290F425 /* PBXTargetDependency */,
-				5C674E1D25D464556A49D80032DEB6A2 /* PBXTargetDependency */,
-				25A196C423D4686E476DD4343F132406 /* PBXTargetDependency */,
-				8E562DE2F4BC96461E14018BA05215FE /* PBXTargetDependency */,
-				FC68202165618C2FCE8218E772635A4C /* PBXTargetDependency */,
+				53EA45EB717FC2EB7F3EA6AF507D3E85 /* PBXTargetDependency */,
+				19D55B04DBB525DE7A1B3E7273926587 /* PBXTargetDependency */,
+				BED6D08522BDB3FD8EC1DCB4535F1552 /* PBXTargetDependency */,
+				2993EFA720A4724BECD7F29F614251B7 /* PBXTargetDependency */,
+				E2E694B452FB975D9DFA695B7DC246D5 /* PBXTargetDependency */,
+				56D4BC9B6D92547A5B505BE834829B27 /* PBXTargetDependency */,
+				052D8E8FB529C588991D3A12ECF9027C /* PBXTargetDependency */,
 			);
-			name = "Pods-FableApp";
-			productName = "Pods-FableApp";
-			productReference = F4E8BB4619B9E6855BFDA4646A5B7AFB /* libPods-FableApp.a */;
+			name = "Pods-Fable";
+			productName = "Pods-Fable";
+			productReference = 41A71AC46EA557B5BB0832AF87CE0970 /* libPods-Fable.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9D4E5C9908B9CA51A8F70FEBD7C4B3A3 /* RNVectorIcons */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A41231973258468104BDE47D5037BC39 /* Build configuration list for PBXNativeTarget "RNVectorIcons" */;
+			buildPhases = (
+				C3B9B8FA541C56440081EA5327AE79C5 /* Sources */,
+				54DE9748ED36A42AA7C7916478D38DB3 /* Frameworks */,
+				8FE35E45D94524BD75EFBB2FE4720418 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				954DCAC29077A1C796809E519BA0F8B1 /* PBXTargetDependency */,
+			);
+			name = RNVectorIcons;
+			productName = RNVectorIcons;
+			productReference = 38E29AED07A8C6931C1D90B01B0A2FA8 /* libRNVectorIcons.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		AB44023427968F61400B4CB6789FB87A /* yoga */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48A511352997EF96E5604CBF9AD30DCA /* Build configuration list for PBXNativeTarget "yoga" */;
+			buildPhases = (
+				794053DEEA325210F6B464F5A810D5D5 /* Sources */,
+				714BFE201109E3EB14446EF383267C52 /* Frameworks */,
+				187E0B631B9E10116B2929BFD823A173 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = yoga;
+			productName = yoga;
+			productReference = 0CC9E0FBBCB30E638F1FBFF765E94C5E /* libyoga.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		B704C2E68709F966F574BF166B314FBD /* lottie-react-native */ = {
@@ -2093,42 +2110,25 @@
 			);
 			name = "lottie-react-native";
 			productName = "lottie-react-native";
-			productReference = 8C3FF221982E2A52354227D9146BD680 /* liblottie-react-native.a */;
+			productReference = A513F58D68D99B65E922FB6B522B78CA /* liblottie-react-native.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		ED4937F62CDF414473A3AAC5ACF80F0D /* yoga */ = {
+		D23762FC904CDCA31F67743719006C65 /* ReactNativeFabric */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A2CC45136A9975E2CBF09EC585BE0DCC /* Build configuration list for PBXNativeTarget "yoga" */;
+			buildConfigurationList = 4B9B45342B410E11FF5F610B1B07A492 /* Build configuration list for PBXNativeTarget "ReactNativeFabric" */;
 			buildPhases = (
-				263B404E1DC26C34E93F707C0AF1615F /* Sources */,
-				AC648D0A803B36509341FC0C5F1CA680 /* Frameworks */,
-				7F21862FB35A3A7733F3B05D8AA82596 /* Headers */,
+				96BF9445177129FB17D818ED7EE4E045 /* Sources */,
+				7B69C298E3BEA4C3595BFCE06C009A5E /* Frameworks */,
+				5E6A8FAFA62ACC9A2E9BC3AADAA06670 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				75011DD08CE3EAF8EB13009FDA808220 /* PBXTargetDependency */,
 			);
-			name = yoga;
-			productName = yoga;
-			productReference = 8D566E9008657A149C764CC23B14CCCB /* libyoga.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		F9D3CF5DCDE2ECAB50D558967BE87B0D /* RNVectorIcons */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B2E9A9EEFBF817EBF8804B5EA0F5CED2 /* Build configuration list for PBXNativeTarget "RNVectorIcons" */;
-			buildPhases = (
-				EAB200319FB2A0456B63B8A51249D1CD /* Sources */,
-				A434FABE5248CB75CA1670FC95182C8A /* Frameworks */,
-				23C44D9B69CF25C28FF7839552C42072 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1984326BAA3B8109B32456E25F63E8D0 /* PBXTargetDependency */,
-			);
-			name = RNVectorIcons;
-			productName = RNVectorIcons;
-			productReference = BB6B6A588F9D9E249C95BFD1FDEA4821 /* libRNVectorIcons.a */;
+			name = ReactNativeFabric;
+			productName = ReactNativeFabric;
+			productReference = EE546B6B1FBD4D8CF78EDDB63F313F16 /* libReactNativeFabric.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -2148,37 +2148,22 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 8EA713CD9423C54157429BC855966544 /* Products */;
+			productRefGroup = 4787FCDA2FB6F634D7F5258EBD1874A8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				58C59A321CE3E36BFCB567322DDFBAB6 /* lottie-ios */,
 				B704C2E68709F966F574BF166B314FBD /* lottie-react-native */,
-				A04A4FCCF78222E4DB53346253F11C2F /* Pods-FableApp */,
-				3CAD39BB7A8D35BFECE025FE1662EB0A /* ReactNativeFabric */,
-				1B541B56F4BC61A03983E2C3552D5C77 /* RNKeychain */,
-				F9D3CF5DCDE2ECAB50D558967BE87B0D /* RNVectorIcons */,
-				ED4937F62CDF414473A3AAC5ACF80F0D /* yoga */,
+				85812F5D4C9E21C584E61D45DFA9EBF5 /* Pods-Fable */,
+				D23762FC904CDCA31F67743719006C65 /* ReactNativeFabric */,
+				469B63B6E33293A2C923D86B651D1A7C /* RNKeychain */,
+				9D4E5C9908B9CA51A8F70FEBD7C4B3A3 /* RNVectorIcons */,
+				AB44023427968F61400B4CB6789FB87A /* yoga */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		263B404E1DC26C34E93F707C0AF1615F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D3374F58D59CCCACA712B409DDC5AAFB /* Utils.cpp in Sources */,
-				C39E84281E4606A5CB66498F1CFED597 /* YGEnums.cpp in Sources */,
-				BCE090B68E2900AEFE346DA32E009F2D /* YGLayout.cpp in Sources */,
-				060A83BC433FFC0835B822ED70632050 /* YGNode.cpp in Sources */,
-				E4F656936FDC1978A2C546ECA997401D /* YGNodePrint.cpp in Sources */,
-				2CFBB31392284573F3E0F5BD9A413EF5 /* YGStyle.cpp in Sources */,
-				6EDB676E32438C202A4296E172FDD1A2 /* yoga-dummy.m in Sources */,
-				DBAF268DE8A3EFCEC9148B83CC5114BC /* Yoga.cpp in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		43E2136142151DE79F649B87C0408F6D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2248,6 +2233,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		626D397DA9977065B0F1C3355D2C2E82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65C6253BCA085EBB2284A6F4CAA4F616 /* Pods-Fable-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		708B95886F893F2D65BA04F4E296BE76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B1850BC5A01F8B6465E3A6BC707532D /* RNKeychain-dummy.m in Sources */,
+				23348276C5A865C756E80B6D5BBB9F85 /* RNKeychainManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		794053DEEA325210F6B464F5A810D5D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4081BFEA72DD28C5488251D534AEDCA5 /* Utils.cpp in Sources */,
+				2D4F5749391301EEBA631BFB727A3651 /* YGEnums.cpp in Sources */,
+				6BA67A446B3D4E6464A3A44B4DBCED1D /* YGLayout.cpp in Sources */,
+				F607D6A763082E18EA42301772080B91 /* YGNode.cpp in Sources */,
+				9F1799078C4DA192AB01F66E42FD2DDF /* YGNodePrint.cpp in Sources */,
+				FC2A76AC51852930B800EA5C58A7C381 /* YGStyle.cpp in Sources */,
+				B5E63071A89E041C7094904C925A7CF5 /* yoga-dummy.m in Sources */,
+				E5CB96D228B37680A81E404BA8F23418 /* Yoga.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7D8CD8B56945766B656AB45D194F933A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2258,55 +2275,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9228257373E2349F8214CBAC532114E4 /* Sources */ = {
+		96BF9445177129FB17D818ED7EE4E045 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94728824705C867EDAC95D76EEC9A343 /* Pods-FableApp-dummy.m in Sources */,
+				F4CA32B5A97509703A4E5E61B51DB5C7 /* ReactNativeFabric-dummy.m in Sources */,
+				4402580115AC022117535EF98E357BAC /* SMXAnswers.m in Sources */,
+				4002BC3A27A0AA861BDE9F702DB6D774 /* SMXCrashlytics.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C8C1F0DBCA55804A8154A72CCB36BDA2 /* Sources */ = {
+		C3B9B8FA541C56440081EA5327AE79C5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA09B6D9FDA77C0AF64E9B571AF74197 /* RNKeychain-dummy.m in Sources */,
-				9C58709BB85DEB530D013444D769D70E /* RNKeychainManager.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E42E3325037EE166DA6743CA62115497 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7369F487B176437C8A9BF0F3E5DB5CBD /* ReactNativeFabric-dummy.m in Sources */,
-				52DC6F5F6CD43C851A0D55F643081919 /* SMXAnswers.m in Sources */,
-				EFC0DAEEB744FEAE72B6394508D00268 /* SMXCrashlytics.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EAB200319FB2A0456B63B8A51249D1CD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				275AC2B443FDEE9D9FAC9A4534F6AA5E /* RNVectorIcons-dummy.m in Sources */,
-				BB1C283C4D814D8C730AA1B0F3D60CD8 /* RNVectorIconsManager.m in Sources */,
+				8E05FEAF1FD7F0FA3B1A013EA4EB89F2 /* RNVectorIcons-dummy.m in Sources */,
+				0509B328EC463B57D185E4A802D8A614 /* RNVectorIconsManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1984326BAA3B8109B32456E25F63E8D0 /* PBXTargetDependency */ = {
+		052D8E8FB529C588991D3A12ECF9027C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = React;
-			targetProxy = 6C20D8545B764C4E9B461C4F8E0EC8F8 /* PBXContainerItemProxy */;
+			name = yoga;
+			target = AB44023427968F61400B4CB6789FB87A /* yoga */;
+			targetProxy = 4203307E7A9C10023E6F18070A289EF4 /* PBXContainerItemProxy */;
 		};
-		25A196C423D4686E476DD4343F132406 /* PBXTargetDependency */ = {
+		19D55B04DBB525DE7A1B3E7273926587 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "lottie-ios";
-			target = 58C59A321CE3E36BFCB567322DDFBAB6 /* lottie-ios */;
-			targetProxy = 64056814B9873D185322F54543C1555D /* PBXContainerItemProxy */;
+			name = RNVectorIcons;
+			target = 9D4E5C9908B9CA51A8F70FEBD7C4B3A3 /* RNVectorIcons */;
+			targetProxy = 1DFE1A1DD1A3F82333D3B5DBF231590C /* PBXContainerItemProxy */;
 		};
 		26DEDCF6E7A2CE49EBB48385CB46BA52 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2314,74 +2315,75 @@
 			target = 58C59A321CE3E36BFCB567322DDFBAB6 /* lottie-ios */;
 			targetProxy = 26340770B5F3339214DF577430998CFE /* PBXContainerItemProxy */;
 		};
-		5C674E1D25D464556A49D80032DEB6A2 /* PBXTargetDependency */ = {
+		2993EFA720A4724BECD7F29F614251B7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ReactNativeFabric;
-			target = 3CAD39BB7A8D35BFECE025FE1662EB0A /* ReactNativeFabric */;
-			targetProxy = B442B343E6093CB6029EBBEEAD378F40 /* PBXContainerItemProxy */;
+			target = D23762FC904CDCA31F67743719006C65 /* ReactNativeFabric */;
+			targetProxy = F9ED8630D4B630DCC365460EB8A403F7 /* PBXContainerItemProxy */;
 		};
-		65DEC94F2AE8DEE00801FE10C67AC676 /* PBXTargetDependency */ = {
+		53EA45EB717FC2EB7F3EA6AF507D3E85 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = RNVectorIcons;
-			target = F9D3CF5DCDE2ECAB50D558967BE87B0D /* RNVectorIcons */;
-			targetProxy = 175EB3E0C643889938556CF6C23CA464 /* PBXContainerItemProxy */;
+			name = RNKeychain;
+			target = 469B63B6E33293A2C923D86B651D1A7C /* RNKeychain */;
+			targetProxy = CBBC4E920FDAB1037F8CAE5A203D066E /* PBXContainerItemProxy */;
 		};
-		87BBFACF78237442B11FEED9DB67EE5B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = React;
-			targetProxy = 1D08AB5B38BFA443F6B8B7B7A3A8AD10 /* PBXContainerItemProxy */;
-		};
-		8E562DE2F4BC96461E14018BA05215FE /* PBXTargetDependency */ = {
+		56D4BC9B6D92547A5B505BE834829B27 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "lottie-react-native";
 			target = B704C2E68709F966F574BF166B314FBD /* lottie-react-native */;
-			targetProxy = B5D869A62E9EC013CE383950B87B0B1E /* PBXContainerItemProxy */;
+			targetProxy = 730C5EABBAEFA6C0942BC49832D9B88B /* PBXContainerItemProxy */;
 		};
-		B0434C0BE3D1266BEF5F399B9290F425 /* PBXTargetDependency */ = {
+		6C08F0D1E3B514D43C0E9B83912EA784 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = React;
-			targetProxy = CCF2AF3254B0A8DD923DABB71ADE7AC9 /* PBXContainerItemProxy */;
+			targetProxy = ECC0CB61F6B81306C19E918004BEABBB /* PBXContainerItemProxy */;
 		};
-		DC3162F5137EF6E81C00971610C52333 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = RNKeychain;
-			target = 1B541B56F4BC61A03983E2C3552D5C77 /* RNKeychain */;
-			targetProxy = CFCD4302283511CAE18EE1AA7BC4ACFE /* PBXContainerItemProxy */;
-		};
-		DF0EFEBE266B864A8614F857D631A4F6 /* PBXTargetDependency */ = {
+		75011DD08CE3EAF8EB13009FDA808220 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = React;
-			targetProxy = 6F692862541188C822A647D729FF9AB2 /* PBXContainerItemProxy */;
+			targetProxy = D4BAD46729BF00E681EB7366F42BB2D5 /* PBXContainerItemProxy */;
+		};
+		954DCAC29077A1C796809E519BA0F8B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = React;
+			targetProxy = CD99EAB3A027AA70D64CECFC7A797BCE /* PBXContainerItemProxy */;
+		};
+		BED6D08522BDB3FD8EC1DCB4535F1552 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = React;
+			targetProxy = 52B20A6B0B578FA49D846D3602F685A1 /* PBXContainerItemProxy */;
+		};
+		E2E694B452FB975D9DFA695B7DC246D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "lottie-ios";
+			target = 58C59A321CE3E36BFCB567322DDFBAB6 /* lottie-ios */;
+			targetProxy = E18EF706B43F2CC4B9CD08A000ED0D01 /* PBXContainerItemProxy */;
 		};
 		F1C076A8B174A995EBA58A02964CD3FE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = React;
 			targetProxy = AE18EA43DDC87E379D65DDF34C1B4921 /* PBXContainerItemProxy */;
 		};
-		FC68202165618C2FCE8218E772635A4C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = yoga;
-			target = ED4937F62CDF414473A3AAC5ACF80F0D /* yoga */;
-			targetProxy = DD5C91D7E397F26097150B51B9058705 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1C948AB770E7C213EB4F83497448B5B1 /* Debug */ = {
+		108D8DF0041004FB759DFB00A1BEED2B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 58F47554F3BB9BD758A408F8E521AF35 /* ReactNativeFabric.xcconfig */;
+			baseConfigurationReference = 5142F5DB33F7DBF32BA54F43C4AB8A3E /* yoga.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/ReactNativeFabric/ReactNativeFabric-prefix.pch";
+				GCC_PREFIX_HEADER = "Target Support Files/yoga/yoga-prefix.pch";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = ReactNativeFabric;
-				PRODUCT_NAME = ReactNativeFabric;
+				PRODUCT_MODULE_NAME = yoga;
+				PRODUCT_NAME = yoga;
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -2453,7 +2455,57 @@
 			};
 			name = Debug;
 		};
-		2DAEDB183A504986DC9D568471346FA6 /* Debug */ = {
+		227D1F685E0F3585DE422BDC6E4D2F84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58F47554F3BB9BD758A408F8E521AF35 /* ReactNativeFabric.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/ReactNativeFabric/ReactNativeFabric-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = ReactNativeFabric;
+				PRODUCT_NAME = ReactNativeFabric;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		23FCF3BD4C61C1D210BD7DDF24F3A207 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5142F5DB33F7DBF32BA54F43C4AB8A3E /* yoga.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/yoga/yoga-prefix.pch";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = yoga;
+				PRODUCT_NAME = yoga;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		29D83C2486DA8FA2B54B72DDCBF88D37 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 79DE6E42418BCC2706918E6FD818D0DD /* RNVectorIcons.xcconfig */;
 			buildSettings = {
@@ -2473,8 +2525,9 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
 		37D926A04D381325CC8CB1B8251208AB /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -2499,7 +2552,50 @@
 			};
 			name = Debug;
 		};
-		57C959815BB6CF1645B36332350941B1 /* Debug */ = {
+		4231D1A45A88593B2D6AF4418ACEA331 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F3EF2D84C9ACFE8BC4397E0ACBA86A7 /* Pods-Fable.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4C5B1CE3B95B8C1B6A51ED239ED76616 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C681296D3AC91A0FA673AFE23C382A7D /* Pods-Fable.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5FE4E5790DE7C2FFEFC1738F0FD0D495 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0A2B69166935D76359D21F65E3B2E9D7 /* RNKeychain.xcconfig */;
 			buildSettings = {
@@ -2519,35 +2615,11 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
-		722FFEEA5EB3512CAB85B262062FD873 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5142F5DB33F7DBF32BA54F43C4AB8A3E /* yoga.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/yoga/yoga-prefix.pch";
-				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = yoga;
-				PRODUCT_NAME = yoga;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		84AD061DAD9E20432867BB7EC3DDEE82 /* Release */ = {
+		7F1E3570891D457A771DAAB64F6E42D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 79DE6E42418BCC2706918E6FD818D0DD /* RNVectorIcons.xcconfig */;
 			buildSettings = {
@@ -2567,35 +2639,8 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
-		};
-		9175658AFC52AB5E0D6C4B9561285402 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5142F5DB33F7DBF32BA54F43C4AB8A3E /* yoga.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/yoga/yoga-prefix.pch";
-				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = yoga;
-				PRODUCT_NAME = yoga;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
+			name = Debug;
 		};
 		A0BE89FE75FCC78DDFC15B3E50235F29 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -2621,6 +2666,29 @@
 			};
 			name = Release;
 		};
+		A43A8BA98507DC7DA426E5325C02CFC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58F47554F3BB9BD758A408F8E521AF35 /* ReactNativeFabric.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/ReactNativeFabric/ReactNativeFabric-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = ReactNativeFabric;
+				PRODUCT_NAME = ReactNativeFabric;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		A645D0B6115E58E871B333ECC864CF70 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4D78253ACA8239B4459D8EE9D62C1606 /* lottie-ios.xcconfig */;
@@ -2644,27 +2712,6 @@
 			};
 			name = Debug;
 		};
-		B7BF06649F65667F0754277E3E938C25 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B0414B62DAD21BACF6608A66210BA5B3 /* Pods-FableApp.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 		BD54F966B0A78C76EF584C2477CDB801 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 282D321BC0A715D6929E37AE7955B487 /* lottie-react-native.xcconfig */;
@@ -2684,76 +2731,6 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		BF4B68B0F469B20C4618A7424B7A25EC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0A2B69166935D76359D21F65E3B2E9D7 /* RNKeychain.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/RNKeychain/RNKeychain-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = RNKeychain;
-				PRODUCT_NAME = RNKeychain;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		CD97EF304CB2484D2247DB5CA5C63B18 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 58F47554F3BB9BD758A408F8E521AF35 /* ReactNativeFabric.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/ReactNativeFabric/ReactNativeFabric-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = ReactNativeFabric;
-				PRODUCT_NAME = ReactNativeFabric;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		D85A0952DB1ACB74A35E1A709E16563D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 58EE4DCA1FF89B4B1763BBDA3B318DED /* Pods-FableApp.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -2817,6 +2794,29 @@
 			};
 			name = Release;
 		};
+		FFD4151775AF41818D390C79A27F986B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A2B69166935D76359D21F65E3B2E9D7 /* RNKeychain.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/RNKeychain/RNKeychain-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = RNKeychain;
+				PRODUCT_NAME = RNKeychain;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -2838,20 +2838,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5733D9AF6C97E1C5DDD924917E8DF97F /* Build configuration list for PBXNativeTarget "RNKeychain" */ = {
+		48A511352997EF96E5604CBF9AD30DCA /* Build configuration list for PBXNativeTarget "yoga" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				57C959815BB6CF1645B36332350941B1 /* Debug */,
-				BF4B68B0F469B20C4618A7424B7A25EC /* Release */,
+				108D8DF0041004FB759DFB00A1BEED2B /* Debug */,
+				23FCF3BD4C61C1D210BD7DDF24F3A207 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83E9FEF22BB1DEED2F659003D5DBCDED /* Build configuration list for PBXNativeTarget "ReactNativeFabric" */ = {
+		4B9B45342B410E11FF5F610B1B07A492 /* Build configuration list for PBXNativeTarget "ReactNativeFabric" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1C948AB770E7C213EB4F83497448B5B1 /* Debug */,
-				CD97EF304CB2484D2247DB5CA5C63B18 /* Release */,
+				A43A8BA98507DC7DA426E5325C02CFC6 /* Debug */,
+				227D1F685E0F3585DE422BDC6E4D2F84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66FCE0F07039B35CC9AA4F35D9F07E03 /* Build configuration list for PBXNativeTarget "RNKeychain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFD4151775AF41818D390C79A27F986B /* Debug */,
+				5FE4E5790DE7C2FFEFC1738F0FD0D495 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74373686A7E2374FA75D18F1509C2096 /* Build configuration list for PBXNativeTarget "Pods-Fable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4231D1A45A88593B2D6AF4418ACEA331 /* Debug */,
+				4C5B1CE3B95B8C1B6A51ED239ED76616 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2865,29 +2883,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9B06DC0B57921EAFE7FFCA86F8C09E75 /* Build configuration list for PBXNativeTarget "Pods-FableApp" */ = {
+		A41231973258468104BDE47D5037BC39 /* Build configuration list for PBXNativeTarget "RNVectorIcons" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B7BF06649F65667F0754277E3E938C25 /* Debug */,
-				D85A0952DB1ACB74A35E1A709E16563D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A2CC45136A9975E2CBF09EC585BE0DCC /* Build configuration list for PBXNativeTarget "yoga" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				722FFEEA5EB3512CAB85B262062FD873 /* Debug */,
-				9175658AFC52AB5E0D6C4B9561285402 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B2E9A9EEFBF817EBF8804B5EA0F5CED2 /* Build configuration list for PBXNativeTarget "RNVectorIcons" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2DAEDB183A504986DC9D568471346FA6 /* Debug */,
-				84AD061DAD9E20432867BB7EC3DDEE82 /* Release */,
+				7F1E3570891D457A771DAAB64F6E42D2 /* Debug */,
+				29D83C2486DA8FA2B54B72DDCBF88D37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
