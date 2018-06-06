@@ -34,7 +34,7 @@ class ListingContainer extends Component {
     const params = navigation.state.params || {};
 
     return {
-      headerTitle: 'Fable',
+      headerTitle: '',
     };
   };
 
