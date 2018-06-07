@@ -51,11 +51,11 @@ export const theme = {
     translucent: colours.translucent.black,
   },
   tabBar: {
-    background: colours.grey.light[2],
-    border: colours.grey.light[2],
+    background: colours.blue.main[1],
+    border: colours.blue.main[2],
     icons: {
-      inactive: colours.grey.medium[2],
-      active: colours.blue.main[1],
+      inactive: colours.white,
+      active: colours.pink,
     },
   },
   text: {
