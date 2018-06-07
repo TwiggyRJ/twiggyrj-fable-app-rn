@@ -43,6 +43,7 @@ export const theme = {
     statusBar: colours.blue.main[2],
     background: colours.blue.main[1],
     text: colours.white,
+    font: 'Nickainley_Normal',
   },
   background: {
     light: colours.white,

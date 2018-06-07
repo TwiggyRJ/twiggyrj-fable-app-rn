@@ -106,7 +106,7 @@ const ContainerNav = createStackNavigator(
       },
       headerTitleStyle: {
         color: theme.header.text,
-        fontFamily: 'Nickainley_Normal',
+        fontFamily: theme.header.font,
         fontSize: 30,
         fontWeight: undefined,
         flex: 1,
