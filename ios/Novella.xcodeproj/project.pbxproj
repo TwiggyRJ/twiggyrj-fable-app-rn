@@ -12,7 +12,7 @@
 		00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302C01ABCB91800DB3ED1 /* libRCTImage.a */; };
 		00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */; };
 		00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */; };
-		00E356F31AD99517003FC87E /* FableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* FableTests.m */; };
+		00E356F31AD99517003FC87E /* NovellaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* NovellaTests.m */; };
 		133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
 		139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139105C11AF99BAD00B5F7CC /* libRCTSettings.a */; };
 		139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139FDEF41B06529B00C62182 /* libRCTWebSocket.a */; };
@@ -35,7 +35,7 @@
 		2D02E4C71E0B4AEC006451C7 /* libRCTText-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E941DF850E9000B6D8A /* libRCTText-tvOS.a */; };
 		2D02E4C81E0B4AEC006451C7 /* libRCTWebSocket-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E991DF850E9000B6D8A /* libRCTWebSocket-tvOS.a */; };
 		2D16E6881FA4F8E400B85C8A /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D16E6891FA4F8E400B85C8A /* libReact.a */; };
-		2DCD954D1E0B4F2C00145EB5 /* FableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* FableTests.m */; };
+		2DCD954D1E0B4F2C00145EB5 /* NovellaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* NovellaTests.m */; };
 		389946D6C94F4EE5A0540834 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 514359A285B94FF9B7AF22E8 /* Feather.ttf */; };
 		3B3E75FB20C9E9B900A59293 /* Lora-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B3E75F620C9E9B800A59293 /* Lora-Bold.ttf */; };
 		3B3E75FC20C9E9B900A59293 /* Lora-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B3E75F720C9E9B800A59293 /* Lora-Italic.ttf */; };
@@ -43,10 +43,11 @@
 		3B3E75FE20C9E9B900A59293 /* Lora-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B3E75F920C9E9B800A59293 /* Lora-Regular.ttf */; };
 		3B3E75FF20C9E9B900A59293 /* Nickainley-Normal.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3B3E75FA20C9E9B900A59293 /* Nickainley-Normal.otf */; };
 		3B3E760120C9EF9300A59293 /* splashscreen_text.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B3E760020C9EF9300A59293 /* splashscreen_text.png */; };
+		3B94471520CA5C580009272F /* libReactNativeConfig.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BC7794420B716D00028CEEB /* libReactNativeConfig.a */; };
 		3BFFF6AB20B74B20007FD3A0 /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B9EB69E20B72861005ED993 /* Lottie.framework */; };
 		3BFFF6AC20B74B20007FD3A0 /* Lottie.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3B9EB69E20B72861005ED993 /* Lottie.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		45F9D9EF9D284650AB1AF4CF /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1783FA1F2C634F10AA164AF5 /* SimpleLineIcons.ttf */; };
-		4706FD243D7FDCBD1935903A /* libPods-Fable.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73FDD3729C8444C91CFA665C /* libPods-Fable.a */; };
+		4706FD243D7FDCBD1935903A /* libPods-Novella.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73FDD3729C8444C91CFA665C /* libPods-Novella.a */; };
 		4D1B196186454FF286E3FEEB /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FDCEB962E3E5435AA3A42C8C /* Foundation.ttf */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
@@ -101,7 +102,7 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = Fable;
+			remoteInfo = Novella;
 		};
 		139105C01AF99BAD00B5F7CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -129,7 +130,7 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
-			remoteInfo = "Fable-tvOS";
+			remoteInfo = "Novella-tvOS";
 		};
 		2D16E6711FA4F8DC00B85C8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -443,17 +444,17 @@
 		00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTVibration.xcodeproj; path = "../node_modules/react-native/Libraries/Vibration/RCTVibration.xcodeproj"; sourceTree = "<group>"; };
 		00E356EE1AD99517003FC87E /* NovellaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NovellaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* FableTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FableTests.m; sourceTree = "<group>"; };
-		12940B4E97F0B725A9ADA911 /* Pods-Fable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fable.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fable/Pods-Fable.release.xcconfig"; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* NovellaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NovellaTests.m; sourceTree = "<group>"; };
+		12940B4E97F0B725A9ADA911 /* Pods-Novella.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Novella.release.xcconfig"; path = "Pods/Target Support Files/Pods-Novella/Pods-Novella.release.xcconfig"; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* Novella.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Novella.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Fable/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Fable/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Novella/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Novella/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Fable/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Fable/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Fable/main.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Novella/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Novella/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Novella/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		1783FA1F2C634F10AA164AF5 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
 		2974CEB50E4F45869E3D337B /* LottieReactNative.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = LottieReactNative.xcodeproj; path = "../node_modules/lottie-react-native/src/ios/LottieReactNative.xcodeproj"; sourceTree = "<group>"; };
@@ -469,7 +470,7 @@
 		3B3E75FA20C9E9B900A59293 /* Nickainley-Normal.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nickainley-Normal.otf"; path = "../../assets/Nickainley-Normal.otf"; sourceTree = "<group>"; };
 		3B3E760020C9EF9300A59293 /* splashscreen_text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splashscreen_text.png; sourceTree = "<group>"; };
 		3B9EB69620B72860005ED993 /* Lottie.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Lottie.xcodeproj; path = "../node_modules/lottie-ios/Lottie.xcodeproj"; sourceTree = "<group>"; };
-		3BFFF66920B749E8007FD3A0 /* Fable.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Fable.entitlements; path = Fable/Fable.entitlements; sourceTree = "<group>"; };
+		3BFFF66920B749E8007FD3A0 /* Novella.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Novella.entitlements; path = Novella/Novella.entitlements; sourceTree = "<group>"; };
 		3E2D952E8C2F4F8CB2FCE9B2 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
 		440694FA3C804A52900F3B61 /* SMXCrashlytics.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = SMXCrashlytics.xcodeproj; path = "../node_modules/react-native-fabric/ios/SMXCrashlytics.xcodeproj"; sourceTree = "<group>"; };
 		505E6F3802B544658AC13F09 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
@@ -477,8 +478,8 @@
 		51FE6091B2EF4C00B88957B7 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		651A6EAB190C4F9A9879A90E /* libLottieReactNative.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libLottieReactNative.a; sourceTree = "<group>"; };
-		70922953B9C9AA7B3CABF1B6 /* Pods-Fable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fable.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fable/Pods-Fable.debug.xcconfig"; sourceTree = "<group>"; };
-		73FDD3729C8444C91CFA665C /* libPods-Fable.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Fable.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70922953B9C9AA7B3CABF1B6 /* Pods-Novella.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Novella.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Novella/Pods-Novella.debug.xcconfig"; sourceTree = "<group>"; };
+		73FDD3729C8444C91CFA665C /* libPods-Novella.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Novella.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75A2B5D739EE425089DA530E /* RNVectorIcons.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNVectorIcons.xcodeproj; path = "../node_modules/react-native-vector-icons/RNVectorIcons.xcodeproj"; sourceTree = "<group>"; };
 		776BF60FCC3E4DED974528A3 /* libRNKeychain.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNKeychain.a; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
@@ -511,6 +512,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B94471520CA5C580009272F /* libReactNativeConfig.a in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
 				3BFFF6AB20B74B20007FD3A0 /* Lottie.framework in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
@@ -525,7 +527,7 @@
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
-				4706FD243D7FDCBD1935903A /* libPods-Fable.a in Frameworks */,
+				4706FD243D7FDCBD1935903A /* libPods-Novella.a in Frameworks */,
 				16A87EC13905CF781CAF28D7 /* libPods-Novella.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -597,13 +599,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		00E356EF1AD99517003FC87E /* FableTests */ = {
+		00E356EF1AD99517003FC87E /* NovellaTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* FableTests.m */,
+				00E356F21AD99517003FC87E /* NovellaTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = FableTests;
+			path = NovellaTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -634,10 +636,10 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* Fable */ = {
+		13B07FAE1A68108700A75B9A /* Novella */ = {
 			isa = PBXGroup;
 			children = (
-				3BFFF66920B749E8007FD3A0 /* Fable.entitlements */,
+				3BFFF66920B749E8007FD3A0 /* Novella.entitlements */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -647,7 +649,7 @@
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = Fable;
+			name = Novella;
 			sourceTree = "<group>";
 		};
 		146834001AC3E56700842450 /* Products */ = {
@@ -677,7 +679,7 @@
 			isa = PBXGroup;
 			children = (
 				2D16E6891FA4F8E400B85C8A /* libReact.a */,
-				73FDD3729C8444C91CFA665C /* libPods-Fable.a */,
+				73FDD3729C8444C91CFA665C /* libPods-Novella.a */,
 				8DDDDF42F84C15B68664B024 /* libPods-Novella.a */,
 			);
 			name = Frameworks;
@@ -834,9 +836,9 @@
 			isa = PBXGroup;
 			children = (
 				3B3E75F520C9E97E00A59293 /* fonts */,
-				13B07FAE1A68108700A75B9A /* Fable */,
+				13B07FAE1A68108700A75B9A /* Novella */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* FableTests */,
+				00E356EF1AD99517003FC87E /* NovellaTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				817B59AABB0E4CD8B69231B7 /* Resources */,
@@ -871,8 +873,8 @@
 		F571919BB7D3E7D2C67748C4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				70922953B9C9AA7B3CABF1B6 /* Pods-Fable.debug.xcconfig */,
-				12940B4E97F0B725A9ADA911 /* Pods-Fable.release.xcconfig */,
+				70922953B9C9AA7B3CABF1B6 /* Pods-Novella.debug.xcconfig */,
+				12940B4E97F0B725A9ADA911 /* Pods-Novella.release.xcconfig */,
 				AECF0BA66FFBCFA42A59663E /* Pods-Novella.debug.xcconfig */,
 				CDB33667AA5DBB486D4D01C5 /* Pods-Novella.release.xcconfig */,
 			);
@@ -896,7 +898,7 @@
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
 			name = NovellaTests;
-			productName = FableTests;
+			productName = NovellaTests;
 			productReference = 00E356EE1AD99517003FC87E /* NovellaTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
@@ -937,7 +939,7 @@
 			dependencies = (
 			);
 			name = "Novella-tvOS";
-			productName = "Fable-tvOS";
+			productName = "Novella-tvOS";
 			productReference = 2D02E47B1E0B4A5D006451C7 /* Novella-tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -955,7 +957,7 @@
 				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
 			);
 			name = "Novella-tvOSTests";
-			productName = "Fable-tvOSTests";
+			productName = "Novella-tvOSTests";
 			productReference = 2D02E4901E0B4A5D006451C7 /* Novella-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
@@ -1581,7 +1583,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* FableTests.m in Sources */,
+				00E356F31AD99517003FC87E /* NovellaTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1607,7 +1609,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DCD954D1E0B4F2C00145EB5 /* FableTests.m in Sources */,
+				2DCD954D1E0B4F2C00145EB5 /* NovellaTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1638,7 +1640,7 @@
 				13B07FB21A68108700A75B9A /* Base */,
 			);
 			name = LaunchScreen.xib;
-			path = Fable;
+			path = Novella;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1660,7 +1662,7 @@
 					"$(SRCROOT)..\node_modules\neact-native-fabriciosSMXCrashlytics",
 					"$(SRCROOT)..\node_moduleslottie-react-nativesrciosLottieReactNative",
 				);
-				INFOPLIST_FILE = FableTests/Info.plist;
+				INFOPLIST_FILE = NovellaTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -1693,7 +1695,7 @@
 					"$(SRCROOT)..\node_modules\neact-native-fabriciosSMXCrashlytics",
 					"$(SRCROOT)..\node_moduleslottie-react-nativesrciosLottieReactNative",
 				);
-				INFOPLIST_FILE = FableTests/Info.plist;
+				INFOPLIST_FILE = NovellaTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -1718,7 +1720,7 @@
 			baseConfigurationReference = AECF0BA66FFBCFA42A59663E /* Pods-Novella.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Fable/Fable.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Novella/Novella.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = HK64769L4T;
@@ -1730,7 +1732,7 @@
 					"$(SRCROOT)..\node_modules\neact-native-fabriciosSMXCrashlytics",
 					"$(SRCROOT)..\node_moduleslottie-react-nativesrciosLottieReactNative",
 				);
-				INFOPLIST_FILE = Fable/Info.plist;
+				INFOPLIST_FILE = Novella/Info.plist;
 				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "-traditional";
 				INFOPLIST_PREFIX_HEADER = "${BUILD_DIR}/GeneratedInfoPlistDotEnv.h";
 				INFOPLIST_PREPROCESS = YES;
@@ -1751,7 +1753,7 @@
 			baseConfigurationReference = CDB33667AA5DBB486D4D01C5 /* Pods-Novella.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Fable/Fable.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Novella/Novella.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HK64769L4T;
 				HEADER_SEARCH_PATHS = (
@@ -1762,7 +1764,7 @@
 					"$(SRCROOT)..\node_modules\neact-native-fabriciosSMXCrashlytics",
 					"$(SRCROOT)..\node_moduleslottie-react-nativesrciosLottieReactNative",
 				);
-				INFOPLIST_FILE = Fable/Info.plist;
+				INFOPLIST_FILE = Novella/Info.plist;
 				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "-traditional";
 				INFOPLIST_PREFIX_HEADER = "${BUILD_DIR}/GeneratedInfoPlistDotEnv.h";
 				INFOPLIST_PREPROCESS = YES;
@@ -1798,7 +1800,7 @@
 					"$(SRCROOT)..\node_modules\neact-native-fabriciosSMXCrashlytics",
 					"$(SRCROOT)..\node_moduleslottie-react-nativesrciosLottieReactNative",
 				);
-				INFOPLIST_FILE = "Fable-tvOS/Info.plist";
+				INFOPLIST_FILE = "Novella-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1812,7 +1814,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Fable-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Novella-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -1840,7 +1842,7 @@
 					"$(SRCROOT)..\node_modules\neact-native-fabriciosSMXCrashlytics",
 					"$(SRCROOT)..\node_moduleslottie-react-nativesrciosLottieReactNative",
 				);
-				INFOPLIST_FILE = "Fable-tvOS/Info.plist";
+				INFOPLIST_FILE = "Novella-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1854,7 +1856,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Fable-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Novella-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -1873,7 +1875,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Fable-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "Novella-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1883,7 +1885,7 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Fable-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Novella-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Novella-tvOS.app/Novella-tvOS";
@@ -1902,7 +1904,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Fable-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "Novella-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1912,7 +1914,7 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Fable-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Novella-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Novella-tvOS.app/Novella-tvOS";

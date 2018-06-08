@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-               BuildableName = "Fable-tvOS.app"
-               BlueprintName = "Fable-tvOS"
-               ReferencedContainer = "container:Fable.xcodeproj">
+               BuildableName = "Novella-tvOS.app"
+               BlueprintName = "Novella-tvOS"
+               ReferencedContainer = "container:Novella.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "Fable-tvOSTests.xctest"
-               BlueprintName = "Fable-tvOSTests"
-               ReferencedContainer = "container:Fable.xcodeproj">
+               BuildableName = "Novella-tvOSTests.xctest"
+               BlueprintName = "Novella-tvOSTests"
+               ReferencedContainer = "container:Novella.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -61,9 +61,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "Fable-tvOSTests.xctest"
-               BlueprintName = "Fable-tvOSTests"
-               ReferencedContainer = "container:Fable.xcodeproj">
+               BuildableName = "Novella-tvOSTests.xctest"
+               BlueprintName = "Novella-tvOSTests"
+               ReferencedContainer = "container:Novella.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -71,9 +71,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "Fable-tvOS.app"
-            BlueprintName = "Fable-tvOS"
-            ReferencedContainer = "container:Fable.xcodeproj">
+            BuildableName = "Novella-tvOS.app"
+            BlueprintName = "Novella-tvOS"
+            ReferencedContainer = "container:Novella.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "Fable-tvOS.app"
-            BlueprintName = "Fable-tvOS"
-            ReferencedContainer = "container:Fable.xcodeproj">
+            BuildableName = "Novella-tvOS.app"
+            BlueprintName = "Novella-tvOS"
+            ReferencedContainer = "container:Novella.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -113,9 +113,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "Fable-tvOS.app"
-            BlueprintName = "Fable-tvOS"
-            ReferencedContainer = "container:Fable.xcodeproj">
+            BuildableName = "Novella-tvOS.app"
+            BlueprintName = "Novella-tvOS"
+            ReferencedContainer = "container:Novella.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
