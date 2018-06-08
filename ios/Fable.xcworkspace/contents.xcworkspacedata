@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Fable.xcodeproj">
+      location = "group:/Users/aaronfryer/Documents/projects/twiggyrj-fable-app-rn/ios/Novella.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

@@ -8,6 +8,8 @@ PODS:
     - React
   - React (0.55.4):
     - React/Core (= 0.55.4)
+  - react-native-splash-screen (3.0.7):
+    - React
   - React/Core (0.55.4):
     - yoga (= 0.55.4.React)
   - ReactNativeFabric (0.5.1):
@@ -25,6 +27,7 @@ DEPENDENCIES:
   - Fabric
   - lottie-ios (from `../node_modules/lottie-ios`)
   - lottie-react-native (from `../node_modules/lottie-react-native`)
+  - react-native-splash-screen (from `../node_modules/react-native-splash-screen`)
   - React/Core (from `../node_modules/react-native`)
   - ReactNativeFabric (from `../node_modules/react-native-fabric`)
   - RNKeychain (from `../node_modules/react-native-keychain`)
@@ -43,6 +46,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/lottie-react-native"
   React:
     :path: "../node_modules/react-native"
+  react-native-splash-screen:
+    :path: "../node_modules/react-native-splash-screen"
   ReactNativeFabric:
     :path: "../node_modules/react-native-fabric"
   RNKeychain:
@@ -58,11 +63,12 @@ SPEC CHECKSUMS:
   lottie-ios: 9f24be3ecb13412223b6ac70d97437742b0e3de1
   lottie-react-native: db4bd75685428c4ad0ec2f913145abff3d38b640
   React: aa2040dbb6f317b95314968021bd2888816e03d5
+  react-native-splash-screen: 8e3f866dc79bfe533baeffd0a38c33f7a7eae7f8
   ReactNativeFabric: 3912bf9c714d7cc98110eadf06ca6dedef219322
   RNKeychain: 627c6095cef215dd3d9804a9a9cf45ab96aa3997
   RNVectorIcons: c0dbfbf6068fefa240c37b0f71bd03b45dddac44
   yoga: a23273df0088bf7f2bb7e5d7b00044ea57a2a54a
 
-PODFILE CHECKSUM: 4ca2d124ecde0168ba2e25fe50d1b3266d6e8015
+PODFILE CHECKSUM: 5bfd1a4a2b4f18492ad4ecfa687d297c63b24d7d
 
 COCOAPODS: 1.5.2
