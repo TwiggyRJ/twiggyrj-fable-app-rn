@@ -100,7 +100,19 @@ const ContainerNav = createStackNavigator(
   {
     initialRouteName: 'MainTabs',
     navigationOptions: {
-      headerTitle: 'Fable',
+      headerTitle: 'Novella',
+      headerStyle: {
+        backgroundColor: theme.header.background,
+      },
+      headerTitleStyle: {
+        color: theme.header.text,
+        fontFamily: theme.header.font,
+        fontSize: 30,
+        fontWeight: undefined,
+        flex: 1,
+        textAlign: 'center',
+      },
+      headerTintColor: theme.header.text,
     },
   },
 );

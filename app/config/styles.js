@@ -1,8 +1,14 @@
 import styled from 'styled-components/native';
+import { isIOS } from '../lib/helpers';
 
 const colours = {
   black: '#000000',
-  blue: '#4276ba',
+  blue: {
+    main: {
+      1: '#4276ba',
+      2: '#3b6aac',
+    },
+  },
   pink: '#d2599b',
   grey: {
     light: {
@@ -32,19 +38,25 @@ export const Spacer = styled.View`
 `;
 
 export const theme = {
-  primary: colours.blue,
+  primary: colours.blue.main[1],
   secondary: colours.pink,
+  header: {
+    statusBar: colours.blue.main[2],
+    background: colours.blue.main[1],
+    text: colours.white,
+    font: (isIOS ? 'Nickainley-Normal' : 'Nickainley_Normal'),
+  },
   background: {
     light: colours.white,
     dark: colours.black,
     translucent: colours.translucent.black,
   },
   tabBar: {
-    background: colours.grey.light[2],
-    border: colours.grey.light[2],
+    background: colours.blue.main[1],
+    border: colours.blue.main[2],
     icons: {
-      inactive: colours.grey.medium[2],
-      active: colours.blue,
+      inactive: colours.white,
+      active: colours.pink,
     },
   },
   text: {

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import { StatusBar, View } from 'react-native';
 import { createDrawerNavigator, createStackNavigator } from 'react-navigation';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import SplashScreen from 'react-native-splash-screen';
 import { Provider } from 'mobx-react';
 import * as stores from './stores';
 import Main from './routes/main';
@@ -13,29 +15,10 @@ const RootStack = createStackNavigator({
     path: '/',
     screen: Login,
   },
-  Main: createDrawerNavigator({
-    Stories: {
-      screen: Main,
-      navigationOptions: {
-        header: null,
-        drawerLabel: 'Home', 
-        drawerIcon: ({ tintColor }) => (
-          <Icon
-            name="home"
-            size={24}
-            style={{color: tintColor}}
-          />
-        ),
-      },
-    },
+  Main: {
+    path: '/main',
+    screen: Main,
   },
-  {
-    drawerPosition: 'right',
-    contentOptions: {
-      activeTintColor: theme.primary,
-      inactiveTintColor: theme.text.dark,
-    },
-  }),
 },
 {
   initialRouteName: 'Main',
@@ -46,11 +29,20 @@ const RootStack = createStackNavigator({
 );
 
 export default class App extends Component {
+  componentDidMount() {
+    SplashScreen.hide();
+  }
+  
   render() {
-    return (
-      <Provider {...stores}>
+    return [
+      <Provider key="app" {...stores}>
         <RootStack />
-      </Provider>
-    );
+      </Provider>,
+      <StatusBar
+        key="main-statusbar"
+        backgroundColor={theme.header.statusBar}
+        barStyle="light-content"
+      />,
+    ];
   }
 }
