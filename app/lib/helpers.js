@@ -21,3 +21,10 @@ export function getIcon(icon, outline) {
   }
   return `${icon}`;
 }
+
+export function getPlatformSpecific(iosOption, androidOption) {
+  if (Platform.OS === 'ios') {
+    return iosOption;
+  }
+  return androidOption;
+}

@@ -1,9 +1,9 @@
-import auth from './auth';
+import authStore from './auth';
 import storiesStore from './stories';
 import bookmarksStore from './bookmarks';
 
 export {
-  auth,
+  authStore,
   bookmarksStore,
   storiesStore,
 };

@@ -1,5 +1,5 @@
 import styled from 'styled-components/native';
-import { isIOS } from '../lib/helpers';
+import { getPlatformSpecific } from '../lib/helpers';
 
 const colours = {
   black: '#000000',
@@ -44,7 +44,7 @@ export const theme = {
     statusBar: colours.blue.main[2],
     background: colours.blue.main[1],
     text: colours.white,
-    font: (isIOS ? 'Nickainley-Normal' : 'Nickainley_Normal'),
+    font: getPlatformSpecific('Nickainley-Normal', 'Nickainley_Normal'),
   },
   background: {
     light: colours.white,
@@ -74,3 +74,21 @@ export const theme = {
     text: colours.white,
   },
 };
+
+export function headerStyle(title) {
+  return {
+    headerTitle: title,
+    headerStyle: {
+      backgroundColor: theme.header.background,
+    },
+    headerTitleStyle: {
+      color: theme.header.text,
+      fontFamily: theme.header.font,
+      fontSize: 30,
+      fontWeight: undefined,
+      flex: 1,
+      textAlign: 'center',
+    },
+    headerTintColor: theme.header.text,
+  }
+}

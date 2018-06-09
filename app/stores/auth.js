@@ -13,10 +13,9 @@ class AuthStore {
   @action
   authenticate(email, password) {
     this.isLoading = true;
-    this.auth = {email, password};
+    this.auth = auth({ email, password });
+    this.isLoading = false;
   }
 }
 
-const authStore = new AuthStore();
-
-export default authStore;
+export default new AuthStore();

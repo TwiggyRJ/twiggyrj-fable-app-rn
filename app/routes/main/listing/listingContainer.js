@@ -34,7 +34,16 @@ class ListingContainer extends Component {
     const params = navigation.state.params || {};
 
     return {
-      headerTitle: '',
+      headerTitle: params.story.title,
+      headerTitleStyle: {
+        fontFamily: theme.header.font,
+        fontSize: 26,
+        fontWeight: undefined,
+        flex: 1,
+        textAlign: 'center',
+        marginLeft: 0,
+        lineHeight: 36,
+      },
     };
   };
 
