@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, Image, TouchableWithoutFeedback } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import { CachedImage } from 'react-native-cached-image';
 import { formatNumber, truncateText } from '../../lib/formatting';
 import { getDateFormated } from '../../lib/dates';
 import Author from '../author';
@@ -11,7 +12,7 @@ const StoryListing = (props) => {
   return (
     <TouchableWithoutFeedback onPress={() => props.navigate(props.story)}>
       <View style={[styles.listingContainer, props.styles]}>
-        <Image style={styles.images} source={{ uri: props.story.cover }} />
+        <CachedImage style={styles.images} source={{ uri: props.story.cover }} />
         <View style={styles.contentContainer}>
           <Text style={styles.title}>{props.story.title}</Text>
           <Text style={styles.description}>{truncateText(props.story.description, 100)}</Text>

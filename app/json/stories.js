@@ -83,7 +83,7 @@ const stories = [
     "edition": "First Edition"
   },
   {
-    "id": "4",
+    "id": "5",
     "title": "Case 01 - The Making of a Great Detective",
     "cover": "https://images.alphacoders.com/125/thumb-1920-125091.jpg",
     "author": {

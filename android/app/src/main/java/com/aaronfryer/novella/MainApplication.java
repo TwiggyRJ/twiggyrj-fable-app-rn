@@ -2,7 +2,8 @@ package com.aaronfryer.novella;
  
 import android.app.Application; 
 import com.crashlytics.android.Crashlytics; 
-import com.facebook.react.ReactApplication; 
+import com.facebook.react.ReactApplication;
+import com.RNFetchBlob.RNFetchBlobPackage;
 import com.airbnb.android.react.lottie.LottiePackage; 
 import com.smixx.fabric.FabricPackage; 
 import com.oblador.vectoricons.VectorIconsPackage; 
@@ -29,7 +30,8 @@ public class MainApplication extends Application implements ReactApplication {
     @Override 
     protected List<ReactPackage> getPackages() { 
       return Arrays.<ReactPackage>asList( 
-        new MainReactPackage(), 
+        new MainReactPackage(),
+        new RNFetchBlobPackage(), 
         new LottiePackage(), 
         new FabricPackage(), 
         new VectorIconsPackage(), 

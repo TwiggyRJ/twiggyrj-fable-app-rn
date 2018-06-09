@@ -1,6 +1,5 @@
 import { createStackNavigator } from 'react-navigation';
 import { headerStyle } from '../../../config/styles';
-import Listing from '../listing';
 import Bookmarks from './bookmarks';
 
 const BookmarksContainer = createStackNavigator(

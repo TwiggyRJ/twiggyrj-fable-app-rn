@@ -20,6 +20,9 @@ target 'Novella' do
     'Core',
   ]
 
+
+  pod 'react-native-fetch-blob', :path => '../node_modules/react-native-fetch-blob'
+
 end
 
 post_install do |installer|
