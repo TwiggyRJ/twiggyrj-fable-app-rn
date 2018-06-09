@@ -5,19 +5,20 @@ import { getIcon } from '../../lib/helpers';
 import { theme } from '../../config/styles';
 import FlattendList from '../../components/flattendList';
 import Button from '../../components/button';
-import Home from './stories';
+import Stories from './stories';
 import Story from './story';
 import Bookmarks from './bookmarks';
 import Listing from './listing';
+import Menu from './menu';
 
 const TabNav = createBottomTabNavigator(
   {
-    MainTab: {
-      screen: Home,
-      path: '/home',
+    StoriesTab: {
+      screen: Stories,
+      path: '/allstories',
       navigationOptions: {
-        title: 'Welcome',
-        tabBarLabel: 'Home',
+        title: 'Novella',
+        tabBarAccessibilityLabel: 'Stories',
         tabBarIcon: ({ tintColor, focused }) => (
           <Icon
             name={getIcon('home', !focused)}
@@ -31,7 +32,8 @@ const TabNav = createBottomTabNavigator(
       screen: Bookmarks,
       path: '/bookmarks',
       navigationOptions: {
-        title: 'Settings',
+        title: 'Bookmarks',
+        tabBarAccessibilityLabel: 'Bookmarks',
         tabBarIcon: ({ tintColor, focused }) => (
           <Icon
             name={getIcon('bookmark', !focused)}
@@ -42,10 +44,11 @@ const TabNav = createBottomTabNavigator(
       },
     },
     NotificationsTab: {
-      screen: Bookmarks,
+      screen: Menu,
       path: '/settings',
       navigationOptions: {
-        title: 'Settings',
+        title: 'Notifications',
+        tabBarAccessibilityLabel: 'Notifications',
         tabBarIcon: ({ tintColor, focused }) => (
           <Icon
             name={getIcon('bell', !focused)}
@@ -55,11 +58,11 @@ const TabNav = createBottomTabNavigator(
         ),
       },
     },
-    SettingsTab: {
-      screen: Bookmarks,
-      path: '/settings',
+    MenuTab: {
+      screen: Menu,
+      path: '/menu',
       navigationOptions: {
-        title: 'Settings',
+        title: 'You',
         tabBarIcon: ({ tintColor, focused }) => (
           <Icon
             name={getIcon('account', !focused)}
@@ -71,6 +74,7 @@ const TabNav = createBottomTabNavigator(
     },
   },
   {
+    initialRouteName: 'StoriesTab',
     tabBarPosition: 'bottom',
     animationEnabled: true,
     swipeEnabled: true,
@@ -117,4 +121,4 @@ const ContainerNav = createStackNavigator(
   },
 );
 
-export default ContainerNav;
+export default TabNav;
