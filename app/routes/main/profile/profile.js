@@ -35,6 +35,14 @@ class Profile extends Component {
     this.props.storiesStore.getAuthorStories(this.state.person.id);
   }
 
+  @autobind
+  navigateToStory(story) {
+    this.props.navigation.navigate(
+      'Listing',
+      { story },
+    );
+  }
+
   render() {
     return (
       <ProfileContainer>

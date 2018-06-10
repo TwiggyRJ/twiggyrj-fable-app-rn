@@ -46,7 +46,7 @@ class ProfileContainer extends Component {
       <ScrollView>
         {
           this.state.person || this.props.authorStore.author ?
-            <Profile person={this.state.person || this.props.authorStore.author} />
+            <Profile person={this.state.person || this.props.authorStore.author} navigation={this.props.navigation} />
           :
             <View style={{ marginTop: (Dimensions.get('window').height / 3) }}>
               <ActivityIndicator
