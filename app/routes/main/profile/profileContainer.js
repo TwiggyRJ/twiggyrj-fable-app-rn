@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import { ActivityIndicator, Dimensions, ScrollView, View, Text } from 'react-native';
 import { inject, observer } from 'mobx-react/native';
-import Icon from 'react-native-vector-icons/Ionicons';
 import autobind from 'autobind-decorator';
-import FlattendList from '../../../components/flattendList';
-import Button from '../../../components/button';
 import Profile from './profile';
+import { theme } from '../../../config/styles';
 
 @inject('authStore')
 @inject('authorStore')
@@ -16,6 +14,14 @@ class ProfileContainer extends Component {
 
     return {
       headerTitle: params.type === 'you' ? 'You' : 'Author',
+      headerTitleStyle: {
+        color: theme.header.text,
+        fontFamily: theme.header.font,
+        fontSize: 30,
+        fontWeight: undefined,
+        flex: 0.85,
+        textAlign: 'center',
+      },
     };
   };
 
@@ -35,18 +41,12 @@ class ProfileContainer extends Component {
     }
   }
 
-  componenty(props, state) {
-    if (state.person === null && props.authorStore.author) {
-      this.setState({ person: props.authorStore.author });
-    }
-  }
-
   render() {
     return (
       <ScrollView>
         {
-          this.state.person ?
-            <Profile person={this.state.person} />
+          this.state.person || this.props.authorStore.author ?
+            <Profile person={this.state.person || this.props.authorStore.author} />
           :
             <View style={{ marginTop: (Dimensions.get('window').height / 3) }}>
               <ActivityIndicator

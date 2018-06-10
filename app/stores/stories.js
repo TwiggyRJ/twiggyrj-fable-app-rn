@@ -1,5 +1,5 @@
 import { observable, action } from 'mobx';
-import { getAllStories } from '../api/stories';
+import { getAllStories, getAuthorStories } from '../api/stories';
 
 class StoriesStore {
   @observable isLoading;
@@ -15,6 +15,13 @@ class StoriesStore {
     this.isLoading = true;
     //console.log(getAllStories())
     this.stories = getAllStories();
+    this.isLoading = false;
+  }
+
+  @action
+  getAuthorStories(author) {
+    this.isLoading = true;
+    this.stories = getAuthorStories(author);
     this.isLoading = false;
   }
 }
