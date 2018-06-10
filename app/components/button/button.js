@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Text, TouchableOpacity, TouchableNativeFeedback } from 'react-native';
+import { TouchableOpacity } from 'react-native';
 import { ButtonContainer, ButtonText } from './styles';
 
 const Button = (props) => {
