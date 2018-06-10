@@ -1,25 +1,31 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Text, TouchableOpacity } from 'react-native';
+import { Text, TouchableOpacity, TouchableNativeFeedback } from 'react-native';
 import { ButtonContainer, ButtonText } from './styles';
 
 const Button = (props) => {
   const { customStyles, textStyles, text, type, component, onPress } = props;
-  if (type === "component") {
+  if (type === 'component') {
     return (
       <ButtonContainer styling={customStyles} onPress={onPress}>
         { component }
       </ButtonContainer>
     );
-  } else {
+  } else if (type === 'container') {
     return (
-      <ButtonContainer styling={customStyles} onPress={onPress}>
-        <ButtonText styling={textStyles}>
-          {text}
-        </ButtonText>
-      </ButtonContainer>
+      <TouchableOpacity>
+        { component }
+      </TouchableOpacity>
     );
   }
+
+  return (
+    <ButtonContainer styling={customStyles} onPress={onPress}>
+      <ButtonText styling={textStyles}>
+        {text}
+      </ButtonText>
+    </ButtonContainer>
+  );
 };
 
 Button.propTypes = {

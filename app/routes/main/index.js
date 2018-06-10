@@ -66,7 +66,7 @@ const TabNav = createBottomTabNavigator(
         title: 'You',
         tabBarIcon: ({ tintColor, focused }) => (
           <Icon
-            name={getIcon('account', !focused)}
+            name="menu"
             size={26}
             style={{ color: tintColor }}
           />

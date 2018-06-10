@@ -1,19 +1,28 @@
 import React, { Component } from 'react';
-import { ActivityIndicator, View, Text } from 'react-native';
+import { ActivityIndicator, ScrollView, Text } from 'react-native';
 import { inject, observer } from 'mobx-react/native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import autobind from 'autobind-decorator';
-import FlattendList from '../../../components/flattendList';
+import { theme } from '../../../config/styles';
+import Author from '../../../components/author';
 import Button from '../../../components/button';
+import FlattendList from '../../../components/flattendList';
+import ItemContainer from '../../../components/itemContainer';
+import {
+  AuthorStyle,
+  AuthorLabel,
+  MenuContainer,
+  SettingsContainer,
+} from './styles';
 
 @inject('authStore')
 @observer
-class MenuContainer extends Component {
+class Menu extends Component {
   static navigationOptions = ({ navigation }) => {
     const params = navigation.state.params || {};
 
     return {
-      headerTitle: 'You',
+      headerTitle: 'Menu',
     };
   };
 
@@ -26,7 +35,7 @@ class MenuContainer extends Component {
   }
 
   componentDidMount() {
-    
+    this.props.authStore.authenticate();
   }
 
   @autobind
@@ -39,16 +48,97 @@ class MenuContainer extends Component {
 
   render() {
     return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        {
-          !this.props.authStore.isLoading ?
-            <Text>lol</Text>
-          :
-            null
-        }
-      </View>
+      <ScrollView>
+        <MenuContainer>
+          <SettingsContainer>
+            {
+              !this.props.authStore.isLoading && this.props.authStore.auth ?
+                <Button
+                  type="container"
+                  component={
+                    <ItemContainer
+                      component={
+                        <Author
+                          author={`${this.props.authStore.auth.firstname} ${this.props.authStore.auth.lastname}`}
+                          avatar={{
+                            src: this.props.authStore.auth.avatar,
+                            height: 50,
+                            width: 50,
+                          }}
+                          size={18}
+                          customStyles={AuthorStyle}
+                          color={theme.text.dark}
+                          component={
+                            <AuthorLabel>
+                              View profile
+                            </AuthorLabel>
+                          }
+                        />
+                      }
+                    />
+                  }
+                />
+              :
+                null
+            }
+            <Button
+              type="container"
+              component={
+                <ItemContainer
+                  borderBottom
+                  component={
+                    <Text>Stories</Text>
+                  }
+                />
+              }
+            />
+            <Button
+              type="container"
+              component={
+                <ItemContainer
+                  borderBottom
+                  component={
+                    <Text>Stats</Text>
+                  }
+                />
+              }
+            />
+          </SettingsContainer>
+          <SettingsContainer>
+            <Button
+              type="container"
+              component={
+                <ItemContainer
+                  component={
+                    <Text>Settings</Text>
+                  }
+                />
+              }
+            />
+            <Button
+              type="container"
+              component={
+                <ItemContainer
+                  component={
+                    <Text>Terms of Service</Text>
+                  }
+                />
+              }
+            /><Button
+              type="container"
+              component={
+                <ItemContainer
+                  component={
+                    <Text>Privacy Policy</Text>
+                  }
+                />
+              }
+            />
+          </SettingsContainer>
+        </MenuContainer>
+      </ScrollView>
     );
   }
 }
 
-export default MenuContainer;
+export default Menu;
