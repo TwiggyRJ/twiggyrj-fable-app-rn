@@ -17,13 +17,6 @@ class StoriesStore {
     this.stories = getAllStories();
     this.isLoading = false;
   }
-
-  @action
-  getAuthorStories(author) {
-    this.isLoading = true;
-    this.stories = getAuthorStories(author);
-    this.isLoading = false;
-  }
 }
 
 export default new StoriesStore();

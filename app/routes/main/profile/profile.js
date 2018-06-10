@@ -9,12 +9,17 @@ import FlattendList from '../../../components/flattendList';
 import Button from '../../../components/button';
 import ItemContainer from '../../../components/itemContainer';
 import {
+  AuthorContainer,
+  AuthorMeta,
+  AuthorMetaContainer,
   AuthorStyle,
+  Container,
   ProfileContainer,
+  SectionContainer,
+  SectionTitle,
 } from './styles';
-import { getAllStories } from '../../../api/stories';
 
-@inject('storiesStore')
+@inject('authorStore')
 @observer
 class Profile extends Component {
   constructor(props) {
@@ -32,7 +37,7 @@ class Profile extends Component {
 
   @autobind
   getStories() {
-    this.props.storiesStore.getAuthorStories(this.state.person.id);
+    this.props.authorStore.getAuthorStories(this.state.person.id);
   }
 
   @autobind
@@ -46,30 +51,47 @@ class Profile extends Component {
   render() {
     return (
       <ProfileContainer>
-        <ItemContainer
-          component={
-            <Author
-              author={`${this.state.person.firstname} ${this.state.person.lastname}`}
-              avatar={{
-                src: this.state.person.avatar,
-                height: 50,
-                width: 50,
-              }}
-              size={18}
-              customStyles={AuthorStyle}
-              color={theme.text.dark}
-            />
-          }
-        />
+        <SectionContainer>
+          <ItemContainer
+            component={
+              <AuthorContainer>
+                <Author
+                  author={`${this.state.person.firstname} ${this.state.person.lastname}`}
+                  avatar={{
+                    src: this.state.person.avatar,
+                    height: 50,
+                    width: 50,
+                  }}
+                  size={18}
+                  customStyles={AuthorStyle}
+                  color={theme.text.dark}
+                />
+                <AuthorMetaContainer>
+                  <AuthorMeta>
+                    {this.state.person.following} Following
+                  </AuthorMeta>
+                  <AuthorMeta>
+                    {this.state.person.followers} Followers
+                  </AuthorMeta>
+                </AuthorMetaContainer>
+              </AuthorContainer>
+            }
+          />
+        </SectionContainer>
+        <Container>
+          <SectionTitle>Latest Stories</SectionTitle>
+        </Container>
         {
-          !this.props.storiesStore.isLoading ?
-            <FlattendList
-              listKey="profileStoriesList"
-              refreshing={{ action: this.getStories, state: this.state.refreshing }}
-              items={this.props.storiesStore.stories}
-              length={this.props.storiesStore.stories.length}
-              navigate={this.navigateToStory}
-            />
+          !this.props.authorStore.isLoading && this.props.authorStore.stories ?
+            <SectionContainer>
+              <FlattendList
+                listKey="profileStoriesList"
+                refreshing={{ action: this.getStories, state: this.state.refreshing }}
+                items={this.props.authorStore.stories}
+                length={this.props.authorStore.stories.length}
+                navigate={this.navigateToStory}
+              />
+            </SectionContainer>
           :
             <ActivityIndicator
               animating={this.state.animating}
