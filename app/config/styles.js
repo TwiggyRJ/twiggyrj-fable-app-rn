@@ -69,6 +69,10 @@ export const theme = {
     description: colours.black,
     meta: colours.grey.medium[1],
   },
+  listingContainer: {
+    background: colours.white,
+    border: colours.grey.light[2],
+  },
   overlay: {
     background: colours.translucent.black,
     text: colours.white,

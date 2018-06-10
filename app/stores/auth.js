@@ -7,7 +7,7 @@ class AuthStore {
 
   constructor() {
     this.auth = null;
-    this.isLoading = false;
+    this.isLoading = null;
   }
 
   @action

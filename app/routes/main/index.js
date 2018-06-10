@@ -10,6 +10,7 @@ import Story from './story';
 import Bookmarks from './bookmarks';
 import Listing from './listing';
 import Menu from './menu';
+import Notifications from './notifications';
 
 const TabNav = createBottomTabNavigator(
   {
@@ -44,8 +45,8 @@ const TabNav = createBottomTabNavigator(
       },
     },
     NotificationsTab: {
-      screen: Menu,
-      path: '/settings',
+      screen: Notifications,
+      path: '/notifications',
       navigationOptions: {
         title: 'Notifications',
         tabBarAccessibilityLabel: 'Notifications',
@@ -65,7 +66,7 @@ const TabNav = createBottomTabNavigator(
         title: 'You',
         tabBarIcon: ({ tintColor, focused }) => (
           <Icon
-            name={getIcon('account', !focused)}
+            name="menu"
             size={26}
             style={{ color: tintColor }}
           />
