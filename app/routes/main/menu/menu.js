@@ -39,10 +39,10 @@ class Menu extends Component {
   }
 
   @autobind
-  navigateToStory(story) {
+  navigateToItem(item, props) {
     this.props.navigation.navigate(
-      'Listing',
-      { story },
+      item,
+      props,
     );
   }
 
@@ -55,6 +55,7 @@ class Menu extends Component {
               !this.props.authStore.isLoading && this.props.authStore.auth ?
                 <Button
                   type="container"
+                  onPress={() => this.navigateToItem('Profile', { type: 'you' })}
                   component={
                     <ItemContainer
                       component={

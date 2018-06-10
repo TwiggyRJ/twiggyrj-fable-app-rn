@@ -13,7 +13,7 @@ const Button = (props) => {
     );
   } else if (type === 'container') {
     return (
-      <TouchableOpacity>
+      <TouchableOpacity onPress={onPress}>
         { component }
       </TouchableOpacity>
     );

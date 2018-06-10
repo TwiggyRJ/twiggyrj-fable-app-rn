@@ -8,7 +8,7 @@ import Button from '../../../components/button';
 
 //@inject('authStore')
 @observer
-class NotificationsContainer extends Component {
+class Notifications extends Component {
   static navigationOptions = ({ navigation }) => {
     const params = navigation.state.params || {};
 
@@ -46,4 +46,4 @@ class NotificationsContainer extends Component {
   }
 }
 
-export default NotificationsContainer;
+export default Notifications;
