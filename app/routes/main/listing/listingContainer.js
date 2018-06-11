@@ -57,6 +57,14 @@ class ListingContainer extends Component {
   }
 
   @autobind
+  navigateToProfile() {
+    this.props.navigation.navigate(
+      'Profile',
+      { type: 'author' },
+    );
+  }
+
+  @autobind
   navigateToStory(storyId) {
     this.props.navigation.navigate('Story', {
       storyId,
@@ -102,6 +110,7 @@ class ListingContainer extends Component {
             <Button
               customStyles={ButtonStyles}
               type="component"
+              onPress={() => this.navigateToProfile()}
               component={
                 <AuthorButton>
                   <Author

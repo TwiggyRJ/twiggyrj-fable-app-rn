@@ -101,6 +101,44 @@ const stories = [
     "last_modified": "2018-05-23T18:35:24+00:00",
     "edition": "First Edition"
   },
+  {
+    "id": "6",
+    "title": "Case 02 - The Eye Glass Murderer",
+    "cover": "http://blog.brycecampbell.me/user/files/daisuke_torakura.jpg",
+    "author": {
+      "id": "3",
+      "name": "Aaron Fryer",
+      "avatar": "https://scontent-lhr3-1.xx.fbcdn.net/v/t1.0-9/23916021_10155128635868994_2293259360887463363_n.jpg?_nc_cat=0&oh=9665ea2b01f7ce2b9b38b294c859267c&oe=5B7F56B9"
+    },
+    "genre": [
+      "Murder Mystery",
+    ],
+    "type": "Game",
+    "views": 2409,
+    "description": "A famous vampire writer who used to be a romance writer, and whom Kogoro reads, invites Kogoro to his estate for discussion on his next vampire novel and to spy on his wife. However, when the writer ends up dead and snow prevents the cops from coming Kogoro is forced to re-evaluate the possibilities of vampires being real.",
+    "published": "2018-06-10T18:35:24+00:00",
+    "last_modified": "2018-06-10T18:35:24+00:00",
+    "edition": "First Edition"
+  },
+  {
+    "id": "7",
+    "title": "Case 03 - The Mystery of the Contessa II",
+    "cover": "https://img.youtube.com/vi/QGkjUXcp1Js/maxresdefault.jpg",
+    "author": {
+      "id": "3",
+      "name": "Aaron Fryer",
+      "avatar": "https://scontent-lhr3-1.xx.fbcdn.net/v/t1.0-9/23916021_10155128635868994_2293259360887463363_n.jpg?_nc_cat=0&oh=9665ea2b01f7ce2b9b38b294c859267c&oe=5B7F56B9"
+    },
+    "genre": [
+      "Murder Mystery",
+    ],
+    "type": "Game",
+    "views": 1350,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae nisl quis est finibus placerat eu eu mi. Fusce eget suscipit eros. Curabitur eget enim sagittis, gravida diam non, ultricies odio.\n\nPellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin eu nisl velit. Morbi ante elit, efficitur non sapien nec, mattis dignissim nisi. Proin aliquam dictum mauris, sit amet suscipit ligula vulputate nec.",
+    "published": "2018-07-16T12:25:24+00:00",
+    "last_modified": "2018-07-16T12:25:24+00:00",
+    "edition": "First Edition"
+  },
 ];
 
 export default stories;

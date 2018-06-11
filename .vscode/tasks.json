@@ -112,6 +112,18 @@
       "group": "build",
       "type": "shell",
       "command": "npm version patch"
-    }
+    },
+    {
+      "taskName": "Open Android Emulator (Windows)",
+      "group": "emulator",
+      "type": "shell",
+      "command": "cd ~/AppData/Local/Android/sdk/tools && ./emulator -avd Nexus_5X_API_25"
+    },
+    {
+      "taskName": "Open Android Emulator (Mac OS)",
+      "group": "emulator",
+      "type": "shell",
+      "command": "~/Library/Android/sdk/tools && ./emulator -avd Nexus_5X_API_25"
+    },
   ]
 }

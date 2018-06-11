@@ -1,5 +1,5 @@
 import { observable, action } from 'mobx';
-import { getAllStories } from '../api/stories';
+import { getAllStories, getAuthorStories } from '../api/stories';
 
 class StoriesStore {
   @observable isLoading;
