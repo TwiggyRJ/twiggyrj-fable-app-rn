@@ -13,6 +13,7 @@
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
 #import "SplashScreen.h"
+#import "ReactNativeConfig.h"
 
 @implementation AppDelegate
 
@@ -20,9 +21,15 @@
 {
   [Fabric with:@[[Crashlytics class]]];
   NSURL *jsCodeLocation;
+  NSString *environment = [ReactNativeConfig envFor:@"ENV"];
   
+  
+#ifdef DEBUG
   jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
-
+#else
+  jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
+#endif
+  
   RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
                                                       moduleName:@"Novella"
                                                initialProperties:nil
