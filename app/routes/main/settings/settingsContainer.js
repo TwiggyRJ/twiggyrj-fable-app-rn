@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { ActivityIndicator, ScrollView, Text } from 'react-native';
 import { inject, observer } from 'mobx-react/native';
 import Icon from 'react-native-vector-icons/Ionicons';
+import VersionNumber from 'react-native-version-number';
 import autobind from 'autobind-decorator';
 import { theme } from '../../../config/styles';
 import Author from '../../../components/author';
@@ -9,20 +10,27 @@ import Button from '../../../components/button';
 import FlattendList from '../../../components/flattendList';
 import ItemContainer from '../../../components/itemContainer';
 import {
-  AuthorStyle,
-  AuthorLabel,
   MenuContainer,
   SettingsContainer,
+  VersionContainer,
 } from './styles';
 
 @inject('authStore')
 @observer
-class Menu extends Component {
+class Settings extends Component {
   static navigationOptions = ({ navigation }) => {
     const params = navigation.state.params || {};
 
     return {
-      headerTitle: 'Menu',
+      headerTitle: 'Settings',
+      headerTitleStyle: {
+        color: theme.header.text,
+        fontFamily: theme.header.font,
+        fontSize: 30,
+        fontWeight: undefined,
+        flex: 0.85,
+        textAlign: 'center',
+      },
     };
   };
 
@@ -51,44 +59,13 @@ class Menu extends Component {
       <ScrollView>
         <MenuContainer>
           <SettingsContainer>
-            {
-              !this.props.authStore.isLoading && this.props.authStore.auth ?
-                <Button
-                  type="container"
-                  onPress={() => this.navigateToItem('Profile', { type: 'you' })}
-                  component={
-                    <ItemContainer
-                      component={
-                        <Author
-                          author={`${this.props.authStore.auth.firstname} ${this.props.authStore.auth.lastname}`}
-                          avatar={{
-                            src: this.props.authStore.auth.avatar,
-                            height: 50,
-                            width: 50,
-                          }}
-                          size={18}
-                          customStyles={AuthorStyle}
-                          color={theme.text.dark}
-                          component={
-                            <AuthorLabel>
-                              View profile
-                            </AuthorLabel>
-                          }
-                        />
-                      }
-                    />
-                  }
-                />
-              :
-                null
-            }
             <Button
               type="container"
               component={
                 <ItemContainer
                   borderBottom
                   component={
-                    <Text>Stories</Text>
+                    <Text>Notifications</Text>
                   }
                 />
               }
@@ -99,7 +76,7 @@ class Menu extends Component {
                 <ItemContainer
                   borderBottom
                   component={
-                    <Text>Stats</Text>
+                    <Text>Account</Text>
                   }
                 />
               }
@@ -108,39 +85,38 @@ class Menu extends Component {
           <SettingsContainer>
             <Button
               type="container"
-              onPress={() => this.navigateToItem('Settings', null)}
               component={
                 <ItemContainer
+                  borderBottom
                   component={
-                    <Text>Settings</Text>
-                  }
-                />
-              }
-            />
-            <Button
-              type="container"
-              component={
-                <ItemContainer
-                  component={
-                    <Text>Terms of Service</Text>
-                  }
-                />
-              }
-            /><Button
-              type="container"
-              component={
-                <ItemContainer
-                  component={
-                    <Text>Privacy Policy</Text>
+                    <Text>Clear cache</Text>
                   }
                 />
               }
             />
           </SettingsContainer>
+          <SettingsContainer>
+            <Button
+              type="container"
+              component={
+                <ItemContainer
+                  borderBottom
+                  component={
+                    <Text>Sign out</Text>
+                  }
+                />
+              }
+            />
+          </SettingsContainer>
+          <VersionContainer>
+            <Text>
+              Version {VersionNumber.appVersion}
+            </Text>
+          </VersionContainer>
         </MenuContainer>
       </ScrollView>
     );
   }
 }
 
-export default Menu;
+export default Settings;

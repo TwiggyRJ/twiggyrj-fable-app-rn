@@ -2996,10 +2996,6 @@ invert-kv@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/invert-kv/-/invert-kv-1.0.0.tgz#104a8e4aaca6d3d8cd157a8ef8bfab2d7a3ffdb6"
 
-ios-deploy@^1.9.2:
-  version "1.9.2"
-  resolved "https://registry.yarnpkg.com/ios-deploy/-/ios-deploy-1.9.2.tgz#c2f4c46b06db4771939b29f980c7c1a8906b47a2"
-
 is-accessor-descriptor@^0.1.6:
   version "0.1.6"
   resolved "https://registry.yarnpkg.com/is-accessor-descriptor/-/is-accessor-descriptor-0.1.6.tgz#a9e12cb3ae8d876727eeef3843f8a0897b5c98d6"
@@ -4842,6 +4838,10 @@ react-native-vector-icons@^4.6.0:
     lodash "^4.0.0"
     prop-types "^15.5.10"
     yargs "^8.0.2"
+
+react-native-version-number@^0.3.4:
+  version "0.3.4"
+  resolved "https://registry.yarnpkg.com/react-native-version-number/-/react-native-version-number-0.3.4.tgz#4850e1a40ea719ee43092812d0693f9dc3be5f40"
 
 react-native@0.55.4:
   version "0.55.4"
