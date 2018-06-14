@@ -139,6 +139,27 @@ const stories = [
     "last_modified": "2018-07-16T12:25:24+00:00",
     "edition": "First Edition"
   },
+  {
+    "id": "8",
+    "title": "The Lost Treasure of the Forbidden Temple",
+    "cover": "https://orig00.deviantart.net/63d7/f/2014/174/d/e/ancient_ruined_temple_by_ice_wolf_elemental-d7np6iy.jpg",
+    "author": {
+      "id": "3",
+      "name": "Aaron Fryer",
+      "avatar": "https://scontent-lhr3-1.xx.fbcdn.net/v/t1.0-9/23916021_10155128635868994_2293259360887463363_n.jpg?_nc_cat=0&oh=9665ea2b01f7ce2b9b38b294c859267c&oe=5B7F56B9"
+    },
+    "genre": [
+      "Adventure",
+      "Dungeons",
+      "Fantasy",
+    ],
+    "type": "Game",
+    "views": 649,
+    "description": "Set in a far away land where fantasy and adventure go hand in hand. A great adventure with untold riches are ahead, are you brave enough to discover it?",
+    "published": "2018-07-16T12:25:24+00:00",
+    "last_modified": "2018-07-16T12:25:24+00:00",
+    "edition": "First Edition"
+  },
 ];
 
 export default stories;
