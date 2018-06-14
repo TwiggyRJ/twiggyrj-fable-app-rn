@@ -107,6 +107,23 @@ export function getAuthorStories(author) {
   }
 }
 
+export function getLandingStories() {
+  try {
+    const stories = storiesJson;
+    let orderedStories = {
+      genre: {
+        classic: stories.slice(0, 3),
+      },
+      all: stories,
+    };
+
+    return orderedStories;
+  } catch(e) {
+    console.log('error');
+    throw e;
+  }
+}
+
 export async function searchStories(term) {
 
 }

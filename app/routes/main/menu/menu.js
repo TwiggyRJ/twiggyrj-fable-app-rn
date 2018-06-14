@@ -122,11 +122,22 @@ class Menu extends Component {
               component={
                 <ItemContainer
                   component={
+                    <Text>About App</Text>
+                  }
+                />
+              }
+            />
+            <Button
+              type="container"
+              component={
+                <ItemContainer
+                  component={
                     <Text>Terms of Service</Text>
                   }
                 />
               }
-            /><Button
+            />
+            <Button
               type="container"
               component={
                 <ItemContainer
