@@ -39,7 +39,7 @@ class Stories extends Component {
         }}>
           <Carousel
             ref={(c) => { this._carousel = c; }}
-            data={this.props.storiesStore.stories.genre.classic}
+            data={this.props.storiesStore.stories.featured}
             renderItem={({ item, index }) => {
               return (
                 <StoryListing
