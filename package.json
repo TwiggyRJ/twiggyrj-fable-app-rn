@@ -8,6 +8,9 @@
     "version": "./npm-version/version-ios.sh"
   },
   "dependencies": {
+    "appcenter": "^1.5.1",
+    "appcenter-analytics": "^1.5.1",
+    "appcenter-crashes": "^1.5.1",
     "autobind-decorator": "^2.1.0",
     "axios": "^0.18.0",
     "babel-plugin-transform-decorators-legacy": "^1.3.4",
@@ -22,7 +25,6 @@
     "react-native": "0.55.4",
     "react-native-cached-image": "^1.4.3",
     "react-native-config": "^0.11.5",
-    "react-native-fabric": "^0.5.1",
     "react-native-keychain": "^3.0.0-rc.3",
     "react-native-parallax-scroll-view": "^0.21.0",
     "react-native-snap-carousel": "^3.7.1",

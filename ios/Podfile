@@ -23,6 +23,8 @@ target 'Novella' do
 
   pod 'react-native-fetch-blob', :path => '../node_modules/react-native-fetch-blob'
 
+  pod 'react-native-version-number', :path => '../node_modules/react-native-version-number'
+
 end
 
 post_install do |installer|

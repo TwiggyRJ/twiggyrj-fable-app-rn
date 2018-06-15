@@ -8,6 +8,7 @@
  */
 
 #import "AppDelegate.h"
+#import <AppCenterReactNative/AppCenterReactNative.h>
 #import <Fabric/Fabric.h>
 #import <Crashlytics/Crashlytics.h>
 #import <React/RCTBundleURLProvider.h>
@@ -21,6 +22,8 @@
 {
   [Fabric with:@[[Crashlytics class]]];
   NSURL *jsCodeLocation;
+
+  [AppCenterReactNative register];  // Initialize AppCenter 
   NSString *environment = [ReactNativeConfig envFor:@"ENV"];
   
   

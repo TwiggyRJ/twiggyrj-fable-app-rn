@@ -1,11 +1,13 @@
 import authStore from './auth';
 import authorStore from './author';
-import storiesStore from './stories';
 import bookmarksStore from './bookmarks';
+import pagesStore from './pages';
+import storiesStore from './stories';
 
 export {
   authStore,
   authorStore,
   bookmarksStore,
+  pagesStore,
   storiesStore,
 };
