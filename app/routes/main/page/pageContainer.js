@@ -7,10 +7,28 @@ import autobind from 'autobind-decorator';
 import FlattendList from '../../../components/flattendList';
 import Button from '../../../components/button';
 import StoryListing from '../../../components/storyListing';
+import { theme, Divider, Spacer } from '../../../config/styles';
 
 @inject('pagesStore')
 @observer
 class PageContainer extends Component {
+  static navigationOptions = ({ navigation }) => {
+    const params = navigation.state.params || {};
+
+    return {
+      headerTitle: params.story,
+      headerTitleStyle: {
+        fontFamily: theme.header.font,
+        fontSize: 26,
+        fontWeight: undefined,
+        flex: 1,
+        textAlign: 'center',
+        marginLeft: 0,
+        lineHeight: 36,
+      },
+    };
+  };
+
   constructor(props) {
     super(props);
 
@@ -20,7 +38,7 @@ class PageContainer extends Component {
   }
 
   componentDidMount() {
-    this.props.pageStore.getPage(0);
+    this.props.pagesStore.getPage(0); 
   }
 
   @autobind
@@ -37,7 +55,11 @@ class PageContainer extends Component {
         <ScrollView contentContainerStyle={{
           marginTop: 10,
         }}>
-          
+        {
+          this.props.pagesStore.page.components.map((page) => {
+            return (<Text>{page.content}</Text>)
+          })
+        }
         </ScrollView>
       )
     }

@@ -3,7 +3,7 @@ import { getPage } from '../api/pages';
 
 class PagesStore {
   @observable isLoading;
-  @observable pages;
+  @observable page;
 
   constructor() {
     this.page = null;
