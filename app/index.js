@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { StatusBar, View } from 'react-native';
 import { createDrawerNavigator, createStackNavigator } from 'react-navigation';
+import AppCenter from 'appcenter';
+import Analytics from 'appcenter-analytics';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import SplashScreen from 'react-native-splash-screen';
 import { Provider } from 'mobx-react';
@@ -29,8 +31,14 @@ const RootStack = createStackNavigator({
 );
 
 export default class App extends Component {
+
   componentDidMount() {
     SplashScreen.hide();
+    this.enableTracking();
+  }
+
+  async enableTracking() {
+    await Analytics.setEnabled(true);
   }
   
   render() {

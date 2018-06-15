@@ -23,4 +23,4 @@ const pages = [
   },
 ];
 
-return pages;
+export default pages;
