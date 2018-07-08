@@ -49,11 +49,11 @@ const pages = [
       {
         id: 'ef8463-bf35324-th35463',
         type: 'interaction',
-        description: 'You pause, you was tempted to save a few gold pieces but you could do the honorable thing.',
+        description: 'You pause, you was tempted to save a few gold pieces but you could do the honorable thing...',
         options: [
           {
             id: 'op3424',
-            option: 'Run away',
+            choice: 'Run away',
             type: 'dice',
             criteria: {
               success: 7,
@@ -64,7 +64,7 @@ const pages = [
           },
           {
             id: 'op3981',
-            option: 'Pay',
+            choice: 'Pay',
             type: 'progress',
             success: null,
           },
