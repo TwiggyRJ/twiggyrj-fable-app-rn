@@ -1,13 +1,25 @@
 import React, { Component } from 'react';
-import { ActivityIndicator, Dimensions, ScrollView, View, Text } from 'react-native';
+import { ActivityIndicator, Dimensions, ScrollView, View } from 'react-native';
 import { inject, observer } from 'mobx-react/native';
 import Icon from 'react-native-vector-icons/Ionicons';
-import Carousel from 'react-native-snap-carousel';
+import { CachedImage } from 'react-native-cached-image';
 import autobind from 'autobind-decorator';
 import FlattendList from '../../../components/flattendList';
 import Button from '../../../components/button';
 import StoryListing from '../../../components/storyListing';
 import { theme, Divider, Spacer } from '../../../config/styles';
+import styles, {
+  Dialogue,
+  DialogueBlock,
+  DialogueText,
+  DialogueTextBlock,
+  Interaction,
+  InteractionButton,
+  InteractionButtonText,
+  InteractionText,
+  InteractionOptions,
+  Text,
+} from './styles';
 
 @inject('pagesStore')
 @observer
@@ -38,7 +50,7 @@ class PageContainer extends Component {
   }
 
   componentDidMount() {
-    this.props.pagesStore.getPage(0); 
+    this.props.pagesStore.getPage(0);
   }
 
   @autobind
@@ -53,13 +65,58 @@ class PageContainer extends Component {
     if (!this.props.pagesStore.isLoading && this.props.pagesStore.page) {
       return (
         <ScrollView contentContainerStyle={{
-          marginTop: 10,
+          marginTop: 0,
         }}>
-        {
-          this.props.pagesStore.page.components.map((page) => {
-            return (<Text>{page.content}</Text>)
-          })
-        }
+          {
+            this.props.pagesStore.page.components.map((component) => {
+              if (component.type === 'text') {
+                return (<Text key={component.id}>{component.content}</Text>);
+              } else if (component.type === 'image') {
+                return (<CachedImage key={component.id} style={{ height: Dimensions.get('window').width * 0.5, width: Dimensions.get('window').width}} source={{ uri: component.src }} />);
+              } else if (component.type === 'dialogue') {
+                const dialogue = component.content.map((content, index) => {
+                  return (
+                    <Dialogue alignment={content.align} noMargin={index === (component.content.length - 1)} key={content.id}>
+                      <CachedImage style={styles.dialogueImage} source={{ uri: content.image }} />
+                      <DialogueTextBlock>
+                        <DialogueText alignment={content.align}>{content.speaker}</DialogueText>
+                        <DialogueText alignment={content.align}>
+                          {content.dialogue}
+                        </DialogueText>
+                      </DialogueTextBlock>
+                    </Dialogue>
+                  );
+                });
+                return (
+                  <DialogueBlock key={component.id}>
+                    {dialogue}
+                  </DialogueBlock>
+                );
+              } else if (component.type === 'interaction') {
+                return (
+                  <Interaction key={component.id}>
+                    <InteractionText>{component.description}</InteractionText>
+                    <Spacer height="20" />
+                    <InteractionOptions>
+                      {
+                        component.options.map(option => {
+                          return(
+                            <Button
+                              key={option.id}
+                              customStyles={InteractionButton}
+                              textStyles={InteractionButtonText}
+                              type="text"
+                              text={option.option}
+                            />
+                          )
+                        })
+                      }
+                    </InteractionOptions>
+                  </Interaction>
+                );
+              }
+            })
+          }
         </ScrollView>
       )
     }
