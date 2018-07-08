@@ -66,8 +66,9 @@ class ListingContainer extends Component {
 
   @autobind
   navigateToStory(storyId) {
-    this.props.navigation.navigate('Story', {
-      storyId,
+    this.props.navigation.navigate('Page', {
+      pageId: 0,
+      story: this.state.story.title,
     });
   }
 
@@ -88,12 +89,14 @@ class ListingContainer extends Component {
                     <Button
                       customStyles={ReadButton}
                       textStyles={ButtonText}
+                      onPress={() => this.navigateToStory(0)}
                       text="Read"
                     />
                     :
                     <Button
                       customStyles={ReadButton}
                       textStyles={ButtonText}
+                      onPress={() => this.navigateToStory(0)}
                       text="Continue"
                     />
                 }

@@ -1,7 +1,11 @@
 PODS:
-  - Crashlytics (3.10.2):
-    - Fabric (~> 1.7.7)
-  - Fabric (1.7.7)
+  - AppCenter/Analytics (1.6.1):
+    - AppCenter/Core
+  - AppCenter/Core (1.6.1)
+  - AppCenter/Crashes (1.6.1):
+    - AppCenter/Core
+  - AppCenterReactNativeShared (1.5.1):
+    - AppCenter/Core (= 1.6.1)
   - lottie-ios (2.5.0)
   - lottie-react-native (2.5.0):
     - lottie-ios
@@ -12,12 +16,10 @@ PODS:
     - React/Core
   - react-native-splash-screen (3.0.7):
     - React
+  - react-native-version-number (0.3.4):
+    - React
   - React/Core (0.55.4):
     - yoga (= 0.55.4.React)
-  - ReactNativeFabric (0.5.1):
-    - Crashlytics
-    - Fabric
-    - React
   - RNKeychain (3.0.0-rc.3):
     - React
   - RNVectorIcons (4.6.0):
@@ -25,22 +27,23 @@ PODS:
   - yoga (0.55.4.React)
 
 DEPENDENCIES:
-  - Crashlytics
-  - Fabric
+  - AppCenter/Analytics (~> 1.6.1)
+  - AppCenter/Crashes (~> 1.6.1)
+  - AppCenterReactNativeShared (~> 1.5.1)
   - lottie-ios (from `../node_modules/lottie-ios`)
   - lottie-react-native (from `../node_modules/lottie-react-native`)
   - react-native-fetch-blob (from `../node_modules/react-native-fetch-blob`)
   - react-native-splash-screen (from `../node_modules/react-native-splash-screen`)
+  - react-native-version-number (from `../node_modules/react-native-version-number`)
   - React/Core (from `../node_modules/react-native`)
-  - ReactNativeFabric (from `../node_modules/react-native-fabric`)
   - RNKeychain (from `../node_modules/react-native-keychain`)
   - RNVectorIcons (from `../node_modules/react-native-vector-icons`)
   - yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - Crashlytics
-    - Fabric
+    - AppCenter
+    - AppCenterReactNativeShared
 
 EXTERNAL SOURCES:
   lottie-ios:
@@ -53,8 +56,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-fetch-blob"
   react-native-splash-screen:
     :path: "../node_modules/react-native-splash-screen"
-  ReactNativeFabric:
-    :path: "../node_modules/react-native-fabric"
+  react-native-version-number:
+    :path: "../node_modules/react-native-version-number"
   RNKeychain:
     :path: "../node_modules/react-native-keychain"
   RNVectorIcons:
@@ -63,18 +66,18 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
-  Crashlytics: 0360624eea1c978a743feddb2fb1ef8b37fb7a0d
-  Fabric: bda89e242bce1b7b8ab264248cf3407774ce0095
+  AppCenter: f9eb653a45cece34549232f295aec05260dfc24f
+  AppCenterReactNativeShared: 5b40dc5bbaf891697d1982e0ae0e9b1120dd4274
   lottie-ios: 9f24be3ecb13412223b6ac70d97437742b0e3de1
   lottie-react-native: db4bd75685428c4ad0ec2f913145abff3d38b640
   React: aa2040dbb6f317b95314968021bd2888816e03d5
   react-native-fetch-blob: 63394b1d7b0781547b3e4463b3195790177b1222
   react-native-splash-screen: 8e3f866dc79bfe533baeffd0a38c33f7a7eae7f8
-  ReactNativeFabric: 3912bf9c714d7cc98110eadf06ca6dedef219322
+  react-native-version-number: 36c0d8eb57a275a6239a860f8dbab3d18299b0e0
   RNKeychain: 627c6095cef215dd3d9804a9a9cf45ab96aa3997
   RNVectorIcons: c0dbfbf6068fefa240c37b0f71bd03b45dddac44
   yoga: a23273df0088bf7f2bb7e5d7b00044ea57a2a54a
 
-PODFILE CHECKSUM: a1c9fbec29f69ef5b4575a7f979e32f6805e6a43
+PODFILE CHECKSUM: c84ff3c83d97cbe162498131e2efccca4cf21254
 
-COCOAPODS: 1.5.2
+COCOAPODS: 1.5.3

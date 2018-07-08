@@ -8,6 +8,9 @@
  */
 
 #import "AppDelegate.h"
+#import <AppCenterReactNativeCrashes/AppCenterReactNativeCrashes.h>
+#import <AppCenterReactNativeAnalytics/AppCenterReactNativeAnalytics.h>
+#import <AppCenterReactNative/AppCenterReactNative.h>
 #import <Fabric/Fabric.h>
 #import <Crashlytics/Crashlytics.h>
 #import <React/RCTBundleURLProvider.h>
@@ -21,6 +24,12 @@
 {
   [Fabric with:@[[Crashlytics class]]];
   NSURL *jsCodeLocation;
+
+  [AppCenterReactNativeCrashes registerWithAutomaticProcessing];  // Initialize AppCenter crashes
+
+  [AppCenterReactNativeAnalytics registerWithInitiallyEnabled:false];  // Initialize AppCenter analytics
+
+  [AppCenterReactNative register];  // Initialize AppCenter 
   NSString *environment = [ReactNativeConfig envFor:@"ENV"];
   
   

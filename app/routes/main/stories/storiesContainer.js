@@ -3,6 +3,7 @@ import { headerStyle } from '../../../config/styles';
 import Stories from './stories';
 import Listing from '../listing';
 import Profile from '../profile';
+import Page from '../page';
 
 const StoriesContainer = createStackNavigator(
   {
@@ -17,6 +18,10 @@ const StoriesContainer = createStackNavigator(
     Profile: {
       path: '/stories/listing/profile',
       screen: Profile,
+    },
+    Page: {
+      path: '/stories/story/page',
+      screen: Page,
     },
   },
   {

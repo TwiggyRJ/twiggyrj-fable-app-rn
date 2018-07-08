@@ -1,22 +1,21 @@
 package com.aaronfryer.novella; 
  
 import android.app.Application; 
-import com.crashlytics.android.Crashlytics; 
 import com.facebook.react.ReactApplication;
+
+import com.apsl.versionnumber.RNVersionNumberPackage;
+import org.devio.rn.splashscreen.SplashScreenReactPackage;
+import com.lugg.ReactNativeConfig.ReactNativeConfigPackage;
+import com.microsoft.appcenter.reactnative.crashes.AppCenterReactNativeCrashesPackage;
+import com.microsoft.appcenter.reactnative.analytics.AppCenterReactNativeAnalyticsPackage;
+import com.microsoft.appcenter.reactnative.appcenter.AppCenterReactNativePackage;
 import com.RNFetchBlob.RNFetchBlobPackage;
-import com.airbnb.android.react.lottie.LottiePackage; 
-import com.smixx.fabric.FabricPackage; 
 import com.oblador.vectoricons.VectorIconsPackage; 
 import com.oblador.keychain.KeychainPackage; 
-import com.lugg.ReactNativeConfig.ReactNativeConfigPackage; 
 import com.facebook.react.ReactNativeHost; 
 import com.facebook.react.ReactPackage; 
 import com.facebook.react.shell.MainReactPackage; 
 import com.facebook.soloader.SoLoader; 
-import org.devio.rn.splashscreen.SplashScreenReactPackage;
-import com.apsl.versionnumber.RNVersionNumberPackage;
- 
-import io.fabric.sdk.android.Fabric; 
 import java.util.Arrays; 
 import java.util.List; 
  
@@ -32,14 +31,15 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() { 
       return Arrays.<ReactPackage>asList( 
         new MainReactPackage(),
+        new KeychainPackage(),
+        new VectorIconsPackage(),
         new RNFetchBlobPackage(), 
-        new LottiePackage(), 
-        new FabricPackage(), 
-        new VectorIconsPackage(), 
-        new KeychainPackage(), 
-        new ReactNativeConfigPackage(),
+        new RNVersionNumberPackage(),
         new SplashScreenReactPackage(),
-        new RNVersionNumberPackage()
+        new ReactNativeConfigPackage(),
+        new AppCenterReactNativeCrashesPackage(MainApplication.this, getResources().getString(R.string.appCenterCrashes_whenToSendCrashes)),
+        new AppCenterReactNativeAnalyticsPackage(MainApplication.this, getResources().getString(R.string.appCenterAnalytics_whenToEnableAnalytics)),
+        new AppCenterReactNativePackage(MainApplication.this)
       ); 
     } 
  
@@ -57,7 +57,6 @@ public class MainApplication extends Application implements ReactApplication {
   @Override 
   public void onCreate() { 
     super.onCreate();
-    Fabric.with(this, new Crashlytics()); 
     SoLoader.init(this, /* native exopackage */ false); 
   } 
 } 
