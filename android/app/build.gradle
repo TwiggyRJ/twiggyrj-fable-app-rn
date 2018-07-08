@@ -2,27 +2,6 @@ apply plugin: "com.android.application"
 
 import com.android.build.OutputFile
 
-buildscript {
-  repositories {
-    maven { url 'https://maven.fabric.io/public' }
-  }
-
-  dependencies {
-    // These docs use an open ended version so that our plugin
-    // can be updated quickly in response to Android tooling updates
-
-    // We recommend changing it to the latest version from our changelog:
-    // https://docs.fabric.io/android/changelog.html#fabric-gradle-plugin
-    classpath 'io.fabric.tools:gradle:1.+'
-  }
-}
-
-apply plugin: 'io.fabric'
-
-repositories {
-  maven { url 'https://maven.fabric.io/public' }
-}
-
 /**
  * The react.gradle file registers a task for each build variant (e.g. bundleDebugJsAndAssets
  * and bundleReleaseJsAndAssets).
@@ -164,8 +143,6 @@ dependencies {
     implementation project(':appcenter-crashes')
     implementation project(':appcenter-analytics')
     implementation project(':appcenter')
-    implementation project(':lottie-react-native')
-    implementation project(':react-native-fabric')
     implementation project(':react-native-vector-icons')
     implementation project(':react-native-keychain')
     implementation project(':react-native-config')

@@ -6,7 +6,6 @@ import com.facebook.react.ReactApplication;
 import com.apsl.versionnumber.RNVersionNumberPackage;
 import org.devio.rn.splashscreen.SplashScreenReactPackage;
 import com.lugg.ReactNativeConfig.ReactNativeConfigPackage;
-import com.airbnb.android.react.lottie.LottiePackage;
 import com.microsoft.appcenter.reactnative.crashes.AppCenterReactNativeCrashesPackage;
 import com.microsoft.appcenter.reactnative.analytics.AppCenterReactNativeAnalyticsPackage;
 import com.microsoft.appcenter.reactnative.appcenter.AppCenterReactNativePackage;
@@ -32,7 +31,6 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() { 
       return Arrays.<ReactPackage>asList( 
         new MainReactPackage(),
-        new LottiePackage(),
         new KeychainPackage(),
         new VectorIconsPackage(),
         new RNFetchBlobPackage(), 
