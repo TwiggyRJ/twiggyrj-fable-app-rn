@@ -105,7 +105,7 @@ class PageContainer extends Component {
                               customStyles={InteractionButton}
                               textStyles={InteractionButtonText}
                               type="text"
-                              text={option.option}
+                              text={option.choice}
                               onPress={() => initInteraction(option)}
                             />
                           )
