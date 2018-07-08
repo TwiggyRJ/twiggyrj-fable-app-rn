@@ -4,9 +4,8 @@ import { inject, observer } from 'mobx-react/native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { CachedImage } from 'react-native-cached-image';
 import autobind from 'autobind-decorator';
-import FlattendList from '../../../components/flattendList';
 import Button from '../../../components/button';
-import StoryListing from '../../../components/storyListing';
+import { initInteraction } from '../../../lib/interaction';
 import { theme, Divider, Spacer } from '../../../config/styles';
 import styles, {
   Dialogue,
@@ -107,6 +106,7 @@ class PageContainer extends Component {
                               textStyles={InteractionButtonText}
                               type="text"
                               text={option.option}
+                              onPress={() => initInteraction(option)}
                             />
                           )
                         })
