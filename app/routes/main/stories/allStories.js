@@ -3,6 +3,7 @@ import { ActivityIndicator, View, Text } from 'react-native';
 import { inject, observer } from 'mobx-react/native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import autobind from 'autobind-decorator';
+import { Spacer } from '../../../config/styles';
 import FlattendList from '../../../components/flattendList';
 import Button from '../../../components/button';
 
@@ -40,6 +41,9 @@ class Stories extends Component {
               items={this.props.storiesStore.stories}
               length={this.props.storiesStore.stories.length}
               navigate={this.navigateToStory}
+              ItemSeperatorComponent={<Spacer height={10} />}
+              ListEmptyComponent={<Text>Empty!</Text>}
+              ListHeaderComponent={<Text>Header</Text>}
             />
           :
             <ActivityIndicator

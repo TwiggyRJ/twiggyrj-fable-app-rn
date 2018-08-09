@@ -1,5 +1,5 @@
 import React from 'react';
-import { Dimensions, FlatList, Text, TouchableWithoutFeedback } from 'react-native';
+import { FlatList, Text } from 'react-native';
 import styles from './styles';
 import StoryListing from '../storyListing';
 
@@ -11,8 +11,13 @@ const FlattendList = (props) => {
       data={props.items}
       refreshing={props.refreshing.state}
       onRefresh={() => props.refreshing.action}
-      keyExtractor={(item, index) => item.id}
-      renderItem={({item, index}) => <StoryListing story={item} navigate={props.navigate} index={index} styles={index === (props.length - 1) ? { marginBottom: 0 } : null} />} />
+      keyExtractor={item => item.id}
+      ItemSeparatorComponent={props.ItemSeparatorComponent}
+      ListEmptyComponent={props.ListEmptyComponent}
+      ListHeaderComponent={props.ListHeaderComponent}
+      ListFooterComponent={props.ListFooterComponent}
+      renderItem={({ item, index }) => <StoryListing story={item} navigate={props.navigate} index={index} />}
+    />
   );
 };
 

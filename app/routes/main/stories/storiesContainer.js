@@ -4,6 +4,7 @@ import Stories from './stories';
 import Listing from '../listing';
 import Profile from '../profile';
 import Page from '../page';
+import Story from '../story';
 
 const StoriesContainer = createStackNavigator(
   {

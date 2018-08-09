@@ -7,6 +7,7 @@ import autobind from 'autobind-decorator';
 import FlattendList from '../../../components/flattendList';
 import Button from '../../../components/button';
 import StoryListing from '../../../components/storyListing';
+import { Spacer } from '../../../config/styles';
 
 @inject('storiesStore')
 @observer
@@ -59,6 +60,8 @@ class Stories extends Component {
             items={this.props.storiesStore.stories.all}
             length={this.props.storiesStore.stories.length}
             navigate={this.navigateToStory}
+            ListEmptyComponent={<Text>Empty!</Text>}
+            ListHeaderComponent={<Text>Header</Text>}
           />
         </ScrollView>
       )

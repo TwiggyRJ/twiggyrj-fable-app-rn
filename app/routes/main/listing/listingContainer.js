@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
+import { inject, observer } from 'mobx-react/native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import ParallaxScrollView from 'react-native-parallax-scroll-view';
+import { Button } from 'react-native-anubis-component-library';
 import autobind from 'autobind-decorator';
 import { getDateFormated } from '../../../lib/dates';
 import { getIonicIcon } from '../../../lib/helpers';
-import Button from '../../../components/button';
 import Header from '../../../components/header';
 import Author from '../../../components/author';
 import { theme, Divider, Spacer } from '../../../config/styles';
@@ -29,6 +30,8 @@ import {
   ReadButton,
 } from './styles';
 
+@inject('storyStore')
+@observer
 class ListingContainer extends Component {
   static navigationOptions = ({ navigation }) => {
     const params = navigation.state.params || {};
@@ -56,6 +59,10 @@ class ListingContainer extends Component {
     };
   }
 
+  componentDidMount() {
+    this.props.storyStore.storySelected(this.state.story);
+  }
+
   @autobind
   navigateToProfile() {
     this.props.navigation.navigate(
@@ -66,9 +73,9 @@ class ListingContainer extends Component {
 
   @autobind
   navigateToStory(storyId) {
-    this.props.navigation.navigate('Page', {
+    this.props.navigation.navigate('Story', {
       pageId: 0,
-      story: this.state.story.title,
+      title: this.state.story.title,
     });
   }
 
@@ -87,6 +94,12 @@ class ListingContainer extends Component {
                 {
                   this.state.notRead ?
                     <Button
+                      platformProps={{
+                        containerStyles: '',
+                        isHighlight: true,
+                        ripple: theme.button.ripple.light,
+                        rippleBorder: true,
+                      }}
                       customStyles={ReadButton}
                       textStyles={ButtonText}
                       onPress={() => this.navigateToStory(0)}
@@ -94,6 +107,12 @@ class ListingContainer extends Component {
                     />
                     :
                     <Button
+                      platformProps={{
+                        containerStyles: '',
+                        isHighlight: true,
+                        ripple: theme.button.ripple.light,
+                        rippleBorder: true,
+                      }}
                       customStyles={ReadButton}
                       textStyles={ButtonText}
                       onPress={() => this.navigateToStory(0)}
@@ -111,37 +130,42 @@ class ListingContainer extends Component {
               {this.state.story.description}
             </Description>
             <Button
+              platformProps={{
+                containerStyles: '',
+                isHighlight: true,
+                ripple: theme.button.ripple.dark,
+                rippleBorder: true,
+              }}
               customStyles={ButtonStyles}
               type="component"
-              onPress={() => this.navigateToProfile()}
-              component={
-                <AuthorButton>
-                  <Author
-                    author={this.state.story.author.name}
-                    avatar={{
-                      src: this.state.story.author.avatar,
-                      height: 50,
-                      width: 50,
-                    }}
-                    size={18}
-                    customStyles={AuthorStyle}
-                    color={theme.primary}
-                    component={
-                      <AuthorLabel>
-                        Author
-                      </AuthorLabel>
-                    }
+             
+            >
+              <AuthorButton>
+                <Author
+                  author={this.state.story.author.name}
+                  avatar={{
+                    src: this.state.story.author.avatar,
+                    height: 50,
+                    width: 50,
+                  }}
+                  size={18}
+                  customStyles={AuthorStyle}
+                  color={theme.primary}
+                  component={
+                    <AuthorLabel>
+                      Author
+                    </AuthorLabel>
+                  }
+                />
+                <AuthorButtonIcon>
+                  <Icon
+                    name={getIonicIcon('arrow-forward', false)}
+                    size={25}
+                    style={{ color: theme.text.dark }}
                   />
-                  <AuthorButtonIcon>
-                    <Icon
-                      name={getIonicIcon('arrow-forward', false)}
-                      size={25}
-                      style={{ color: theme.text.dark }}
-                    />
-                  </AuthorButtonIcon>
-                </AuthorButton>
-              }
-            />
+                </AuthorButtonIcon>
+              </AuthorButton>
+            </Button>
           </DescriptionContainer>
           <Divider height={10} />
           <MetaContainer>
@@ -190,15 +214,31 @@ class ListingContainer extends Component {
             {
               this.state.notRead ?
                 <Button
+                  platformProps={{
+                    containerStyles: '',
+                    isHighlight: true,
+                    ripple: theme.button.ripple.light,
+                    rippleBorder: true,
+                  }}
                   customStyles={ReadButton}
                   textStyles={ButtonText}
                   text="Read"
+                  ripple={theme.secondary}
+                  rippleBorder
                 />
                 :
                 <Button
+                  platformProps={{
+                    containerStyles: '',
+                    isHighlight: true,
+                    ripple: theme.button.ripple.light,
+                    rippleBorder: true,
+                  }}
                   customStyles={ReadButton}
                   textStyles={ButtonText}
                   text="Continue"
+                  ripple={theme.secondary}
+                  rippleBorder
                 />
             }
           </PlayContainer>

@@ -1,10 +1,10 @@
 import React from 'react';
 import { Container } from './styles';
 
-const ItemContainer = (props) => {
+const ItemContainer = ({ children }) => {
   return (
     <Container>
-      {props.component}
+      {children}
     </Container>
   )
 }

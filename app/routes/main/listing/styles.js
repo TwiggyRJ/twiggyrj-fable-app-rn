@@ -35,6 +35,7 @@ export const Description = styled.Text`
   color: ${theme.text.dark};
   font-size: 18;
   font-style: italic;
+  padding-bottom: 20px;
 `;
 
 export const MetaValue = styled.Text`
@@ -74,18 +75,22 @@ export const PlayContainer = styled.View`
   justify-content: flex-start;
   flex-wrap: nowrap;
   margin-top: 10px;
+  height: 35px;
+  overflow: hidden;
 `;
 
 export const ButtonStyles = `
   align-items: flex-start;
+  background-color: transparent;
   padding-bottom: 0px;
   width: 100%;
 `;
 
 export const ReadButton = `
+  padding-vertical: 20px;
   background-color: ${theme.primary};
   border-radius: 50;
-  height: 35;
+  height: 35px;
   padding: 5px 20px;
 `;
 

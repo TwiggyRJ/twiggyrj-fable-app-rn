@@ -10,7 +10,6 @@ export default StyleSheet.create({
   },
   listingContainer: {
     elevation: 1,
-    marginBottom: 10,
     borderBottomColor: '#d3d3d3',
     borderBottomWidth: 1,
   },

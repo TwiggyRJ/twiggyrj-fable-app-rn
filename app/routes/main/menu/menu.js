@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import { ActivityIndicator, ScrollView, Text } from 'react-native';
 import { inject, observer } from 'mobx-react/native';
 import Icon from 'react-native-vector-icons/Ionicons';
+import { Button } from 'react-native-anubis-component-library';
 import autobind from 'autobind-decorator';
 import { theme } from '../../../config/styles';
 import Author from '../../../components/author';
-import Button from '../../../components/button';
 import FlattendList from '../../../components/flattendList';
 import ItemContainer from '../../../components/itemContainer';
 import {
@@ -54,99 +54,64 @@ class Menu extends Component {
             {
               !this.props.authStore.isLoading && this.props.authStore.auth ?
                 <Button
+                  platformProps={{
+                    containerStyles: '',
+                    isHighlight: true,
+                    ripple: theme.button.ripple.light,
+                    rippleBorder: true,
+                  }}
                   type="container"
+                  customStyles=""
                   onPress={() => this.navigateToItem('Profile', { type: 'you' })}
-                  component={
-                    <ItemContainer
+                >
+                  <ItemContainer>
+                    <Author
+                      author={`${this.props.authStore.auth.firstname} ${this.props.authStore.auth.lastname}`}
+                      avatar={{
+                        src: this.props.authStore.auth.avatar,
+                        height: 50,
+                        width: 50,
+                      }}
+                      size={18}
+                      customStyles={AuthorStyle}
+                      color={theme.text.dark}
                       component={
-                        <Author
-                          author={`${this.props.authStore.auth.firstname} ${this.props.authStore.auth.lastname}`}
-                          avatar={{
-                            src: this.props.authStore.auth.avatar,
-                            height: 50,
-                            width: 50,
-                          }}
-                          size={18}
-                          customStyles={AuthorStyle}
-                          color={theme.text.dark}
-                          component={
-                            <AuthorLabel>
-                              View profile
-                            </AuthorLabel>
-                          }
-                        />
+                        <AuthorLabel>
+                          View profile
+                          </AuthorLabel>
                       }
                     />
-                  }
-                />
+                  </ItemContainer>
+                </Button>
               :
                 null
             }
             <Button
+              platformProps={{
+                containerStyles: '',
+                isHighlight: true,
+                ripple: theme.button.ripple.light,
+                rippleBorder: true,
+              }}
               type="container"
-              component={
-                <ItemContainer
-                  borderBottom
-                  component={
-                    <Text>Stories</Text>
-                  }
-                />
-              }
-            />
+            >
+              <ItemContainer borderBottom>
+                <Text>Stories</Text>
+              </ItemContainer>
+            </Button>
             <Button
+              platformProps={{
+                containerStyles: '',
+                isHighlight: true,
+                ripple: theme.button.ripple.light,
+                rippleBorder: true,
+              }}
               type="container"
-              component={
-                <ItemContainer
-                  borderBottom
-                  component={
-                    <Text>Stats</Text>
-                  }
-                />
-              }
-            />
-          </SettingsContainer>
-          <SettingsContainer>
-            <Button
-              type="container"
-              onPress={() => this.navigateToItem('Settings', null)}
-              component={
-                <ItemContainer
-                  component={
-                    <Text>Settings</Text>
-                  }
-                />
-              }
-            />
-            <Button
-              type="container"
-              component={
-                <ItemContainer
-                  component={
-                    <Text>About App</Text>
-                  }
-                />
-              }
-            />
-            <Button
-              type="container"
-              component={
-                <ItemContainer
-                  component={
-                    <Text>Terms of Service</Text>
-                  }
-                />
-              }
-            />
-            <Button
-              type="container"
-              component={
-                <ItemContainer
-                  component={
-                    <Text>Privacy Policy</Text>
-                  }
-                />
-              }
-            />
+            >
+              <ItemContainer borderBottom>
+                <Text>Stats</Text>
+              </ItemContainer>
+            </Button>
           </SettingsContainer>
         </MenuContainer>
       </ScrollView>

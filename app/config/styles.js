@@ -51,6 +51,14 @@ export const theme = {
     dark: colours.black,
     translucent: colours.translucent.black,
   },
+  button: {
+    ripple: {
+      dark: colours.grey.medium[1],
+      light: colours.white,
+      primary: colours.blue.main[1],
+      secondary: colours.pink,
+    },
+  },
   tabBar: {
     background: colours.blue.main[1],
     border: colours.blue.main[2],

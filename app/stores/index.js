@@ -3,6 +3,7 @@ import authorStore from './author';
 import bookmarksStore from './bookmarks';
 import pagesStore from './pages';
 import storiesStore from './stories';
+import storyStore from './story';
 
 export {
   authStore,
@@ -10,4 +11,5 @@ export {
   bookmarksStore,
   pagesStore,
   storiesStore,
+  storyStore,
 };

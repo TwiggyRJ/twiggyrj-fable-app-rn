@@ -9,6 +9,7 @@ import { Provider } from 'mobx-react';
 import * as stores from './stores';
 import Main from './routes/main';
 import Login from './routes/login';
+import Story from './routes/main/story';
 import Button from './components/button';
 import { theme } from './config/styles';
 
@@ -20,6 +21,10 @@ const RootStack = createStackNavigator({
   Main: {
     path: '/main',
     screen: Main,
+  },
+  Story: {
+    path: '/stories/story/',
+    screen: Story,
   },
 },
 {
