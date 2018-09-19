@@ -4939,9 +4939,8 @@ react-lifecycles-compat@^3, react-lifecycles-compat@^3.0.2, react-lifecycles-com
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
 
-react-native-anubis-component-library@^0.1.0:
+"react-native-anubis-component-library@file:../react-native-anubis-component-library":
   version "0.1.0"
-  resolved "https://registry.yarnpkg.com/react-native-anubis-component-library/-/react-native-anubis-component-library-0.1.0.tgz#3faf0d40ad63d38274b29faf53f88b22d956aed2"
 
 react-native-cached-image@^1.4.3:
   version "1.4.3"

@@ -1,45 +1,35 @@
 import React, { Component } from 'react';
-import { StatusBar, View } from 'react-native';
-import { createDrawerNavigator, createStackNavigator } from 'react-navigation';
+import { AppLoader } from 'react-native-anubis-component-library';
 import AppCenter from 'appcenter';
 import Analytics from 'appcenter-analytics';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import SplashScreen from 'react-native-splash-screen';
-import { Provider } from 'mobx-react';
-import * as stores from './stores';
-import Main from './routes/main';
-import Login from './routes/login';
-import Story from './routes/main/story';
-import Button from './components/button';
-import { theme } from './config/styles';
+import App from './app';
 
-const RootStack = createStackNavigator({
-  Login: {
-    path: '/',
-    screen: Login,
-  },
-  Main: {
-    path: '/main',
-    screen: Main,
-  },
-  Story: {
-    path: '/stories/story/',
-    screen: Story,
-  },
-},
-{
-  initialRouteName: 'Main',
-  navigationOptions: {
-    header: null,
-  },
-},
-);
+export default class AppInit extends Component {
+  constructor(props) {
+    super(props);
 
-export default class App extends Component {
+    this.state = {
+      appReady: false,
+      rootKey: Math.random(),
+    };
+
+    this.resetAnimation = this.resetAnimation.bind(this);
+    console.disableYellowBox = true;
+  }
 
   componentDidMount() {
     SplashScreen.hide();
     this.enableTracking();
+    this.resetAnimation();
+  }
+
+  resetAnimation() {
+    setTimeout(() => {
+      this.setState({
+        appReady: true,
+      });
+    }, 250);
   }
 
   async enableTracking() {
@@ -47,15 +37,14 @@ export default class App extends Component {
   }
   
   render() {
-    return [
-      <Provider key="app" {...stores}>
-        <RootStack />
-      </Provider>,
-      <StatusBar
-        key="main-statusbar"
-        backgroundColor={theme.header.statusBar}
-        barStyle="light-content"
-      />,
-    ];
+    return (
+      <AppLoader
+        image={require('../assets/images/loader.png')}
+        isAppLoaded={true}
+        splashscreenBackground="#4276ba"
+      >
+        <App />
+      </AppLoader>
+    );
   }
 }

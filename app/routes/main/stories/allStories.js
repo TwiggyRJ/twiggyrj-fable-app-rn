@@ -6,6 +6,7 @@ import autobind from 'autobind-decorator';
 import { Spacer } from '../../../config/styles';
 import FlattendList from '../../../components/flattendList';
 import Button from '../../../components/button';
+import { AppLoader } from 'react-native-anubis-component-library';
 
 @inject('storiesStore')
 @observer
@@ -45,7 +46,7 @@ class Stories extends Component {
               ListEmptyComponent={<Text>Empty!</Text>}
               ListHeaderComponent={<Text>Header</Text>}
             />
-          :
+            :
             <ActivityIndicator
               animating={this.state.animating}
               size="large"

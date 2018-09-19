@@ -21,7 +21,7 @@
     "prop-types": "^15.6.0",
     "react": "16.3.1",
     "react-native": "0.55.4",
-    "react-native-anubis-component-library": "^0.1.0",
+    "react-native-anubis-component-library": "file:../react-native-anubis-component-library",
     "react-native-cached-image": "^1.4.3",
     "react-native-config": "^0.11.5",
     "react-native-keychain": "^3.0.0-rc.3",
@@ -56,7 +56,10 @@
     "setupFiles": [
       ".\\node_modules\\appcenter\\test\\AppCenterMock.js",
       ".\\node_modules\\appcenter-analytics\\test\\AppCenterAnalyticsMock.js",
-      ".\\node_modules\\appcenter-crashes\\test\\AppCenterCrashesMock.js"
+      ".\\node_modules\\appcenter-crashes\\test\\AppCenterCrashesMock.js",
+      "./node_modules/appcenter/test/AppCenterMock.js",
+      "./node_modules/appcenter-analytics/test/AppCenterAnalyticsMock.js",
+      "./node_modules/appcenter-crashes/test/AppCenterCrashesMock.js"
     ]
   },
   "rnpm": {

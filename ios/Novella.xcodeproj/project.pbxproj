@@ -46,7 +46,6 @@
 		3B3E75FF20C9E9B900A59293 /* Nickainley-Normal.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3B3E75FA20C9E9B900A59293 /* Nickainley-Normal.otf */; };
 		3B3E760120C9EF9300A59293 /* splashscreen_text.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B3E760020C9EF9300A59293 /* splashscreen_text.png */; };
 		3B94471520CA5C580009272F /* libReactNativeConfig.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BC7794420B716D00028CEEB /* libReactNativeConfig.a */; };
-		3BFFF6AB20B74B20007FD3A0 /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B9EB69E20B72861005ED993 /* Lottie.framework */; };
 		3BFFF6AC20B74B20007FD3A0 /* Lottie.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3B9EB69E20B72861005ED993 /* Lottie.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		45F9D9EF9D284650AB1AF4CF /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1783FA1F2C634F10AA164AF5 /* SimpleLineIcons.ttf */; };
 		4706FD243D7FDCBD1935903A /* libPods-Novella.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73FDD3729C8444C91CFA665C /* libPods-Novella.a */; };
@@ -544,7 +543,6 @@
 			files = (
 				3B94471520CA5C580009272F /* libReactNativeConfig.a in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
-				3BFFF6AB20B74B20007FD3A0 /* Lottie.framework in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
@@ -1587,7 +1585,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh ./index.js";
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh ./index.js\n";
 		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1614,7 +1612,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Fabric/run\" ce43cb0bb739ef2f3c502441d5475ef0d5c4fbc0 984b2a2f3153adf286adcf72a06d56235956986effa5affe6db73989cb914943";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
 		};
 		419BD09B18E99A9BD655216F /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
