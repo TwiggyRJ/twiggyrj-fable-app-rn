@@ -6,14 +6,25 @@ import { theme } from '../../config/styles';
 export default StyleSheet.create({
   contentContainer: {
     backgroundColor: '#FFFFFF',
+    borderBottomLeftRadius: 5,
+    borderBottomRightRadius: 5,
     padding: 20,
+    width: undefined,
   },
   listingContainer: {
     elevation: 1,
     borderBottomColor: '#d3d3d3',
+    borderBottomLeftRadius: 5,
+    borderBottomRightRadius: 5,
+    borderTopLeftRadius: 5,
+    borderTopRightRadius: 5,
     borderBottomWidth: 1,
+    overflow: 'hidden',
+    width: undefined,
   },
   images: {
+    borderTopLeftRadius: 5,
+    borderTopRightRadius: 5,
     height: 200,
     width: undefined,
   },
